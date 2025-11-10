@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
-*{
-    font-family: Play ;
+* {
+  font-family: Play;
+}
+
+.section-padding {
+  padding-inline: clamp(1.75rem, 6.22vw + 0.389rem, 6.688rem);
+}
+
+.section-margin {
+  margin-inline: clamp(2.813rem, 3.949vw + 1.949rem, 6.688rem)
+}
+
+@theme {
+  --color-primary: #AC3030;
+  --color-secondary: #E5E5E5;
+  --html-spacing: clamp(2.813rem, 4.586vw + 1.809rem, 7.313rem);
+}
+
+html {
+background-color: #F7F7F7;
 }
