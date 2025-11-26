@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Icons } from "../assets";
 
-const DropdownLanguage = () => {
+function DropdownLanguage() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 

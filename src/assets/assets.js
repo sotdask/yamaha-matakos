@@ -31,6 +31,8 @@ import partner from "./icons/partner.svg";
 import parallaxMap from "./images/parallax-map.svg";
 import parallaxPhone from "./images/parallax-phone.svg";
 import parallaxMail from "./images/parallax-mail.svg";
+import star from "./icons/star.svg";
+
 
 export const Icons = {
   facebook,
@@ -46,4 +48,5 @@ export const Icons = {
   parallaxMap,
   parallaxPhone,
   parallaxMail,
+  star,
 };

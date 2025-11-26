@@ -7,3 +7,4 @@ export { default as Showcase } from "./Home/Showcase";
 export { default as Partners } from "./Home/Partners";
 export { default as Discover } from "./Home/Discover";
 export { default as ParallaxInfo } from "./Home/Parallax";
+export { default as Reviews } from "./Home/Reviews";

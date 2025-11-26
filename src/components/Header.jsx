@@ -1,6 +1,6 @@
 import React from "react";
 import { Icons } from "../assets/assets";
-import { LinkButton, LangDropdown } from "../assets/ui";
+import { LinkButton, LangDropdown, BurgerMenu } from "../assets/ui";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -29,11 +29,7 @@ const Header = () => {
             <LangDropdown />
           </div>
           <div className="mobile-version flex lg:hidden">
-            <div className="flex flex-col items-end space-y-1.5">
-              <div className="h-1 w-8 bg-[#720303] rounded"></div>
-              <div className="h-1 w-6 bg-[#720303] rounded"></div>
-              <div className="h-1 w-4 bg-[#720303] rounded"></div>
-            </div>
+            <BurgerMenu />
           </div>
         </div>
       </div>
