@@ -29,10 +29,10 @@ const Header = () => {
             <LangDropdown />
           </div>
           <div className="mobile-version flex lg:hidden">
-            <div class="flex flex-col items-end space-y-1.5">
-              <div class="h-1 w-8 bg-[#720303] rounded"></div>
-              <div class="h-1 w-6 bg-[#720303] rounded"></div>
-              <div class="h-1 w-4 bg-[#720303] rounded"></div>
+            <div className="flex flex-col items-end space-y-1.5">
+              <div className="h-1 w-8 bg-[#720303] rounded"></div>
+              <div className="h-1 w-6 bg-[#720303] rounded"></div>
+              <div className="h-1 w-4 bg-[#720303] rounded"></div>
             </div>
           </div>
         </div>

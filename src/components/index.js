@@ -1,5 +1,9 @@
-export { default as Hero } from './Hero';
-export {default as Header } from './Header';
-export {default as Navbar } from './Navbar';
-export {default as Info } from './Info';
-export {default as Explore } from './Explore';
+export { default as Hero } from "./Home/Hero";
+export { default as Header } from "./Header";
+export { default as Navbar } from "./Navbar";
+export { default as Info } from "./Home/Info";
+export { default as Explore } from "./Home/Explore";
+export { default as Showcase } from "./Home/Showcase";
+export { default as Partners } from "./Home/Partners";
+export { default as Discover } from "./Home/Discover";
+export { default as ParallaxInfo } from "./Home/Parallax";
