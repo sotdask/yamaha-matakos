@@ -6,6 +6,8 @@ import categoryFirst from "./images/cat-4.jpg";
 import article1 from "./images/article-1.jpg";
 import article2 from "./images/article-2.jpg";
 import parallax from "./images/parallax.png";
+import supersportImg from "./images/supersportImg.png"
+import video from "./images/matakos-gif.gif"
 
 export const Images = {
   hero,
@@ -16,6 +18,8 @@ export const Images = {
   article1,
   article2,
   parallax,
+  supersportImg,
+  video,
 };
 
 import facebook from "./icons/facebook.svg";
@@ -34,6 +38,8 @@ import parallaxMail from "./images/parallax-mail.svg";
 import star from "./icons/star.svg";
 import burger from "./icons/burger.svg";
 import closeMenu from "./icons/close-menu.svg";
+import down from "./icons/down.svg";
+import modalArrow from "./icons/modal-arrow.svg";
 
 
 
@@ -54,4 +60,7 @@ export const Icons = {
   star,
   burger,
   closeMenu,
+  down,
+  modalArrow,
+  
 };

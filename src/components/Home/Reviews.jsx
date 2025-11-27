@@ -12,7 +12,7 @@ const Reviews = () => {
 
   return (
     <div className="my-(--html-spacing) section-padding flex flex-col items-center">
-      <Title text="real stories. real results" />
+      <Title text="reviews" />
       <p className="lg:w-6/12 text-base lg:text-lg mt-5 text-center">
         Our results in Yamaha Matakos speak for themselves, but our customers
         say it best. Explore the real stories and experiences of people who have

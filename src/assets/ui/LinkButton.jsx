@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
-export default function LinkButton({ to, text }) {
+export default function LinkButton({ to, text, onClick }) {
   return (
     <Link
       to={to}
-      className="inline-block bg-transparent text-lg text-[#C2BABA] font-bold px-3 py-2 hover:border-primary hover:text-primary border-2 border-[#C2BABA] transition"
+      onClick={onClick}
+      className="group relative inline-flex items-center justify-center overflow-hidden bg-primary text-white font-bold text-base px-8 py-3 rounded-full transition-all duration-300 hover:bg-[#720303] hover:shadow-xl hover:shadow-primary/40 hover:scale-105 active:scale-100"
     >
-      {text}
+      <span className="relative z-10">{text}</span>
+      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
     </Link>
   );
 }

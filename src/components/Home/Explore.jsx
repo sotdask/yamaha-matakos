@@ -45,31 +45,27 @@ const Explore = () => {
                 <img
                   src={category.image}
                   alt={`${category.title} category`}
-                  className="h-56 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
+                  className="h-80 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
                 />
                 <span className="absolute left-5 top-5 inline-flex items-center rounded-3xl bg-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/80 backdrop-blur">
                   {category.modelsLabel}
                 </span>
               </div>
-              <div className="flex flex-1 flex-col justify-between gap-6 p-7">
+              <div className="flex flex-1 flex-col gap-6 px-7 py-3">
                 <div>
                   <h3 className="text-2xl font-semibold tracking-tight text-white">
                     {category.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-white/70">
+                  <p className="mt-1 text-sm leading-relaxed text-white/70">
                     {category.description}
                   </p>
                 </div>
                 <div className="flex flex-col gap-6">
-                  <span className="text-xs uppercase tracking-[0.4em] text-white/40">
-                    Updated 2025
-                  </span>
                   <a
                     href={category.href}
-                    className="inline-flex items-center gap-2 self-start rounded-3xl bg-primary px-6 py-2.5 text-sm font-semibold uppercase tracking-[0.3em] text-white transition-all duration-300 hover:bg-primary/80 hover:shadow-[0_12px_25px_-10px_rgba(114,3,3,0.8)] hover:-translate-y-1"
+                    className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-2 py-2 mb-3 text-sm hover:bg-white hover:text-black transition-all duration-300"
                   >
-                    Explore
-                    <span className="text-lg leading-none">›</span>
+                    explore more
                   </a>
                 </div>
               </div>
