@@ -4,14 +4,15 @@ import { Images, Icons } from "../../assets/assets";
 
 const ParallaxInfo = () => {
   return (
-    <Parallax
-      bgImage={Images.parallax}
-      bgImageAlt="the cat"
+    <Parallax 
+      bgImage={Images.parallax} 
+      bgImageAlt="the cat" 
       strength={200}
       bgImageStyle={{
-        objectFit: "cover",
-        objectPosition: "center left",
-        backgroundRepeat: "no-repeat",
+        objectFit: 'cover',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
       }}
     >
       <div className="relative">
@@ -22,43 +23,16 @@ const ParallaxInfo = () => {
           </h3>
           <div className="flex flex-col lg:flex-row items-center gap-y-8 sm:gap-y-10 lg:gap-y-0 lg:gap-x-8 xl:gap-x-12 justify-between my-8 sm:my-12 lg:my-24 xl:my-36 w-full section-padding">
             <div className="wrapper flex flex-col items-center gap-y-4 sm:gap-y-5 lg:gap-y-7">
-              <img
-                src={Icons.parallaxMap}
-                alt=""
-                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20"
-              />
-              <a
-                href="#"
-                className="text-sm sm:text-base md:text-lg xl:text-2xl font-bold text-white text-center hover:text-primary transition duration-300"
-              >
-                LAGKADA 126, THESSALONIKI
-              </a>
+              <img src={Icons.parallaxMap} alt="" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+              <a href="#" className="text-sm sm:text-base md:text-lg xl:text-2xl font-bold text-white text-center">LAGKADA 126, THESSALONIKI</a>
             </div>
             <div className="wrapper flex flex-col items-center gap-y-4 sm:gap-y-5 lg:gap-y-7">
-              <img
-                src={Icons.parallaxPhone}
-                alt=""
-                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20"
-              />
-              <a
-                href="#"
-                className="text-sm sm:text-base md:text-lg xl:text-2xl font-bold text-white hover:text-primary transition duration-300"
-              >
-                +30 2310522774
-              </a>
+              <img src={Icons.parallaxPhone} alt="" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+              <a href="#" className="text-sm sm:text-base md:text-lg xl:text-2xl font-bold text-white">+30 2310522774</a>
             </div>
             <div className="wrapper flex flex-col items-center gap-y-4 sm:gap-y-5 lg:gap-y-7">
-              <img
-                src={Icons.parallaxMail}
-                alt=""
-                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20"
-              />
-              <a
-                href="#"
-                className="text-sm sm:text-base md:text-lg xl:text-2xl text-center font-bold text-white hover:text-primary transition duration-300"
-              >
-                INFO@YAMAHA-MATAKOS.GR
-              </a>
+              <img src={Icons.parallaxMail} alt="" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
+              <a href="#" className="text-sm sm:text-base md:text-lg xl:text-2xl text-center font-bold text-white">INFO@YAMAHA-MATAKOS.GR</a>
             </div>
           </div>
         </div>

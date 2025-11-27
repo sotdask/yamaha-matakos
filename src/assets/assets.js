@@ -32,6 +32,9 @@ import parallaxMap from "./images/parallax-map.svg";
 import parallaxPhone from "./images/parallax-phone.svg";
 import parallaxMail from "./images/parallax-mail.svg";
 import star from "./icons/star.svg";
+import burger from "./icons/burger.svg";
+import closeMenu from "./icons/close-menu.svg";
+
 
 
 export const Icons = {
@@ -49,4 +52,6 @@ export const Icons = {
   parallaxPhone,
   parallaxMail,
   star,
+  burger,
+  closeMenu,
 };
