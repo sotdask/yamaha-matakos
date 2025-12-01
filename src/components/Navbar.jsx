@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Icons } from "../assets/assets";
 import { ModelsMenu } from "../assets/ui";
 
@@ -120,12 +121,12 @@ const Navbar = () => {
             {isExploreOpen && (
               <ul className="absolute top-full left-0 mt-2 bg-[#F7F7F7] rounded-xl shadow-lg border border-gray-200 p-2 flex flex-col gap-1 z-50 w-48 min-w-max">
                 <li>
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -157,9 +158,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="mobile-version flex lg:hidden">
-        <a href="/">
+        <Link to="/">
           <img src={Icons.logo} alt="logo" />
-        </a>
+        </Link>
       </div>
     </>
   );

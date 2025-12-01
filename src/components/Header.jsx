@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Icons } from "../assets/assets";
 import { LinkButton, LangDropdown, MobileMenu } from "../assets/ui";
 import Navbar from "./Navbar";
@@ -31,9 +32,9 @@ const Header = () => {
         <div className="section-padding flex items-center justify-between py-4">
           <div>
             <div className="pc-verion hidden lg:flex">
-              <a href="https://sotdask.github.io/yamaha-matakos/">
+              <Link to="/">
                 <img src={Icons.logo} alt="logo" />
-              </a>
+              </Link>
             </div>
             <div className="mobile-version flex lg:hidden">
               <a href="tel:6940883297">
