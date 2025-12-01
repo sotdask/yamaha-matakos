@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Icons } from "../assets";
 import { LinkButton } from "./index";
 
@@ -25,9 +26,9 @@ const MobileMenu = ({
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-gray-200/50 bg-gradient-to-r from-white to-gray-50/50">
-            <a href="/" onClick={onClose}>
+            <Link to="/" onClick={onClose}>
               <img src={Icons.logo} alt="logo" />
-            </a>
+            </Link>
             <button
               onClick={onClose}
               className="p-2.5 rounded-full active:scale-95 transition-transform"
@@ -105,13 +106,13 @@ const MobileMenu = ({
 
                   {isExploreOpen && (
                     <div className="mt-2 ml-4 space-y-1 overflow-hidden">
-                      <a
-                        href="/about"
+                      <Link
+                        to="/about"
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
                         About Us
-                      </a>
+                      </Link>
                       <a
                         href="#"
                         onClick={onClose}
