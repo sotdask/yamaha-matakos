@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "publish": "npm run build && powershell -Command \"Remove-Item -Recurse -Force docs; Copy-Item -Recurse dist docs\" && git add . && git commit -m \"Update site\" && git push"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
