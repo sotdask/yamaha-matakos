@@ -113,32 +113,32 @@ const MobileMenu = ({
                       >
                         About Us
                       </Link>
-                      <a
-                        href="#"
+                      <Link
+                        to="/workshop"
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
                         Workshop
-                      </a>
-                      <a
-                        href="#"
+                      </Link>
+                      <Link
+                        to="/articles"
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
                         Articles
-                      </a>
+                      </Link>
                     </div>
                   )}
                 </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                        to="/contact"
                   onClick={onClose}
                   className="block text-lg font-bold text-primary py-3 px-4 rounded-lg"
                 >
                   CONTACT
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="mt-10 pt-8 border-t border-gray-200/60">
