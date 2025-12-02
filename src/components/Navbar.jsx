@@ -129,31 +129,31 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="/workshop"
+                  <Link
+                    to="/workshop"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     Workshop
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/blog"
+                  <Link
+                    to="/blog"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     Articles
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="relative block pb-0.5 hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300"
             >
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
