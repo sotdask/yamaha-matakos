@@ -121,7 +121,7 @@ const MobileMenu = ({
                         Workshop
                       </Link>
                       <Link
-                        to="/articles"
+                        to="/blog"
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
