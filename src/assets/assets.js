@@ -9,6 +9,11 @@ import parallax from "./images/parallax.png";
 import supersportImg from "./images/supersportImg.png";
 import about1 from "./images/about-1.png";
 import about2 from "./images/about-2.png";
+import workshop1 from "./images/workshop-1.png";
+import workshop2 from "./images/workshop-2.png";
+import article from "./images/article.png";
+
+
 
 
 export const Images = {
@@ -23,6 +28,9 @@ export const Images = {
   supersportImg,
   about1,
   about2,
+  workshop1,
+   workshop2,
+   article
 };
 
 import facebook from "./icons/facebook.svg";

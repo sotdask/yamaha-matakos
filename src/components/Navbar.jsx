@@ -130,7 +130,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/workshop"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     Workshop
@@ -138,7 +138,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/blog"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     Articles
