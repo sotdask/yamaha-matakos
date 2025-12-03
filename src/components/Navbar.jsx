@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Icons } from "../assets/assets";
 import { ModelsMenu } from "../assets/ui";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isAccessoriesOpen, setIsAccessoriesOpen] = useState(false);
   const [isExploreOpen, setIsExploreOpen] = useState(false);
   const [isModelsOpen, setIsModelsOpen] = useState(false);
@@ -42,10 +44,10 @@ const Navbar = () => {
               onClick={() => setIsModelsOpen(!isModelsOpen)}
               className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1"
             >
-              OUR MODELS
+              {t("navbar.ourModels")}
               <img
                 src={Icons.down}
-                alt="dropdown-arrow"
+                alt="Expand or collapse menu"
                 className={`w-4 h-4 transition-transform duration-300 ${
                   isModelsOpen ? "rotate-180" : ""
                 }`}
@@ -58,10 +60,10 @@ const Navbar = () => {
               onClick={() => setIsAccessoriesOpen(!isAccessoriesOpen)}
               className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1"
             >
-              ACCESSORIES & MORE
+              {t("navbar.accessoriesMore")}
               <img
                 src={Icons.down}
-                alt="dropdown-arrow"
+                alt="Expand or collapse menu"
                 className={`w-4 h-4 transition-transform duration-300 ${
                   isAccessoriesOpen ? "rotate-180" : ""
                 }`}
@@ -74,7 +76,7 @@ const Navbar = () => {
                     href="#"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    Accessories
+                    {t("navbar.accessories")}
                   </a>
                 </li>
                 <li>
@@ -82,7 +84,7 @@ const Navbar = () => {
                     href="#"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    Clothing
+                    {t("navbar.clothing")}
                   </a>
                 </li>
                 <li>
@@ -90,7 +92,7 @@ const Navbar = () => {
                     href="#"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    Maintenance
+                    {t("navbar.maintenance")}
                   </a>
                 </li>
                 <li>
@@ -98,7 +100,7 @@ const Navbar = () => {
                     href="#"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    Riding Gear
+                    {t("navbar.ridingGear")}
                   </a>
                 </li>
               </ul>
@@ -109,10 +111,10 @@ const Navbar = () => {
               onClick={() => setIsExploreOpen(!isExploreOpen)}
               className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1"
             >
-              EXPLORE
+              {t("navbar.explore")}
               <img
                 src={Icons.down}
-                alt="dropdown-arrow"
+                alt="Expand or collapse menu"
                 className={`w-4 h-4 transition-transform duration-300 ${
                   isExploreOpen ? "rotate-180" : ""
                 }`}
@@ -125,7 +127,7 @@ const Navbar = () => {
                     to="/about"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    About Us
+                    {t("navbar.aboutUs")}
                   </Link>
                 </li>
                 <li>
@@ -133,7 +135,7 @@ const Navbar = () => {
                     to="/workshop"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    Workshop
+                    {t("navbar.workshop")}
                   </Link>
                 </li>
                 <li>
@@ -141,7 +143,7 @@ const Navbar = () => {
                     to="/blog"
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
-                    Articles
+                    {t("navbar.articles")}
                   </Link>
                 </li>
               </ul>
@@ -152,14 +154,14 @@ const Navbar = () => {
               to="/contact"
               className="relative block pb-0.5 hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300"
             >
-              CONTACT
+              {t("navbar.contact")}
             </Link>
           </li>
         </ul>
       </div>
       <div className="mobile-version flex lg:hidden">
         <Link to="/">
-          <img src={Icons.logo} alt="logo" />
+          <img src={Icons.logo} alt="Yamaha Matakos logo" />
         </Link>
       </div>
     </>

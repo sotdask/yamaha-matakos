@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Icons } from "../../assets/assets";
 import { Title } from "../../assets/ui";
 
 function FAQ() {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -11,30 +13,30 @@ function FAQ() {
 
   const faqQuestions = [
     {
-      title: "Do you offer financing options for motorcycle purchases?",
-      info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+      title: t("workshop.faq1"),
+      info: t("workshop.faqAnswer"),
     },
     {
-      title: "Can I schedule a test ride before buying?",
-      info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+      title: t("workshop.faq2"),
+      info: t("workshop.faqAnswer"),
     },
     {
-      title: "Do you handle registration, insurance, and paperwork?",
-      info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+      title: t("workshop.faq3"),
+      info: t("workshop.faqAnswer"),
     },
     {
-      title: "Do motorcycles come with a warranty?",
-      info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+      title: t("workshop.faq4"),
+      info: t("workshop.faqAnswer"),
     },
     {
-      title: "Do you offer maintenance and repair services?",
-      info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+      title: t("workshop.faq5"),
+      info: t("workshop.faqAnswer"),
     },
   ];
 
   return (
     <div className="mb-(--html-spacing) section-padding">
-      <Title text="Common Questions" />
+      <Title text={t("workshop.title")} />
       <div className="max-w-4xl mx-auto mt-8">
         <div className="flex flex-col gap-4">
           {faqQuestions.map((item, index) => (
@@ -68,7 +70,7 @@ function FAQ() {
                 >
                   <img
                     src={Icons.down}
-                    alt="Toggle"
+                    alt="Expand or collapse question"
                     className={`w-4 h-4 transition-all duration-300 ${
                       openIndex === index ? "brightness-0 invert" : ""
                     }`}

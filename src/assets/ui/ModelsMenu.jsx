@@ -49,7 +49,7 @@ const ModelsMenu = ({ isOpen }) => {
                     className="w-full cursor-pointer flex gap-x-2 items-center text-gray-700 hover:text-primary hover:bg-primary/10 px-3 py-2.5 rounded-lg transition-colors text-sm text-left"
                   >
                     <span className="capitalize">{item.replace(/-/g, " ")}</span>
-                    <img src={Icons.modalArrow} alt="arrow" className="w-4 h-4" />
+                    <img src={Icons.modalArrow} alt="View subcategory models" className="w-4 h-4" />
                   </button>
                 </li>
               ))}
@@ -69,7 +69,7 @@ const ModelsMenu = ({ isOpen }) => {
                     className="w-full cursor-pointer flex gap-x-2 items-center text-gray-700 hover:text-primary hover:bg-primary/10 px-3 py-2.5 rounded-lg transition-colors text-sm text-left"
                   >
                     <span className="capitalize">{item.replace(/-/g, " ")}</span>
-                    <img src={Icons.modalArrow} alt="arrow" className="w-4 h-4" />
+                    <img src={Icons.modalArrow} alt="View subcategory models" className="w-4 h-4" />
                   </button>
                 </li>
               ))}
@@ -89,7 +89,7 @@ const ModelsMenu = ({ isOpen }) => {
                     className="w-full cursor-pointer flex gap-x-2 items-center text-gray-700 hover:text-primary hover:bg-primary/10 px-3 py-2.5 rounded-lg transition-colors text-sm text-left"
                   >
                     <span className="capitalize">{item.replace(/-/g, " ")}</span>
-                    <img src={Icons.modalArrow} alt="arrow" className="w-4 h-4" />
+                    <img src={Icons.modalArrow} alt="View subcategory models" className="w-4 h-4" />
                   </button>
                 </li>
               ))}
@@ -107,7 +107,7 @@ const ModelsMenu = ({ isOpen }) => {
             onClick={() => setSelectedSubcategory(null)}
             className="flex cursor-pointer items-center gap-2 mb-6 text-gray-700 hover:text-primary transition-colors"
           >
-            <img src={Icons.modalArrow} alt="back arrow" className="w-4 h-4 rotate-180" />
+            <img src={Icons.modalArrow} alt="Go back to main menu" className="w-4 h-4 rotate-180" />
             <span className="text-sm font-semibold">Back</span>
           </button>
 

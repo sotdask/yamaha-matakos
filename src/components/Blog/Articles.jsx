@@ -1,33 +1,32 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Images } from "../../assets/assets";
 
 function Articles() {
+  const { t } = useTranslation();
   const ARTICLE_CARDS = [
     {
-      subtitle: "THE NMAX ARE NOW PART OF THE MAX FAMILY!",
-      title: "NEW NMAX 125 & NMAX 125 TECH MAX",
+      subtitle: t("discover.articleSubtitle"),
+      title: t("discover.articleTitle"),
       image: Images.article,
       href: "#",
-      description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, cRackham.",
+      description: t("info.description"),
       date: "December 1, 2025",
     },
     {
-      subtitle: "THE NMAX ARE NOW PART OF THE MAX FAMILY!",
-      title: "NEW NMAX 125 & NMAX 125 TECH MAX",
+      subtitle: t("discover.articleSubtitle"),
+      title: t("discover.articleTitle"),
       image: Images.article,
       href: "#",
-      description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, cRackham.",
+      description: t("info.description"),
       date: "December 1, 2025",
     },
     {
-      subtitle: "THE NMAX ARE NOW PART OF THE MAX FAMILY!",
-      title: "NEW NMAX 125 & NMAX 125 TECH MAX",
+      subtitle: t("discover.articleSubtitle"),
+      title: t("discover.articleTitle"),
       image: Images.article,
       href: "#",
-      description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, cRackham.",
+      description: t("info.description"),
       date: "December 1, 2025",
     },
   ];
@@ -35,11 +34,7 @@ function Articles() {
   return (
     <div className="my-(--html-spacing) section-padding flex flex-col items-center">
       <p className="text-center text-lg max-w-[90%] lg:max-w-[45%]">
-        Explore the world of{" "}
-        <span className="font-bold text-primary">Yamaha</span> with our latest
-        articles. Here, we go beyond the showroom. We share riding inspiration,
-        maintenance advice, product comparisons, and real experiences that bring
-        the Yamaha spirit to life.
+        {t("blog.description")}
       </p>
       <div className="w-full flex flex-col items-center gap-y-12 mt-7">
         {ARTICLE_CARDS.map((article) => (
@@ -74,7 +69,7 @@ function Articles() {
                   href={article.href}
                   className="uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300"
                 >
-                  explore more
+                  {t("common.exploreMore")}
                 </a>
               </div>
             </div>

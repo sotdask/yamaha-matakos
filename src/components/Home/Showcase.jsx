@@ -1,47 +1,46 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Title } from "../../assets/ui";
 import { Images } from "../../assets/assets";
 import { LinkButton } from "../../assets/ui";
 
-const SHOWCASE_CARDS = [
-  {
-    title: "Hyper Naked",
-    image: Images.categoryFirst,
-    href: "#",
-    modelLabel: "MT-09",
-    description:
-      "Ten years ago Yamaha unveiled a motorcycle which would change everything, marking the beginning of a revolutionary new chapter not only in the history of Yamaha, but in the world of motorcycling too. Now, the MT-09 reaches new levels of Darkness. Combining intelligence and style, this generation offers an even more thrilling ride and pure adrenaline, with aggressive and edgy styling and a premium Y-AMT specification featuring the very latest in technology.",
-  },
-  {
-    title: "Hyper Naked",
-    image: Images.categoryFirst,
-    href: "#",
-    modelLabel: "MT-09",
-    description:
-      "Ten years ago Yamaha unveiled a motorcycle which would change everything, marking the beginning of a revolutionary new chapter not only in the history of Yamaha, but in the world of motorcycling too. Now, the MT-09 reaches new levels of Darkness. Combining intelligence and style, this generation offers an even more thrilling ride and pure adrenaline, with aggressive and edgy styling and a premium Y-AMT specification featuring the very latest in technology.",
-  },
-  {
-    title: "Hyper Naked",
-    image: Images.categoryFirst,
-    href: "#",
-    modelLabel: "MT-09",
-    description:
-      "Ten years ago Yamaha unveiled a motorcycle which would change everything, marking the beginning of a revolutionary new chapter not only in the history of Yamaha, but in the world of motorcycling too. Now, the MT-09 reaches new levels of Darkness. Combining intelligence and style, this generation offers an even more thrilling ride and pure adrenaline, with aggressive and edgy styling and a premium Y-AMT specification featuring the very latest in technology.",
-  },
-  {
-    title: "Hyper Naked",
-    image: Images.categoryFirst,
-    href: "#",
-    modelLabel: "MT-09",
-    description:
-      "Ten years ago Yamaha unveiled a motorcycle which would change everything, marking the beginning of a revolutionary new chapter not only in the history of Yamaha, but in the world of motorcycling too. Now, the MT-09 reaches new levels of Darkness. Combining intelligence and style, this generation offers an even more thrilling ride and pure adrenaline, with aggressive and edgy styling and a premium Y-AMT specification featuring the very latest in technology.",
-  },
-];
-
 const Showcase = () => {
+  const { t } = useTranslation();
+  
+  const SHOWCASE_CARDS = [
+    {
+      title: t("showcase.hyperNaked"),
+      image: Images.categoryFirst,
+      href: "#",
+      modelLabel: t("showcase.mt09"),
+      description: t("showcase.description"),
+    },
+    {
+      title: t("showcase.hyperNaked"),
+      image: Images.categoryFirst,
+      href: "#",
+      modelLabel: t("showcase.mt09"),
+      description: t("showcase.description"),
+    },
+    {
+      title: t("showcase.hyperNaked"),
+      image: Images.categoryFirst,
+      href: "#",
+      modelLabel: t("showcase.mt09"),
+      description: t("showcase.description"),
+    },
+    {
+      title: t("showcase.hyperNaked"),
+      image: Images.categoryFirst,
+      href: "#",
+      modelLabel: t("showcase.mt09"),
+      description: t("showcase.description"),
+    },
+  ];
+
   return (
     <div className="mb-(--html-spacing) section-padding">
-      <Title text="motorcycle showcase" />
+      <Title text={t("showcase.title")} />
       <div className="wrapper grid grid-cols-1 md:grid-cols-2 justify-items-center mt-7 lg:mt-12 gap-3 lg:gap-4">
         {SHOWCASE_CARDS.map((showcase) => (
           <article
@@ -64,14 +63,14 @@ const Showcase = () => {
                 href={showcase.href}
                 className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm hover:bg-white hover:text-black transition-all duration-300"
               >
-                make it yours
+                {t("common.makeItYours")}
               </a>
             </div>
           </article>
         ))}
       </div>
       <div className="wrapper flex justify-center mt-12">
-        <LinkButton to="/" text="VIEW MORE" />
+        <LinkButton to="/" text={t("common.viewMore")} />
       </div>
     </div>
   );

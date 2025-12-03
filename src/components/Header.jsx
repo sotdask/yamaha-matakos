@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Icons } from "../assets/assets";
 import { LinkButton, LangDropdown, MobileMenu } from "../assets/ui";
 import Navbar from "./Navbar";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isExploreOpen, setIsExploreOpen] = useState(false);
   const [isModelsOpen, setIsModelsOpen] = useState(false);
@@ -33,12 +35,12 @@ const Header = () => {
           <div>
             <div className="pc-verion hidden lg:flex">
               <Link to="/">
-                <img src={Icons.logo} alt="logo" />
+                <img src={Icons.logo} alt="Yamaha Matakos logo" />
               </Link>
             </div>
             <div className="mobile-version flex lg:hidden">
               <a href="tel:6940883297">
-                <img src={Icons.tel} alt="telephone" />
+                <img src={Icons.tel} alt="Call Yamaha Matakos" />
               </a>
             </div>
           </div>
@@ -47,7 +49,7 @@ const Header = () => {
             <div className="pc-version hidden lg:flex gap-6 items-center">
               <LinkButton
                 to="https://yamaha-matakos.car.gr/bikes/"
-                text="Buy Now"
+                text={t("common.buyNow")}
               />
               <LangDropdown />
             </div>
@@ -56,7 +58,7 @@ const Header = () => {
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
-              <img src={Icons.burger} alt="Menu" />
+              <img src={Icons.burger} alt="Open navigation menu" />
             </button>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Form() {
+  const { t } = useTranslation();
   const [isChecked, setIsChecked] = useState(false);
 
   return (
@@ -12,11 +14,11 @@ function Form() {
               htmlFor="firstName"
               className="block text-[#720303] font-semibold text-base sm:text-lg"
             >
-              First Name
+              {t("form.firstName")}
             </label>
             <input
               type="text"
-              placeholder="Enter Your First Name"
+              placeholder={t("form.firstNamePlaceholder")}
               name="firstName"
               id="firstName"
               className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full"
@@ -27,11 +29,11 @@ function Form() {
               htmlFor="lastName"
               className="block text-[#720303] font-semibold text-base sm:text-lg"
             >
-              Last Name
+              {t("form.lastName")}
             </label>
             <input
               type="text"
-              placeholder="Enter Your Last Name"
+              placeholder={t("form.lastNamePlaceholder")}
               name="lastName"
               id="lastName"
               className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full"
@@ -44,11 +46,11 @@ function Form() {
             htmlFor="email"
             className="block text-[#720303] font-semibold text-base sm:text-lg"
           >
-            Email
+            {t("form.email")}
           </label>
           <input
             type="email"
-            placeholder="Enter Your Email"
+            placeholder={t("form.emailPlaceholder")}
             name="email"
             id="email"
             className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full"
@@ -60,11 +62,11 @@ function Form() {
             htmlFor="phone"
             className="block text-[#720303] font-semibold text-base sm:text-lg"
           >
-            Number
+            {t("form.phone")}
           </label>
           <input
             type="tel"
-            placeholder="Enter Your Number"
+            placeholder={t("form.phonePlaceholder")}
             name="phone"
             id="phone"
             className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full"
@@ -76,13 +78,13 @@ function Form() {
             htmlFor="message"
             className="block text-[#720303] font-semibold text-base sm:text-lg"
           >
-            Message
+            {t("form.message")}
           </label>
           <textarea
             name="message"
             id="message"
             rows="4"
-            placeholder="Enter Your Message"
+            placeholder={t("form.messagePlaceholder")}
             className="w-full border-2 border-primary rounded-2xl text-primary py-3 px-4"
           ></textarea>
         </div>
@@ -116,18 +118,18 @@ function Form() {
             htmlFor="privacy"
             className="text-primary text-sm sm:text-base md:text-lg cursor-pointer leading-relaxed flex-1"
           >
-            I agree with the{" "}
+            {t("form.privacyAgreement")}{" "}
             <a
               href="#"
               className="text-[#720303] font-semibold underline hover:text-[#8a0404] transition-colors"
             >
-              Privacy Policy
+              {t("form.privacyPolicy")}
             </a>
           </label>
         </div>
         <div className="pt-4 flex justify-center">
-          <button className="uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300">
-            Submit
+          <button className="cursor-pointer uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300">
+            {t("form.submit")}
           </button>
         </div>
       </div>

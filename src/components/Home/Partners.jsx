@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Title } from "../../assets/ui";
 import { Icons } from "../../assets/assets";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,16 +8,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const Partners = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef(null);
 
   return (
     <div className="mb-(--html-spacing) section-padding">
-      <Title text="our partners" />
+      <Title text={t("partners.title")} />
       <div className="wrapper flex flex-col lg:flex-row lg:justify-between mt-7 lg:mt-12 mb-5 lg:mb-10">
         <p className="w-full lg:max-w-4/12 text-lg mb-6 lg:mb-0 text-center lg:text-start">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old.
+          {t("partners.description")}
         </p>
         <div className="hidden lg:flex gap-6">
           <button
@@ -24,14 +24,14 @@ const Partners = () => {
             className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
             aria-label="Previous slide"
           >
-            <img src={Icons.leftArrow} alt="Previous" className="w-12" />
+            <img src={Icons.leftArrow} alt="View previous partner" className="w-12" />
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
             className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
             aria-label="Next slide"
           >
-            <img src={Icons.rightArrow} alt="Next" className="w-12" />
+            <img src={Icons.rightArrow} alt="View next partner" className="w-12" />
           </button>
         </div>
       </div>
@@ -55,31 +55,31 @@ const Partners = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Partner" className="w-full h-auto object-contain" />
+          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
         </SwiperSlide>
       </Swiper>
       <div className="flex justify-center gap-6 mt-6 lg:hidden">
@@ -88,14 +88,14 @@ const Partners = () => {
           className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
           aria-label="Previous slide"
         >
-          <img src={Icons.leftArrow} alt="Previous" className="w-12" />
+          <img src={Icons.leftArrow} alt="View previous partner" className="w-12" />
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
           aria-label="Next slide"
         >
-          <img src={Icons.rightArrow} alt="Next" className="w-12" />
+          <img src={Icons.rightArrow} alt="View next partner" className="w-12" />
         </button>
       </div>
     </div>

@@ -1,38 +1,38 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Title } from "../../assets/ui";
 import { Images } from "../../assets/assets";
 
-const CATEGORY_CARDS = [
-  {
-    title: "Motorcycles",
-    image: Images.motorcycleCategory,
-    href: "#",
-    modelsLabel: "12 models",
-    description:
-      "Discover the full range of Yamaha motorcycles, from agile commuters to track-ready legends built for performance.",
-  },
-  {
-    title: "Scooters",
-    image: Images.scooterCategory,
-    href: "#",
-    modelsLabel: "8 models",
-    description:
-      "Effortless city riding with clever storage, lightweight handling, and unmistakable Yamaha reliability.",
-  },
-  {
-    title: "e-Bikes",
-    image: Images.bikeCategory,
-    href: "#",
-    modelsLabel: "6 models",
-    description:
-      "Adventure-ready machines engineered to conquer the elements while keeping the ride smooth and controlled.",
-  },
-];
-
 const Explore = () => {
+  const { t } = useTranslation();
+  
+  const CATEGORY_CARDS = [
+    {
+      title: t("explore.motorcycles"),
+      image: Images.motorcycleCategory,
+      href: "#",
+      modelsLabel: t("explore.modelsLabel.motorcycles"),
+      description: t("explore.motorcyclesDescription"),
+    },
+    {
+      title: t("explore.scooters"),
+      image: Images.scooterCategory,
+      href: "#",
+      modelsLabel: t("explore.modelsLabel.scooters"),
+      description: t("explore.scootersDescription"),
+    },
+    {
+      title: t("explore.eBikes"),
+      image: Images.bikeCategory,
+      href: "#",
+      modelsLabel: t("explore.modelsLabel.eBikes"),
+      description: t("explore.eBikesDescription"),
+    },
+  ];
+
   return (
     <div className="mb-(--html-spacing) section-padding">
-      <Title text="explore yamaha" />
+      <Title text={t("explore.title")} />
       <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-7 lg:mt-12 gap-y-12">
         {CATEGORY_CARDS.map((category) => (
           <article
@@ -65,7 +65,7 @@ const Explore = () => {
                     href={category.href}
                     className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-2 py-2 mb-3 text-sm hover:bg-white hover:text-black transition-all duration-300"
                   >
-                    explore more
+                    {t("common.exploreMore")}
                   </a>
                 </div>
               </div>

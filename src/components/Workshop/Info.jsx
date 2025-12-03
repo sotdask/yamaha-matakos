@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Images, Icons } from "../../assets/assets";
 
 function Info() {
+  const { t } = useTranslation();
   return (
     <div className="my-(--html-spacing) section-padding">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -15,17 +17,10 @@ function Info() {
           </div>
           <div className="flex flex-col gap-4 text-gray-700 text-center text-base lg:text-lg leading-relaxed">
             <p>
-              Our specialized and{" "}
-              <span className="text-primary font-bold">
-                YTA Silver Certificate–certified
-              </span>{" "}
-              technical staff, trained by the Yamaha Technical Academy, offers
-              the highest quality in the maintenance of your motorcycle.
+              {t("workshop.technicianDescription")}
             </p>
             <p>
-              The use of genuine Yamaha spare parts and consumables by our
-              experienced technicians ensures the proper and safe operation of
-              your motorcycle.
+              {t("workshop.partsDescription")}
             </p>
           </div>
         </div>

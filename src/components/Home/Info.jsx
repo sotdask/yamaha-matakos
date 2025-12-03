@@ -1,25 +1,21 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Title } from "../../assets/ui";
 import { Icons } from "../../assets/assets";
 
 const Info = () => {
+  const { t } = useTranslation();
   return (
     <div className="my-(--html-spacing) section-padding flex flex-col items-center relative ">
       <img
         src={Icons.backgroundLogo}
-        alt="img"
+        alt="Yamaha Matakos decorative background logo"
         className="absolute top-1/5 lg:top-0 select-none"
       />
-      <Title text="yamaha matakos" />
+      <Title text={t("info.title")} />
       <div className="wrapper text-center mt-3 lg:mt-6 max-w-3xl">
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source.
+          {t("info.description")}
         </p>
         <p>
           Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus

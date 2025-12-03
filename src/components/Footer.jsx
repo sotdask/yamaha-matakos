@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Icons } from "../assets/assets";
 
 function Footer() {
+  const { t } = useTranslation();
   const [openSections, setOpenSections] = useState({
     company: false,
     motorcycles: false,
@@ -22,76 +24,76 @@ function Footer() {
   const footerSections = [
     {
       id: "company",
-      title: "Our Company",
+      title: t("footer.ourCompany"),
       links: [
-        { text: "Homepage", href: "/" },
-        { text: "About us", href: "/about" },
-        { text: "News", href: "#" },
-        { text: "Workshop", href: "#" },
-        { text: "Contact", href: "#" },
-        { text: "Accessories", href: "#" },
-        { text: "Clothing", href: "#" },
-        { text: "Maintenance", href: "#" },
-        { text: "Riding Gear", href: "#" },
+        { text: t("footer.homepage"), href: "/" },
+        { text: t("footer.aboutUs"), href: "/about" },
+        { text: t("footer.news"), href: "#" },
+        { text: t("footer.workshop"), href: "#" },
+        { text: t("footer.contact"), href: "#" },
+        { text: t("footer.accessories"), href: "#" },
+        { text: t("footer.clothing"), href: "#" },
+        { text: t("footer.maintenance"), href: "#" },
+        { text: t("footer.ridingGear"), href: "#" },
       ],
     },
     {
       id: "motorcycles",
-      title: "Motorcycles",
+      title: t("footer.motorcycles"),
       links: [
-        { text: "Supersport", href: "#" },
-        { text: "Hyper Naked", href: "#" },
-        { text: "Sport Heritage", href: "#" },
-        { text: "Sport Touring", href: "#" },
-        { text: "Off Road Competition", href: "#" },
-        { text: "Adventure", href: "#" },
+        { text: t("footer.supersport"), href: "#" },
+        { text: t("footer.hyperNaked"), href: "#" },
+        { text: t("footer.sportHeritage"), href: "#" },
+        { text: t("footer.sportTouring"), href: "#" },
+        { text: t("footer.offRoadCompetition"), href: "#" },
+        { text: t("footer.adventure"), href: "#" },
       ],
     },
     {
       id: "scooters",
-      title: "Scooters",
+      title: t("footer.scooters"),
       links: [
-        { text: "Sport", href: "#" },
-        { text: "Urban Mobility", href: "#" },
+        { text: t("footer.sport"), href: "#" },
+        { text: t("footer.urbanMobility"), href: "#" },
       ],
     },
     {
       id: "ebikes",
-      title: "e-Bikes",
+      title: t("footer.eBikes"),
       links: [
-        { text: "Mountain", href: "#" },
-        { text: "Urban", href: "#" },
-        { text: "Gravel", href: "#" },
+        { text: t("footer.mountain"), href: "#" },
+        { text: t("footer.urban"), href: "#" },
+        { text: t("footer.gravel"), href: "#" },
       ],
     },
     {
       id: "getInTouch",
-      title: "Get in Touch",
+      title: t("footer.getInTouch"),
       links: [
-        { text: "Lagkada 127, Thessaloniki", href: "#" },
-        { text: "+30 2310522774", href: "tel:2310522774" },
-        { text: "info@yamaha-matakos.gr", href: "mailto:info@yamaha-matakos.gr" },
+        { text: t("footer.address"), href: "#" },
+        { text: t("footer.phone"), href: "tel:2310522774" },
+        { text: t("footer.email"), href: "mailto:info@yamaha-matakos.gr" },
       ],
     },
     {
       id: "information",
-      title: "Information",
+      title: t("footer.information"),
       links: [
-        { text: "Cookie Policy", href: "#" },
-        { text: "Privacy Policy", href: "#" },
+        { text: t("footer.cookiePolicy"), href: "#" },
+        { text: t("footer.privacyPolicy"), href: "#" },
       ],
     },
     {
       id: "businessHours",
-      title: "Business Hours",
+      title: t("footer.businessHours"),
       items: [
-        "Monday: 9:00 - 18:00",
-        "Tuesday: 9:00 - 18:00",
-        "Wednesday: 9:00 - 18:00",
-        "Thursday: 9:00 - 18:00",
-        "Friday: 9:00 - 18:00",
-        "Saturday: 9:00 - 14:00",
-        "Sunday: Closed",
+        t("footer.monday"),
+        t("footer.tuesday"),
+        t("footer.wednesday"),
+        t("footer.thursday"),
+        t("footer.friday"),
+        t("footer.saturday"),
+        t("footer.sunday"),
       ],
     },
   ];
@@ -100,7 +102,7 @@ function Footer() {
     <footer className="bg-black text-white relative overflow-hidden">
       <img
         src={Icons.backgroundLogo}
-        alt="background-logo"
+        alt="Yamaha Matakos decorative background logo"
         className="absolute top-4/12 lg:top-28 lg:left-4/12 opacity-20"
       />
 
@@ -117,7 +119,7 @@ function Footer() {
                 </h3>
                 <img
                   src={Icons.down}
-                  alt="dropdown-arrow"
+                  alt="Expand or collapse section"
                   className={`w-5 h-5 transition-transform duration-300 ${
                     openSections[section.id] ? "rotate-180" : ""
                   }`}
@@ -180,7 +182,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
             >
-              <img src={Icons.facebook} alt="facebook" className="w-6 h-6" />
+              <img src={Icons.facebook} alt="Visit our Facebook page" className="w-6 h-6" />
             </a>
             <a
               href="#"
@@ -188,7 +190,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
             >
-              <img src={Icons.instagram} alt="instagram" className="w-6 h-6" />
+              <img src={Icons.instagram} alt="Visit our Instagram page" className="w-6 h-6" />
             </a>
             <a
               href="#"
@@ -196,16 +198,16 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
             >
-              <img src={Icons.tiktok} alt="tiktok" className="w-6 h-6" />
+              <img src={Icons.tiktok} alt="Visit our TikTok page" className="w-6 h-6" />
             </a>
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4">
             <p className="text-[#F2F2F2] text-sm text-center lg:text-right">
-              © {new Date().getFullYear()} Yamaha Matakos. All rights reserved.
+              © {new Date().getFullYear()} Yamaha Matakos. {t("footer.allRightsReserved")}
             </p>
             <a href="https://sotdask.gr" target="_blank" className="text-[#F2F2F2] text-sm text-center lg:text-right flex items-center gap-1">
-              Created using{" "}
-              <span className="inline-block animate-sparkle">✨</span> by SD
+              {t("footer.createdBy")}{" "}
+              <span className="inline-block animate-sparkle">✨</span> {t("footer.by")}
             </a>
           </div>
         </div>

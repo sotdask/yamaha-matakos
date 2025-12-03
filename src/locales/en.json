@@ -1,0 +1,170 @@
+{
+  "hero": {
+    "findOutMore": "Find Out More"
+  },
+  "navbar": {
+    "ourModels": "OUR MODELS",
+    "accessoriesMore": "ACCESSORIES & MORE",
+    "explore": "EXPLORE",
+    "contact": "CONTACT",
+    "accessories": "Accessories",
+    "clothing": "Clothing",
+    "maintenance": "Maintenance",
+    "ridingGear": "Riding Gear",
+    "aboutUs": "About Us",
+    "workshop": "Workshop",
+    "articles": "Articles"
+  },
+  "mobileMenu": {
+    "ourModels": "OUR MODELS",
+    "accessoriesMore": "ACCESSORIES & MORE",
+    "explore": "EXPLORE",
+    "contact": "CONTACT",
+    "motorcycles": "Motorcycles",
+    "scooters": "Scooters",
+    "eBikes": "e-Bikes",
+    "aboutUs": "About Us",
+    "workshop": "Workshop",
+    "articles": "Articles",
+    "buyNow": "Buy Now"
+  },
+  "footer": {
+    "ourCompany": "Our Company",
+    "motorcycles": "Motorcycles",
+    "scooters": "Scooters",
+    "eBikes": "e-Bikes",
+    "getInTouch": "Get in Touch",
+    "information": "Information",
+    "businessHours": "Business Hours",
+    "homepage": "Homepage",
+    "aboutUs": "About Us",
+    "news": "News",
+    "workshop": "Workshop",
+    "contact": "Contact",
+    "accessories": "Accessories",
+    "clothing": "Clothing",
+    "maintenance": "Maintenance",
+    "ridingGear": "Riding Gear",
+    "supersport": "Supersport",
+    "hyperNaked": "Hyper Naked",
+    "sportHeritage": "Sport Heritage",
+    "sportTouring": "Sport Touring",
+    "offRoadCompetition": "Off Road Competition",
+    "adventure": "Adventure",
+    "sport": "Sport",
+    "urbanMobility": "Urban Mobility",
+    "mountain": "Mountain",
+    "urban": "Urban",
+    "gravel": "Gravel",
+    "address": "Lagkada 127, Thessaloniki",
+    "phone": "+30 2310522774",
+    "email": "info@yamaha-matakos.gr",
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy",
+    "monday": "Monday: 9:00 - 18:00",
+    "tuesday": "Tuesday: 9:00 - 18:00",
+    "wednesday": "Wednesday: 9:00 - 18:00",
+    "thursday": "Thursday: 9:00 - 18:00",
+    "friday": "Friday: 9:00 - 18:00",
+    "saturday": "Saturday: 9:00 - 14:00",
+    "sunday": "Sunday: Closed",
+    "allRightsReserved": "All rights reserved.",
+    "createdBy": "Created using",
+    "by": "by SD"
+  },
+  "parallax": {
+    "title": "NEED HELP? CONTACT WITH OUR EXPERIENCED PERSONNEL!",
+    "address": "LAGKADA 126, THESSALONIKI",
+    "phone": "+30 2310522774",
+    "email": "INFO@YAMAHA-MATAKOS.GR"
+  },
+  "common": {
+    "buyNow": "Buy Now",
+    "viewMore": "VIEW MORE",
+    "readMore": "read more",
+    "exploreMore": "explore more",
+    "findOutMore": "Find Out More",
+    "leaveReview": "LEAVE A REVIEW",
+    "viewMoreArticles": "VIEW MORE ARTICLES",
+    "makeItYours": "make it yours"
+  },
+  "explore": {
+    "title": "explore yamaha",
+    "motorcycles": "Motorcycles",
+    "scooters": "Scooters",
+    "eBikes": "e-Bikes",
+    "motorcyclesDescription": "Discover the full range of Yamaha motorcycles, from agile commuters to track-ready legends built for performance.",
+    "scootersDescription": "Effortless city riding with clever storage, lightweight handling, and unmistakable Yamaha reliability.",
+    "eBikesDescription": "Adventure-ready machines engineered to conquer the elements while keeping the ride smooth and controlled.",
+    "modelsLabel": {
+      "motorcycles": "12 models",
+      "scooters": "8 models",
+      "eBikes": "6 models"
+    }
+  },
+  "showcase": {
+    "title": "motorcycle showcase",
+    "hyperNaked": "Hyper Naked",
+    "mt09": "MT-09",
+    "description": "Ten years ago Yamaha unveiled a motorcycle which would change everything, marking the beginning of a revolutionary new chapter not only in the history of Yamaha, but in the world of motorcycling too. Now, the MT-09 reaches new levels of Darkness. Combining intelligence and style, this generation offers an even more thrilling ride and pure adrenaline, with aggressive and edgy styling and a premium Y-AMT specification featuring the very latest in technology."
+  },
+  "reviews": {
+    "title": "reviews",
+    "description": "Our results in Yamaha Matakos speak for themselves, but our customers say it best. Explore the real stories and experiences of people who have trusted us with their needs.",
+    "yamahaMatakos": "yamaha matakos",
+    "withOverRatings": "With over 500 ratings"
+  },
+  "partners": {
+    "title": "our partners",
+    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+  },
+  "discover": {
+    "title": "discover more",
+    "articleSubtitle": "THE NMAX ARE NOW PART OF THE MAX FAMILY!",
+    "articleTitle": "NEW NMAX 125 & NMAX 125 TECH MAX"
+  },
+  "info": {
+    "title": "yamaha matakos",
+    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+  },
+  "about": {
+    "history": "YAMAHA MATAKOS has been active in the motorcycle industry since 1964, when the founder of the business, Apostolos Matakos, opened his first repair shop for two- and three-wheel vehicles in Thessaloniki, at 54 Lagkada Street.",
+    "expansion": "In 1973, he began dealing in spare parts and accessories, and in 1978 he expanded his activities to include the import and sale of motorcycles. A few years later, in 1983, he entered into a partnership with YAMAHA Hellas and became an official representative of YAMAHA products.",
+    "award": "Just one year later, he was invited to YAMAHA Japan along with 24 other dealers, where he distinguished himself and received an award.",
+    "relocation": "In 1988, the company relocated to its privately-owned facilities at 120 Lagkada Street and founded the company A. MATAKOS & Co. O.E. Since then and to this day, the company has maintained a path of continuous national and international distinctions in the field of YAMAHA motorcycles, spare parts, and accessories.",
+    "commitment": "The company A. MATAKOS & Co. O.E. is, and will always remain, in the motorcycle industry, offering riders the best possible services, with customer care and satisfaction at the forefront.",
+    "openingHours": "OPENING HOURS"
+  },
+  "workshop": {
+    "title": "Common Questions",
+    "certified": "YTA Silver Certificate–certified",
+    "technicianDescription": "Our specialized and YTA Silver Certificate–certified technical staff, trained by the Yamaha Technical Academy, offers the highest quality in the maintenance of your motorcycle.",
+    "partsDescription": "The use of genuine Yamaha spare parts and consumables by our experienced technicians ensures the proper and safe operation of your motorcycle.",
+    "faq1": "Do you offer financing options for motorcycle purchases?",
+    "faq2": "Can I schedule a test ride before buying?",
+    "faq3": "Do you handle registration, insurance, and paperwork?",
+    "faq4": "Do motorcycles come with a warranty?",
+    "faq5": "Do you offer maintenance and repair services?",
+    "faqAnswer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+  },
+  "blog": {
+    "description": "Explore the world of Yamaha with our latest articles. Here, we go beyond the showroom. We share riding inspiration, maintenance advice, product comparisons, and real experiences that bring the Yamaha spirit to life.",
+    "yamaha": "Yamaha"
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Number",
+    "message": "Message",
+    "firstNamePlaceholder": "Enter Your First Name",
+    "lastNamePlaceholder": "Enter Your Last Name",
+    "emailPlaceholder": "Enter Your Email",
+    "phonePlaceholder": "Enter Your Number",
+    "messagePlaceholder": "Enter Your Message",
+    "privacyAgreement": "I agree with the",
+    "privacyPolicy": "Privacy Policy",
+    "submit": "Submit"
+  }
+}
+

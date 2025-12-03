@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Icons } from "../assets";
 import { LinkButton } from "./index";
@@ -11,6 +12,12 @@ const MobileMenu = ({
   onToggleModels,
   onToggleExplore,
 }) => {
+  const { t, i18n } = useTranslation();
+  
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem('language', lng);
+  };
   return (
     <>
       <div
@@ -27,14 +34,14 @@ const MobileMenu = ({
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-gray-200/50 bg-gradient-to-r from-white to-gray-50/50">
             <Link to="/" onClick={onClose}>
-              <img src={Icons.logo} alt="logo" />
+              <img src={Icons.logo} alt="Yamaha Matakos logo" />
             </Link>
             <button
               onClick={onClose}
               className="p-2.5 rounded-full active:scale-95 transition-transform"
               aria-label="Close menu"
             >
-              <img src={Icons.closeMenu} alt="" className="w-8 h-8" />
+              <img src={Icons.closeMenu} alt="Close menu" className="w-8 h-8" />
             </button>
           </div>
           <nav className="flex-1 overflow-y-auto px-6 py-8 flex flex-col">
@@ -44,10 +51,10 @@ const MobileMenu = ({
                   onClick={onToggleModels}
                   className="w-full text-left text-lg font-bold text-primary py-3 px-4 rounded-lg flex items-center justify-between"
                 >
-                  <span>OUR MODELS</span>
+                  <span>{t("mobileMenu.ourModels")}</span>
                   <img
                     src={Icons.down}
-                    alt="dropdown-arrow"
+                    alt="Expand or collapse section"
                     className={`w-5 h-5 transition-transform duration-300 ${
                       isModelsOpen ? "rotate-180" : ""
                     }`}
@@ -61,21 +68,21 @@ const MobileMenu = ({
                       onClick={onClose}
                       className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                     >
-                      Motorcycles
+                      {t("mobileMenu.motorcycles")}
                     </a>
                     <a
                       href="#"
                       onClick={onClose}
                       className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                     >
-                      Scooters
+                      {t("mobileMenu.scooters")}
                     </a>
                     <a
                       href="#"
                       onClick={onClose}
                       className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                     >
-                      e-Bikes
+                      {t("mobileMenu.eBikes")}
                     </a>
                   </div>
                 )}
@@ -85,7 +92,7 @@ const MobileMenu = ({
                   onClick={onClose}
                   className="w-full text-left text-lg font-bold text-primary py-3 px-4 rounded-lg"
                 >
-                  ACCESSORIES & MORE
+                  {t("mobileMenu.accessoriesMore")}
                 </button>
               </li>
               <li>
@@ -94,10 +101,10 @@ const MobileMenu = ({
                     onClick={onToggleExplore}
                     className="w-full text-left text-lg font-bold text-primary py-3 px-4 rounded-lg flex items-center justify-between"
                   >
-                    <span>EXPLORE</span>
+                    <span>{t("mobileMenu.explore")}</span>
                     <img
                       src={Icons.down}
-                      alt="dropdown-arrow"
+                      alt="Expand or collapse section"
                       className={`w-5 h-5 transition-transform duration-300 ${
                         isExploreOpen ? "rotate-180" : ""
                       }`}
@@ -111,21 +118,21 @@ const MobileMenu = ({
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
-                        About Us
+                        {t("mobileMenu.aboutUs")}
                       </Link>
                       <Link
                         to="/workshop"
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
-                        Workshop
+                        {t("mobileMenu.workshop")}
                       </Link>
                       <Link
                         to="/blog"
                         onClick={onClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
-                        Articles
+                        {t("mobileMenu.articles")}
                       </Link>
                     </div>
                   )}
@@ -137,7 +144,7 @@ const MobileMenu = ({
                   onClick={onClose}
                   className="block text-lg font-bold text-primary py-3 px-4 rounded-lg"
                 >
-                  CONTACT
+                  {t("mobileMenu.contact")}
                 </Link>
               </li>
             </ul>
@@ -145,13 +152,23 @@ const MobileMenu = ({
               <div className="mb-6 flex justify-center">
                 <LinkButton
                   to="https://yamaha-matakos.car.gr/bikes/"
-                  text="Buy Now"
+                  text={t("mobileMenu.buyNow")}
                   onClick={onClose}
                 />
               </div>
               <div className="flex items-center justify-center gap-x-4">
-                <button className="text-primary font-bold text-lg">EN</button>
-                <button className="text-primary font-bold text-lg">ΕΛ</button>
+                <button 
+                  onClick={() => changeLanguage('en')}
+                  className={`text-primary font-bold text-lg ${i18n.language === 'en' ? 'underline' : ''}`}
+                >
+                  EN
+                </button>
+                <button 
+                  onClick={() => changeLanguage('el')}
+                  className={`text-primary font-bold text-lg ${i18n.language === 'el' ? 'underline' : ''}`}
+                >
+                  ΕΛ
+                </button>
               </div>
             </div>
             <div className="mt-auto pt-8 pb-6 border-t border-gray-200/60">
@@ -165,7 +182,7 @@ const MobileMenu = ({
                 >
                   <img
                     src={Icons.facebook}
-                    alt="facebook"
+                    alt="Visit our Facebook page"
                     className="w-6 h-6"
                   />
                 </a>
@@ -178,7 +195,7 @@ const MobileMenu = ({
                 >
                   <img
                     src={Icons.instagram}
-                    alt="instagram"
+                    alt="Visit our Instagram page"
                     className="w-6 h-6"
                   />
                 </a>
@@ -189,13 +206,12 @@ const MobileMenu = ({
                   className="active:scale-95 transition-transform"
                   onClick={onClose}
                 >
-                  <img src={Icons.tiktok} alt="tiktok" className="w-6 h-6" />
+                  <img src={Icons.tiktok} alt="Visit our TikTok page" className="w-6 h-6" />
                 </a>
               </div>
 
               <p className="text-center text-sm text-gray-500">
-                © {new Date().getFullYear()} Yamaha Matakos. All rights
-                reserved.
+                © {new Date().getFullYear()} Yamaha Matakos. {t("footer.allRightsReserved")}
               </p>
             </div>
           </nav>
