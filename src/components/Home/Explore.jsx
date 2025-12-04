@@ -5,26 +5,26 @@ import { Images } from "../../assets/assets";
 
 const Explore = () => {
   const { t } = useTranslation();
-  
+
   const CATEGORY_CARDS = [
     {
       title: t("explore.motorcycles"),
       image: Images.motorcycleCategory,
-      href: "#",
+      href: "https://www.yamaha-motor.eu/gr/el/motorcycles/",
       modelsLabel: t("explore.modelsLabel.motorcycles"),
       description: t("explore.motorcyclesDescription"),
     },
     {
       title: t("explore.scooters"),
       image: Images.scooterCategory,
-      href: "#",
+      href: "https://www.yamaha-motor.eu/gr/el/scooters/",
       modelsLabel: t("explore.modelsLabel.scooters"),
       description: t("explore.scootersDescription"),
     },
     {
       title: t("explore.eBikes"),
       image: Images.bikeCategory,
-      href: "#",
+      href: "https://www.yamaha-motor.eu/gr/el/ebike/",
       modelsLabel: t("explore.modelsLabel.eBikes"),
       description: t("explore.eBikesDescription"),
     },
@@ -42,12 +42,14 @@ const Explore = () => {
             <div className="absolute inset-0 -z-10 bg-linear-to-br from-primary/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative flex h-full flex-col bg-black/80">
               <div className="relative overflow-hidden">
-                <img
-                  src={category.image}
-                  alt={`${category.title} category`}
-                  className="h-80 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
-                />
-                <span className="absolute left-5 top-5 inline-flex items-center rounded-3xl bg-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/80 backdrop-blur">
+                <a href={category.href} target="_blank">
+                  <img
+                    src={category.image}
+                    alt={`${category.title} category`}
+                    className="h-80 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
+                  />
+                </a>
+                <span className="absolute left-5 top-5 inline-flex items-center rounded-3xl bg-white/15 px-4 py-1 text-xs uppercase tracking-wider text-black/80 font-bold backdrop-blur">
                   {category.modelsLabel}
                 </span>
               </div>
@@ -63,6 +65,7 @@ const Explore = () => {
                 <div className="flex flex-col gap-6">
                   <a
                     href={category.href}
+                    target="_blank"
                     className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-2 py-2 mb-3 text-sm hover:bg-white hover:text-black transition-all duration-300"
                   >
                     {t("common.exploreMore")}

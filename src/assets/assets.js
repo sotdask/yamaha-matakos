@@ -2,11 +2,14 @@ import hero from "./images/hero.png";
 import motorcycleCategory from "./images/motorcycle-category.png";
 import scooterCategory from "./images/scooter-category.png";
 import bikeCategory from "./images/bikes-category.png";
+import tracer_900_showcase from "./images/tracer9showcase.png";
+import xmax_300_showcase from "./images/xmax300showcase.png";
+import nmax_125_showcase from "./images/nmax125showcase.png";
+import r6_showcase from "./images/r6showcase.png";
 import categoryFirst from "./images/cat-4.jpg";
 import article1 from "./images/article-1.jpg";
 import article2 from "./images/article-2.jpg";
 import parallax from "./images/parallax.png";
-import supersportImg from "./images/supersportImg.png";
 import about1 from "./images/about-1.png";
 import about2 from "./images/about-2.png";
 import workshop1 from "./images/workshop-1.png";
@@ -32,21 +35,67 @@ import xsr125_2026_legacy from "./images/models/2026-xsr125-legacy.png";
 import xsr125_2026 from "./images/models/2026-xsr125.png";
 import xsr125_2024_legacy from "./images/models/2024-xsr125-legacy.png";
 import xsr125_2024 from "./images/models/2024-xsr125.png";
-// import tracer7 from "./images/models/tracer7.png";
-// import tracer7_gt from "./images/models/tracer7gt.png";
-// import tracer7_2024 from "./images/models/2024-tracer-7.png";
-// import tracer9 from "./images/models/tracer9.png";
-// import tracer9_gt from "./images/models/tracer9gt.png";
-// import tracer9_gt_plus from "./images/models/tracer9gt+.png";
-// import niken_gt from "./images/models/niken-gt.png";
-// import tracer9_2024 from "./images/models/2024-tracer-9.png";
-// import tracer_2024_gt_plus from "./images/models/2024-tracer-9-gt+.png";
-// import tracer_2024_gt from "./images/models/2024-tracer-gt.png";
-
-
-
-
-
+import tracer9_gt_plus from "./images/models/tracer9gt+.png";
+import tracer9_gt from "./images/models/tracer9gt.png";
+import niken_gt from "./images/models/niken-gt.png";
+import tracer9 from "./images/models/tracer9.png";
+import tracer_2024_gt_plus from "./images/models/2024-tracer-9-gt+.png";
+import tracer7_2024 from "./images/models/2024-tracer-7.png";
+import tracer7_gt from "./images/models/tracer7gt.png";
+import tracer7 from "./images/models/tracer7.png";
+import tenere700_world_raid from "./images/models/tenere700-world-raid.png";
+import tenere700_rally from "./images/models/tenere700-rally.png";
+import tenere700_explore from "./images/models/tenere700-explore.png";
+import tenere700 from "./images/models/tenere700.png";
+import wr125r from "./images/models/wr125r.png";
+import yz450f_70th from "./images/models/yz450f70thanniversaryedition.png";
+import yz250f_70th from "./images/models/yz250f70thanniversaryedition.png";
+import yz450f_2026 from "./images/models/2026yz450f.png";
+import yz250f_2026 from "./images/models/2026yz450f.png";
+import yz250_70th from "./images/models/yz250f70thanniversaryedition.png";
+import yz250_2026 from "./images/models/2026yz450f.png";
+import yz125_70th from "./images/models/yz12570thanniversaryedition.png";
+import yz125_2026 from "./images/models/2026yz125.png";
+import yz85_2026 from "./images/models/2026yz85.png";
+import yz65_2026 from "./images/models/2026yz65.png";
+import wr450f from "./images/models/wr450f.png";
+import wr250f from "./images/models/wr250f.png";
+import tt_r110 from "./images/models/tt-r110.png";
+import tt_r50_2026 from "./images/models/2026-tt-r50.png";
+import pw50 from "./images/models/pw50.png";
+import tt_r125 from "./images/models/tt-r125.png";
+import tt_r50_2024 from "./images/models/2024-tt-r50.png";
+import tmax_25th from "./images/models/tmax25thanniversary.png";
+import tmax_tech_max from "./images/models/tmaxtechmax.png";
+import tmax from "./images/models/tmax.png";
+import tmax_tech_max_2025 from "./images/models/2025tmaxtechmax.png";
+import tmax_2025 from "./images/models/2025tmax.png";
+import xmax_300_tech_max_plus from "./images/models/xmax300techmax+.png";
+import xmax_300_tech_max_plus_2025 from "./images/models/2025xmax300techmax+.png";
+import xmax_300_tech_max from "./images/models/xmax300techmax.png";
+import xmax_300 from "./images/models/xmax300.png";
+import xmax_300_tech_max_2025 from "./images/models/2025xmax300techmax.png";
+import xmax_300_2025 from "./images/models/2025xmax300.png";
+import xmax_125_tech_max from "./images/models/xmax125techmax.png";
+import xmax_125_tech_max_plus from "./images/models/xmax125techmax+.png";
+import xmax_125_tech_max_plus_2025 from "./images/models/2025xmax125techmax+.png";
+import xmax_125_tech_max_2025 from "./images/models/2025xmax125techmax.png";
+import xmax_125 from "./images/models/xmax125.png";
+import xmax_125_tech_max_2024 from "./images/models/2024xmax125techmax.png";
+import xmax_125_2025 from "./images/models/2025xmax125.png";
+import nmax_155_tech_max from "./images/models/nmax155techmax.png";
+import nmax_125_tech_max from "./images/models/nmax125techmax.png";
+import nmax_125 from "./images/models/nmax125.png";
+import nmax_155 from "./images/models/nmax155.png";
+import nmax_125_tech_max_2025 from "./images/models/2025nmax125techmax.png";
+import nmax_125_2025 from "./images/models/2025nmax125.png";
+import tricity_300_2024 from "./images/models/2024tricity300.png";
+import tricity_125 from "./images/models/tricity125.png";
+import delight from "./images/models/d'elight.png";
+import rayzr from "./images/models/rayzr.png";
+import neos_dual_battery from "./images/models/neosdualbattery.png";
+import booster_easy from "./images/models/boostereasy.png";
+import booster from "./images/models/booster.png";
 
 
 export const Images = {
@@ -54,11 +103,13 @@ export const Images = {
   motorcycleCategory,
   scooterCategory,
   bikeCategory,
+  tracer_900_showcase,
+  xmax_300_showcase,
+    nmax_125_showcase,
   categoryFirst,
   article1,
   article2,
   parallax,
-  supersportImg,
   about1,
   about2,
   workshop1,
@@ -84,16 +135,69 @@ export const Images = {
   xsr125_2024_legacy,
   xsr125_2026,
   xsr125_2026_legacy,
-  // tracer7,
-  // tracer7_2024,
-  // tracer7_gt,
-  // tracer9,
-  // tracer9_2024,
-  // tracer9_gt,
-  // tracer9_gt_plus,
-  // tracer_2024_gt,
-  // tracer_2024_gt_plus,
-  // niken_gt
+  tracer9_gt_plus,
+  tracer9_gt,
+  niken_gt,
+  tracer9,
+  tracer_2024_gt_plus,
+  tracer7_2024,
+  tracer7_gt,
+  tracer7,
+  tenere700_world_raid,
+  tenere700_rally,
+  tenere700_explore,
+  tenere700,
+  wr125r,
+  yz450f_70th,
+  yz250f_70th,
+  yz450f_2026,
+  yz250f_2026,
+  yz250_70th,
+  yz250_2026,
+  yz125_70th,
+  yz125_2026,
+  yz85_2026,
+  yz65_2026,
+  wr450f,
+  wr250f,
+  tt_r110,
+  tt_r50_2026,
+  pw50,
+  tt_r125,
+  tt_r50_2024,
+  tmax_25th,
+  tmax,
+  tmax_2025,
+  tmax_tech_max_2025,
+  xmax_300_tech_max_plus,
+  tmax_tech_max,
+  xmax_300_tech_max,
+  xmax_300_tech_max_2025,
+  xmax_300,
+  xmax_300_2025,
+  xmax_300_tech_max_plus_2025,
+  xmax_125_tech_max_plus,
+  xmax_125_tech_max,
+  xmax_125_tech_max_plus_2025,
+  xmax_125_tech_max_2025,
+  xmax_125,
+  xmax_125_tech_max_2024,
+  xmax_125_2025,
+  nmax_155_tech_max,
+  nmax_125_tech_max,
+  nmax_125,
+  nmax_155,
+  nmax_125_tech_max_2025,
+  nmax_125_2025,
+  tricity_300_2024,
+  tricity_125,
+  delight,
+  rayzr,
+  neos_dual_battery,
+  booster_easy,
+  booster,
+  r6_showcase,
+
 };
 
 import facebook from "./icons/facebook.svg";

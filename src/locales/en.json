@@ -95,18 +95,19 @@
     "eBikes": "e-Bikes",
     "motorcyclesDescription": "Discover the full range of Yamaha motorcycles, from agile commuters to track-ready legends built for performance.",
     "scootersDescription": "Effortless city riding with clever storage, lightweight handling, and unmistakable Yamaha reliability.",
-    "eBikesDescription": "Adventure-ready machines engineered to conquer the elements while keeping the ride smooth and controlled.",
+    "eBikesDescription": "Their price/performance ratio combined with trusted technology make these eBikes the best tools for your freedom.",
     "modelsLabel": {
-      "motorcycles": "12 models",
-      "scooters": "8 models",
-      "eBikes": "6 models"
+      "motorcycles": "51 models",
+      "scooters": "29 models",
+      "eBikes": "2 models"
     }
   },
   "showcase": {
     "title": "motorcycle showcase",
-    "hyperNaked": "Hyper Naked",
-    "mt09": "MT-09",
-    "description": "Ten years ago Yamaha unveiled a motorcycle which would change everything, marking the beginning of a revolutionary new chapter not only in the history of Yamaha, but in the world of motorcycling too. Now, the MT-09 reaches new levels of Darkness. Combining intelligence and style, this generation offers an even more thrilling ride and pure adrenaline, with aggressive and edgy styling and a premium Y-AMT specification featuring the very latest in technology."
+    "tracerDescription": "With Yamaha’s DNA running through it, TRACER 9 is a sportbike when you want, while being equally at home touring with a passenger and luggage. ",
+    "xmaxDescription": "Its dynamic bodywork and full LED lighting show that this high-quality machine is built with pure MAX DNA. Get on board and experience the superb riding comfort – and feel the seamless acceleration from the powerful EURO5+ engine. Experience the MAX!",
+    "nmaxDescription": "Equipped with a compact body and powerful dual-eye headlights, the latest generation NMAX 125 is your best possible introduction to Yamaha's legendary MAX Sport Scooter family.",
+    "r6Description": "This is the ultimate 600cc Supersport bike that has been dominating WorldSSP racing for years. Like every R-Series it has been developed without compromise in order to achieve the highest levels of performance."
   },
   "reviews": {
     "title": "reviews",
@@ -125,7 +126,7 @@
   },
   "info": {
     "title": "yamaha matakos",
-    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    "description": "YAMAHA Matakos, with a history dating back to 1964, is one of the most experienced and trusted partners in the motorcycle industry. As an official YAMAHA Greece dealer, it offers genuine spare parts, consumables, comprehensive maintenance and repair services, as well as flexible and advantageous financing programs. With privately owned facilities in Thessaloniki and partnerships with leading insurance companies, A. Matakos & Co. continues to grow, providing riders with high-quality service and top-grade products."
   },
   "about": {
     "history": "YAMAHA MATAKOS has been active in the motorcycle industry since 1964, when the founder of the business, Apostolos Matakos, opened his first repair shop for two- and three-wheel vehicles in Thessaloniki, at 54 Lagkada Street.",
@@ -167,5 +168,3 @@
     "submit": "Submit"
   }
 }
-
-

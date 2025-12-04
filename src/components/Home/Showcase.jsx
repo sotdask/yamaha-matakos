@@ -6,51 +6,51 @@ import { LinkButton } from "../../assets/ui";
 
 const Showcase = () => {
   const { t } = useTranslation();
-  
+
   const SHOWCASE_CARDS = [
     {
-      title: t("showcase.hyperNaked"),
-      image: Images.categoryFirst,
-      href: "#",
-      modelLabel: t("showcase.mt09"),
-      description: t("showcase.description"),
+      title: "Sport Touring",
+      image: Images.tracer_900_showcase,
+      href: "https://www.yamaha-motor.eu/gr/el/motorcycles/sport-touring/pdp/tracer-9/#2025-MT09ATRS-VRSK",
+      modelLabel: "Tracer 9",
+      description: t("showcase.tracerDescription"),
     },
     {
-      title: t("showcase.hyperNaked"),
-      image: Images.categoryFirst,
-      href: "#",
-      modelLabel: t("showcase.mt09"),
-      description: t("showcase.description"),
+      title: "Sport",
+      image: Images.xmax_300_showcase,
+      href: "https://www.yamaha-motor.eu/gr/el/scooters/sport/pdp/xmax-300/#2026-XMAX300A-DPBMC",
+      modelLabel: "XMAX 300",
+      description: t("showcase.xmaxDescription"),
     },
     {
-      title: t("showcase.hyperNaked"),
-      image: Images.categoryFirst,
-      href: "#",
-      modelLabel: t("showcase.mt09"),
-      description: t("showcase.description"),
+      title: "Sport",
+      image: Images.nmax_125_showcase,
+      href: "https://www.yamaha-motor.eu/gr/el/scooters/sport/pdp/nmax-125/",
+      modelLabel: "NMAX 125",
+      description: t("showcase.nmaxDescription"),
     },
     {
-      title: t("showcase.hyperNaked"),
-      image: Images.categoryFirst,
-      href: "#",
-      modelLabel: t("showcase.mt09"),
-      description: t("showcase.description"),
+      title: "Supersport",
+      image: Images.r6_showcase,
+      href: "https://www.yamaha-motor.eu/gr/el/motorcycles/supersport/pdp/r6-race/",
+      modelLabel: "R6 RACE",
+      description: t("showcase.r6Description"),
     },
   ];
 
   return (
     <div className="mb-(--html-spacing) section-padding">
       <Title text={t("showcase.title")} />
-      <div className="wrapper grid grid-cols-1 md:grid-cols-2 justify-items-center mt-7 lg:mt-12 gap-3 lg:gap-4">
-        {SHOWCASE_CARDS.map((showcase) => (
+      <div className="max-w-7xl mx-auto mt-8 lg:mt-12 grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8">
+        {SHOWCASE_CARDS.map((showcase, index) => (
           <article
-            key={showcase.title}
-            className="card mt-12 w-full min-h-[400px] md:w-11/12 lg:w-11/12 relative overflow-hidden group cursor-pointer"
+            key={index}
+            className="card w-full h-[320px] md:h-[280px] lg:h-[350px] xl:h-[420px] relative overflow-hidden group cursor-pointer rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             <img
-              src={Images.categoryFirst}
+              src={showcase.image}
               alt={showcase.title}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="overlay absolute inset-0 w-full h-full bg-black/40 z-10 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="z-20 px-4 lg:px-12 lg:w-10/12 flex justify-center text-white menu absolute inset-0 lg:hidden lg:group-hover:flex flex-col">
@@ -61,6 +61,7 @@ const Showcase = () => {
               <p className="text-sm lg:text-base">{showcase.description}</p>
               <a
                 href={showcase.href}
+                target="_blank"
                 className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm hover:bg-white hover:text-black transition-all duration-300"
               >
                 {t("common.makeItYours")}
@@ -69,8 +70,8 @@ const Showcase = () => {
           </article>
         ))}
       </div>
-      <div className="wrapper flex justify-center mt-12">
-        <LinkButton to="/" text={t("common.viewMore")} />
+      <div className="flex justify-center mt-8 lg:mt-12">
+        <LinkButton to="https://www.yamaha-motor.eu/gr/el/motorcycles/" text={t("common.viewMore")} />
       </div>
     </div>
   );

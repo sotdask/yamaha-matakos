@@ -10,26 +10,12 @@ const Info = () => {
       <img
         src={Icons.backgroundLogo}
         alt="Yamaha Matakos decorative background logo"
-        className="absolute top-1/5 lg:top-0 select-none"
+        className="absolute top-0 lg:top-0 select-none w-11/12 h-11/12"
       />
       <Title text={t("info.title")} />
       <div className="wrapper text-center mt-3 lg:mt-6 max-w-3xl">
         <p>
           {t("info.description")}
-        </p>
-        <p>
-          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-          Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-          in 45 BC. This book is a treatise on the theory of ethics, very
-          popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
-          ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        </p>
-        <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form, accompanied by English versions from the 1914
-          translation by H. Rackham.
         </p>
       </div>
     </div>
