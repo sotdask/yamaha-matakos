@@ -96,6 +96,8 @@ import rayzr from "./images/models/rayzr.png";
 import neos_dual_battery from "./images/models/neosdualbattery.png";
 import booster_easy from "./images/models/boostereasy.png";
 import booster from "./images/models/booster.png";
+import video from "./images/video.mov";
+
 
 export const Images = {
   hero,
@@ -196,6 +198,7 @@ export const Images = {
   booster_easy,
   booster,
   r6_showcase,
+  video,
 };
 
 import facebook from "./icons/facebook.svg";
@@ -224,6 +227,10 @@ import alpinestars from "./icons/alpinestars.png";
 import akrapovic from "./icons/akrapovic.png";
 import rockoil from "./icons/rockoil.png";
 import yamalube from "./icons/yamalube.png";
+import phone_red from "./icons/phone-red.svg";
+import pin_red from "./icons/pin-red.svg";
+import mail_red from "./icons/mail-red.svg";
+
 
 export const Icons = {
   facebook,
@@ -252,4 +259,7 @@ export const Icons = {
   alpinestars,
   rockoil,
   yamalube,
+  phone_red,
+  mail_red,
+  pin_red
 };

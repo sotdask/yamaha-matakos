@@ -1,43 +1,76 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Form } from "../../assets/ui";
+import { Icons } from "../../assets/assets";
 
 function ContactOptions() {
+  const { t } = useTranslation();
+
   return (
-    <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
-      <div className="order-2 md:order-1 flex flex-col gap-y-7 w-11/12 sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12">
-        <div className="wrapper text-center md:text-start">
-          <h5 className="text-[#720303] font-bold text-2xl">Visit Our Store</h5>
-          <a href="#" target="_blank" className="text-lg break-words">
-            Lagkada 127, Neapoli, Thessaloniki, 54351
+    <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      <div className="order-2 lg:order-1 space-y-8">
+        <div className="relative pl-8 border-l-4 border-primary">
+          <div className="absolute -left-2.5 top-0 w-4 h-4 bg-primary rounded-full"></div>
+          <h5 className="text-primary font-bold text-xl mb-3 uppercase tracking-wide">
+            {t("contact.visitOurStore")}
+          </h5>
+          <a
+            href="https://maps.app.goo.gl/J6jEdJdfhTZdmBDx5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-3 text-gray-700 hover:text-primary transition-colors group"
+          >
+            <img
+              src={Icons.pin_red}
+              alt="Location"
+              className="w-5 h-5 mt-1 shrink-0 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all"
+            />
+            <span className="text-lg leading-relaxed">{t("contact.address")}</span>
           </a>
         </div>
-
-        <div className="wrapper flex flex-col text-center md:text-start">
-          <h5 className="text-[#720303] font-bold text-2xl">
-            How To Contact Us
+        <div className="relative pl-8 border-l-4 border-primary">
+          <div className="absolute -left-2.5 top-0 w-4 h-4 bg-primary rounded-full"></div>
+          <h5 className="text-primary font-bold text-xl mb-4 uppercase tracking-wide">
+            {t("contact.howToContactUs")}
           </h5>
-          <a href="#" target="_blank" className="text-lg">
-            2310522774
-          </a>
-          <a href="#" target="_blank" className="text-lg break-words">
-            info@yamaha-matakos.gr
-          </a>
+          <div className="space-y-4">
+            <a
+              href="tel:+302310522774"
+              className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <img
+                src={Icons.phone_red}
+                alt="Phone"
+                className="w-5 h-5 shrink-0 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all"
+              />
+              <span className="text-lg">{t("footer.phone")}</span>
+            </a>
+            <a
+              href="mailto:info@yamaha-matakos.gr"
+              className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors group"
+            >
+              <img
+                src={Icons.mail_red}
+                alt="Email"
+                className="w-5 h-5 shrink-0 opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all"
+              />
+              <span className="text-lg break-words">{t("footer.email")}</span>
+            </a>
+          </div>
         </div>
-
-        <div className="wrapper text-center md:text-start">
-          <h5 className="text-[#720303] font-bold text-2xl">
-            How To Get To Us
+        <div className="relative pl-8 border-l-4 border-primary">
+          <div className="absolute -left-2.5 top-0 w-4 h-4 bg-primary rounded-full"></div>
+          <h5 className="text-primary font-bold text-xl mb-3 uppercase tracking-wide">
+            {t("contact.howToGetToUs")}
           </h5>
-          <p className="text-lg">
-            McClintock, a Latin professor at Hampden comes from a line in
-            section 1.10.32.
+          <p className="text-gray-700 leading-relaxed text-lg max-w-84">
+            {t("contact.directions")}
           </p>
         </div>
       </div>
-      <div className="order-1 md:order-2 w-full sm:w-10/12 md:w-10/12 lg:w-11/12 xl:w-8/12">
+      <div className="order-1 lg:order-2">
         <Form />
       </div>
-      
     </div>
   );
 }

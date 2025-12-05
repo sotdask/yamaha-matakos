@@ -32,19 +32,19 @@ function DropdownLanguage() {
         <img src={Icons.globe} alt="Select language" className="w-8 h-8" />
       </button>
       {open && (
-        <ul className="absolute left-0 mt-12 bg-white rounded-xl shadow-lg border p-2 flex flex-col gap-2 z-50 w-28">
+        <ul className="absolute top-full right-0 mt-2 bg-[#F7F7F7] rounded-xl shadow-lg border border-gray-200 p-2 flex flex-col gap-1 z-50 w-28">
           <li 
             onClick={() => changeLanguage('el')}
-            className={`flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer transition ${
-              i18n.language === 'el' ? 'bg-gray-100' : ''
+            className={`block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg cursor-pointer transition-colors text-base font-semibold ${
+              i18n.language === 'el' ? 'bg-primary/10 text-[#720303]' : ''
             }`}
           >
             <span>ΕΛ</span>
           </li>
           <li 
             onClick={() => changeLanguage('en')}
-            className={`flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer transition ${
-              i18n.language === 'en' ? 'bg-gray-100' : ''
+            className={`block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg cursor-pointer transition-colors text-base font-semibold ${
+              i18n.language === 'en' ? 'bg-primary/10 text-[#720303]' : ''
             }`}
           >
             <span>EN</span>

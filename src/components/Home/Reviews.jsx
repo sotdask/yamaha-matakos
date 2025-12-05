@@ -50,7 +50,7 @@ const Reviews = () => {
         </button>
       </div>
             <div className="wrapper flex justify-center mt-12">
-              <LinkButton to="/" text={t("common.leaveReview")} />
+              <LinkButton to="https://www.google.com/search?sca_esv=38e51a907b0f751b&hl=en&sxsrf=AE3TifPPhO1mrs1z9JErEsFDZEph5Dzx1g:1764973373370&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMcFu7HxW0sB83V5Xig8A6EErFGi55swFbqDN0abwqzcq7YgRw-aGCfgs6kR90UluH0uGmHoZYcNNv_NTkBJJOXfy_Ze-&q=Yamaha+Matakos+Reviews&sa=X&ved=2ahUKEwj8ttSXvqeRAxVOcfEDHamfD40Q0bkNegQIJxAE" target="_blank" text={t("common.leaveReview")} />
             </div>
     </div>
   );

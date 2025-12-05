@@ -54,7 +54,7 @@ const Discover = () => {
         </div>
       </div>
       <div className="wrapper flex justify-center mt-12">
-        <LinkButton to="/" text={t("common.viewMoreArticles")} />
+        <LinkButton to="/blog" text={t("common.viewMoreArticles")} />
       </div>
     </div>
   );

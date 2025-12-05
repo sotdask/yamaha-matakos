@@ -21,24 +21,10 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-bold mt-4 mb-8 text-center">
             EXPERIENCE FREEDOM ON A MOTORBIKE
           </h1>
-          <LinkButton to="/" text={t("hero.findOutMore")} />
+          <LinkButton to="/about" text={t("hero.findOutMore")} />
           <div className="socials flex gap-12 mt-14">
             <a
-              href="#"
-              target="_blank"
-              className="hover:scale-110 transition duration-300"
-            >
-              <img src={Icons.facebook} alt="Visit our Facebook page" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              className="hover:scale-110 transition duration-300"
-            >
-              <img src={Icons.instagram} alt="Visit our Instagram page" />
-            </a>
-            <a
-              href="#"
+              href="https://www.tiktok.com/@yamahamatakos"
               target="_blank"
               className="hover:scale-110 transition duration-300"
             >

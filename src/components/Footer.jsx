@@ -28,49 +28,104 @@ function Footer() {
       links: [
         { text: t("footer.homepage"), href: "/" },
         { text: t("footer.aboutUs"), href: "/about" },
-        { text: t("footer.news"), href: "#" },
-        { text: t("footer.workshop"), href: "#" },
-        { text: t("footer.contact"), href: "#" },
-        { text: t("footer.accessories"), href: "#" },
-        { text: t("footer.clothing"), href: "#" },
-        { text: t("footer.maintenance"), href: "#" },
-        { text: t("footer.ridingGear"), href: "#" },
+        { text: t("footer.news"), href: "/blog" },
+        { text: t("footer.workshop"), href: "/workshop" },
+        { text: t("footer.contact"), href: "/contact" },
+        {
+          text: t("footer.accessories"),
+          href: "https://www.yamaha-motor.eu/gr/el/accessories/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.clothing"),
+          href: "https://www.yamaha-motor.eu/gr/el/clothing-merchandise/clothing/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.maintenance"),
+          href: "https://www.yamaha-motor.eu/gr/el/service-support/overview/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.ridingGear"),
+          href: "https://www.yamaha-motor.eu/gr/el/clothing-merchandise/riding-gear/",
+          target: "_blank",
+        },
       ],
     },
     {
       id: "motorcycles",
       title: t("footer.motorcycles"),
       links: [
-        { text: t("footer.supersport"), href: "#" },
-        { text: t("footer.hyperNaked"), href: "#" },
-        { text: t("footer.sportHeritage"), href: "#" },
-        { text: t("footer.sportTouring"), href: "#" },
-        { text: t("footer.offRoadCompetition"), href: "#" },
-        { text: t("footer.adventure"), href: "#" },
+        {
+          text: t("footer.supersport"),
+          href: "https://www.yamaha-motor.eu/gr/el/motorcycles/supersport/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.hyperNaked"),
+          href: "https://www.yamaha-motor.eu/gr/el/motorcycles/hyper-naked/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.sportHeritage"),
+          href: "https://www.yamaha-motor.eu/gr/el/motorcycles/sport-heritage/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.sportTouring"),
+          href: "https://www.yamaha-motor.eu/gr/el/motorcycles/sport-touring/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.adventure"),
+          href: "https://www.yamaha-motor.eu/gr/el/motorcycles/adventure/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.offRoadCompetition"),
+          href: "https://www.yamaha-motor.eu/gr/el/motorcycles/competition/",
+
+          target: "_blank",
+        },
       ],
     },
     {
       id: "scooters",
       title: t("footer.scooters"),
       links: [
-        { text: t("footer.sport"), href: "#" },
-        { text: t("footer.urbanMobility"), href: "#" },
+        {
+          text: t("footer.sport"),
+          href: "https://www.yamaha-motor.eu/gr/el/scooters/sport/",
+          target: "_blank",
+        },
+        {
+          text: t("footer.urbanMobility"),
+          href: "https://www.yamaha-motor.eu/gr/el/scooters/urban-mobility/",
+          target: "_blank",
+        },
       ],
     },
     {
       id: "ebikes",
       title: t("footer.eBikes"),
       links: [
-        { text: t("footer.mountain"), href: "#" },
-        { text: t("footer.urban"), href: "#" },
-        { text: t("footer.gravel"), href: "#" },
+        {
+          text: "Urban",
+          href: "https://www.yamaha-motor.eu/gr/el/ebike/urban/",
+          target: "_blank",
+        },
       ],
     },
     {
       id: "getInTouch",
       title: t("footer.getInTouch"),
       links: [
-        { text: t("footer.address"), href: "#" },
+        {
+          text: t("footer.address"),
+          href: "https://maps.app.goo.gl/J6jEdJdfhTZdmBDx5",
+          target: "_blank",
+        },
         { text: t("footer.phone"), href: "tel:2310522774" },
         { text: t("footer.email"), href: "mailto:info@yamaha-matakos.gr" },
       ],
@@ -160,13 +215,17 @@ function Footer() {
                       <a
                         key={index}
                         href={link.href}
+                        target={link.target}
                         className="block text-[#F2F2F2] hover:text-primary transition-colors text-base"
                       >
                         {link.text}
                       </a>
                     ))
                   : section.items?.map((item, index) => (
-                      <span key={index} className="block text-[#F2F2F2] text-base">
+                      <span
+                        key={index}
+                        className="block text-[#F2F2F2] text-base"
+                      >
                         {item}
                       </span>
                     ))}
@@ -177,37 +236,29 @@ function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col lg:flex-row items-center justify-between gap-4">
           <div className="flex gap-6">
             <a
-              href="#"
+              href="https://www.tiktok.com/@yamahamatakos"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
             >
-              <img src={Icons.facebook} alt="Visit our Facebook page" className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity"
-            >
-              <img src={Icons.instagram} alt="Visit our Instagram page" className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity"
-            >
-              <img src={Icons.tiktok} alt="Visit our TikTok page" className="w-6 h-6" />
+              <img
+                src={Icons.tiktok}
+                alt="Visit our TikTok page"
+                className="w-6 h-6"
+              />
             </a>
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4">
             <p className="text-[#F2F2F2] text-sm text-center lg:text-right">
-              © {new Date().getFullYear()} Yamaha Matakos. {t("footer.allRightsReserved")}
+              © {new Date().getFullYear()} Yamaha Matakos. All rights reserved
             </p>
-            <a href="https://sotdask.gr" target="_blank" className="text-[#F2F2F2] text-sm text-center lg:text-right flex items-center gap-1">
-              {t("footer.createdBy")}{" "}
-              <span className="inline-block animate-sparkle">✨</span> {t("footer.by")}
+            <a
+              href="https://sotdask.gr"
+              target="_blank"
+              className="text-[#F2F2F2] text-sm text-center lg:text-right flex items-center gap-1"
+            >
+              Created using
+              <span className="inline-block animate-sparkle">✨</span> by SD
             </a>
           </div>
         </div>

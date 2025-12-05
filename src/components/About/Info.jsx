@@ -7,11 +7,18 @@ function Info() {
   return (
     <div className="my-(--html-spacing) section-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-6 lg:gap-10">
       <div className="md:col-span-1 lg:col-span-6 flex flex-col gap-4">
-        <img
-          src={Images.about1}
-          alt="Yamaha Matakos History"
-          className="w-full h-auto object-cover"
-        />
+        <video
+          src={Images.video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          disablePictureInPicture
+          disableRemotePlayback
+          className="w-full h-auto object-cover rounded-lg shadow-lg pointer-events-none"
+        >
+          Your browser does not support the video tag.
+        </video>
         <div className="flex flex-col gap-3 text-gray-700 text-base lg:text-lg">
           <p>
             <span className="text-primary font-bold">YAMAHA MATAKOS</span> {t("about.history")}

@@ -71,7 +71,7 @@ const Showcase = () => {
         ))}
       </div>
       <div className="flex justify-center mt-8 lg:mt-12">
-        <LinkButton to="https://www.yamaha-motor.eu/gr/el/motorcycles/" text={t("common.viewMore")} />
+        <LinkButton to="https://www.yamaha-motor.eu/gr/el/motorcycles/" target="_blank" text={t("common.viewMore")} />
       </div>
     </div>
   );

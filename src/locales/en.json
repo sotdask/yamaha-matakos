@@ -53,10 +53,7 @@
     "adventure": "Adventure",
     "sport": "Sport",
     "urbanMobility": "Urban Mobility",
-    "mountain": "Mountain",
-    "urban": "Urban",
-    "gravel": "Gravel",
-    "address": "Lagkada 127, Thessaloniki",
+    "address": "Lagkada 126, Thessaloniki",
     "phone": "+30 2310522774",
     "email": "info@yamaha-matakos.gr",
     "cookiePolicy": "Cookie Policy",
@@ -66,11 +63,8 @@
     "wednesday": "Wednesday: 9:00 - 18:00",
     "thursday": "Thursday: 9:00 - 18:00",
     "friday": "Friday: 9:00 - 18:00",
-    "saturday": "Saturday: 9:00 - 14:00",
-    "sunday": "Sunday: Closed",
-    "allRightsReserved": "All rights reserved.",
-    "createdBy": "Created using",
-    "by": "by SD"
+    "saturday": "Saturday: Closed",
+    "sunday": "Sunday: Closed"
   },
   "parallax": {
     "title": "NEED HELP? CONTACT WITH OUR EXPERIENCED PERSONNEL!",
@@ -117,7 +111,7 @@
   },
   "partners": {
     "title": "our partners",
-    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    "description": "Our trusted partners' commitment, expertise, and shared passion for motorcycling help us elevate the experience for our entire community. Thanks to these organisations whose support we greatly value."
   },
   "discover": {
     "title": "discover more",
@@ -141,12 +135,16 @@
     "certified": "YTA Silver Certificate–certified",
     "technicianDescription": "Our specialized and YTA Silver Certificate–certified technical staff, trained by the Yamaha Technical Academy, offers the highest quality in the maintenance of your motorcycle.",
     "partsDescription": "The use of genuine Yamaha spare parts and consumables by our experienced technicians ensures the proper and safe operation of your motorcycle.",
-    "faq1": "Do you offer financing options for motorcycle purchases?",
-    "faq2": "Can I schedule a test ride before buying?",
-    "faq3": "Do you handle registration, insurance, and paperwork?",
-    "faq4": "Do motorcycles come with a warranty?",
-    "faq5": "Do you offer maintenance and repair services?",
-    "faqAnswer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+    "faq1": "Can you send me an offer for purchasing a model?",
+    "faq2": "When will a vehicle I ordered, which was not immediately available in the store, be delivered to me?",
+    "faq3": "How can I find out the price of a spare part?",
+    "faq4": "Is it possible to trade in an old vehicle?",
+    "faq5": "How can I contact customer support?",
+    "faqAnswer1": "For a purchase offer paying in cash, with financing, by credit card, with or without a down payment—please contact our network stores directly. If you wish to make the purchase from our showroom, you will need to visit us in person to receive a quote.",
+    "faqAnswer2": "The store that accepted your order is responsible for informing you about the expected delivery date of the vehicle, as well as any possible changes to that date. Delivery time depends on the vehicle’s availability in the warehouses, the expected arrival of new stock, customs clearance in our country, and the processing time required by the transport company to deliver it to the store.",
+    "faqAnswer3": "To find out the prices of spare parts, visit our store at 126 Lagkada Street, Thessaloniki, or call 2310 522774 between 09:00 and 18:00, Monday to Friday.",
+    "faqAnswer4": "It is possible to trade in your old vehicle, in cooperation with the stores in our network.",
+    "faqAnswer5": "You can contact us through the contact form on our website. Phone communication is not the most suitable method, as the call center and the responsible staff may be busy."
   },
   "blog": {
     "description": "Explore the world of Yamaha with our latest articles. Here, we go beyond the showroom. We share riding inspiration, maintenance advice, product comparisons, and real experiences that bring the Yamaha spirit to life.",
@@ -166,5 +164,12 @@
     "privacyAgreement": "I agree with the",
     "privacyPolicy": "Privacy Policy",
     "submit": "Submit"
+  },
+  "contact": {
+    "visitOurStore": "Visit Our Store",
+    "howToContactUs": "How To Contact Us",
+    "howToGetToUs": "How To Get To Us",
+    "address": "Lagkada 127, Neapoli, Thessaloniki, 54351",
+    "directions": "McClintock, a Latin professor at Hampden comes from a line in section 1.10.32."
   }
 }

@@ -10,6 +10,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isExploreOpen, setIsExploreOpen] = useState(false);
   const [isModelsOpen, setIsModelsOpen] = useState(false);
+  const [isAccessoriesOpen, setIsAccessoriesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,6 +20,7 @@ const Header = () => {
     setIsMenuOpen(false);
     setIsExploreOpen(false);
     setIsModelsOpen(false);
+    setIsAccessoriesOpen(false);
   };
 
   const toggleExplore = () => {
@@ -26,6 +28,9 @@ const Header = () => {
   };
   const toggleModels = () => {
     setIsModelsOpen(!isModelsOpen);
+  };
+  const toggleAccessories = () => {
+    setIsAccessoriesOpen(!isAccessoriesOpen);
   };
 
   return (
@@ -50,6 +55,7 @@ const Header = () => {
               <LinkButton
                 to="https://yamaha-matakos.car.gr/bikes/"
                 text={t("common.buyNow")}
+                target="_blank"
               />
               <LangDropdown />
             </div>
@@ -69,8 +75,10 @@ const Header = () => {
         onClose={closeMenu}
         isModelsOpen={isModelsOpen}
         isExploreOpen={isExploreOpen}
+        isAccessoriesOpen={isAccessoriesOpen}
         onToggleModels={toggleModels}
         onToggleExplore={toggleExplore}
+        onToggleAccessories={toggleAccessories}
       />
     </>
   );

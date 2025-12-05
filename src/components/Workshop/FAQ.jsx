@@ -14,23 +14,23 @@ function FAQ() {
   const faqQuestions = [
     {
       title: t("workshop.faq1"),
-      info: t("workshop.faqAnswer"),
+      info: t("workshop.faqAnswer1"),
     },
     {
       title: t("workshop.faq2"),
-      info: t("workshop.faqAnswer"),
+      info: t("workshop.faqAnswer2"),
     },
     {
       title: t("workshop.faq3"),
-      info: t("workshop.faqAnswer"),
+      info: t("workshop.faqAnswer3"),
     },
     {
       title: t("workshop.faq4"),
-      info: t("workshop.faqAnswer"),
+      info: t("workshop.faqAnswer4"),
     },
     {
       title: t("workshop.faq5"),
-      info: t("workshop.faqAnswer"),
+      info: t("workshop.faqAnswer5"),
     },
   ];
 
