@@ -97,7 +97,6 @@ import neos_dual_battery from "./images/models/neosdualbattery.png";
 import booster_easy from "./images/models/boostereasy.png";
 import booster from "./images/models/booster.png";
 
-
 export const Images = {
   hero,
   motorcycleCategory,
@@ -105,7 +104,7 @@ export const Images = {
   bikeCategory,
   tracer_900_showcase,
   xmax_300_showcase,
-    nmax_125_showcase,
+  nmax_125_showcase,
   categoryFirst,
   article1,
   article2,
@@ -197,7 +196,6 @@ export const Images = {
   booster_easy,
   booster,
   r6_showcase,
-
 };
 
 import facebook from "./icons/facebook.svg";
@@ -209,7 +207,8 @@ import tel from "./icons/tel.svg";
 import backgroundLogo from "./icons/background-logo.svg";
 import leftArrow from "./icons/left-arrow.svg";
 import rightArrow from "./icons/right-arrow.svg";
-import partner from "./icons/partner.svg";
+import shark from "./icons/shark.png";
+import richa from "./icons/richa.png";
 import parallaxMap from "./images/parallax-map.svg";
 import parallaxPhone from "./images/parallax-phone.svg";
 import parallaxMail from "./images/parallax-mail.svg";
@@ -221,6 +220,10 @@ import modalArrow from "./icons/modal-arrow.svg";
 import tel2 from "./icons/tel-2.svg";
 import pin from "./icons/pin.svg";
 import mail from "./icons/mail.svg";
+import alpinestars from "./icons/alpinestars.png";
+import akrapovic from "./icons/akrapovic.png";
+import rockoil from "./icons/rockoil.png";
+import yamalube from "./icons/yamalube.png";
 
 export const Icons = {
   facebook,
@@ -232,7 +235,7 @@ export const Icons = {
   backgroundLogo,
   leftArrow,
   rightArrow,
-  partner,
+  shark,
   parallaxMap,
   parallaxPhone,
   parallaxMail,
@@ -244,4 +247,9 @@ export const Icons = {
   tel2,
   mail,
   pin,
+  richa,
+  akrapovic,
+  alpinestars,
+  rockoil,
+  yamalube,
 };

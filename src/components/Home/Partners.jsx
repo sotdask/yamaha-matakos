@@ -24,14 +24,22 @@ const Partners = () => {
             className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
             aria-label="Previous slide"
           >
-            <img src={Icons.leftArrow} alt="View previous partner" className="w-12" />
+            <img
+              src={Icons.leftArrow}
+              alt="View previous partner"
+              className="w-12"
+            />
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
             className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
             aria-label="Next slide"
           >
-            <img src={Icons.rightArrow} alt="View next partner" className="w-12" />
+            <img
+              src={Icons.rightArrow}
+              alt="View next partner"
+              className="w-12"
+            />
           </button>
         </div>
       </div>
@@ -41,6 +49,7 @@ const Partners = () => {
         }}
         slidesPerView={2}
         spaceBetween={20}
+        loop={true}
         breakpoints={{
           768: {
             slidesPerView: 3,
@@ -55,31 +64,46 @@ const Partners = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
+          <img
+            src={Icons.shark}
+            alt="Yamaha Matakos partner logo"
+            className="w-full h-auto object-contain border-2 border-primary rounded-4xl"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
+          <img
+            src={Icons.richa}
+            alt="Yamaha Matakos partner logo"
+            className="w-full h-auto object-contain border-2 border-primary rounded-4xl"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
+          <img
+            src={Icons.akrapovic}
+            alt="Yamaha Matakos partner logo"
+            className="w-full h-auto object-contain border-2 border-primary rounded-4xl"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
+          <img
+            src={Icons.alpinestars}
+            alt="Yamaha Matakos partner logo"
+            className="w-full h-auto object-contain border-2 border-primary rounded-4xl"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
+          <img
+            src={Icons.rockoil}
+            alt="Yamaha Matakos partner logo"
+            className="w-full h-auto object-contain border-2 border-primary rounded-4xl"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Icons.partner} alt="Yamaha Matakos partner logo" className="w-full h-auto object-contain" />
+          <img
+            src={Icons.yamalube}
+            alt="Yamaha Matakos partner logo"
+            className="w-full h-auto object-contain border-2 border-primary rounded-4xl"
+          />
         </SwiperSlide>
       </Swiper>
       <div className="flex justify-center gap-6 mt-6 lg:hidden">
@@ -88,14 +112,22 @@ const Partners = () => {
           className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
           aria-label="Previous slide"
         >
-          <img src={Icons.leftArrow} alt="View previous partner" className="w-12" />
+          <img
+            src={Icons.leftArrow}
+            alt="View previous partner"
+            className="w-12"
+          />
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
           aria-label="Next slide"
         >
-          <img src={Icons.rightArrow} alt="View next partner" className="w-12" />
+          <img
+            src={Icons.rightArrow}
+            alt="View next partner"
+            className="w-12"
+          />
         </button>
       </div>
     </div>
