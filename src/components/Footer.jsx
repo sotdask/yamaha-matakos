@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { Icons } from "../assets/assets";
 
 function Footer() {
@@ -134,8 +135,8 @@ function Footer() {
       id: "information",
       title: t("footer.information"),
       links: [
-        { text: t("footer.cookiePolicy"), href: "#" },
-        { text: t("footer.privacyPolicy"), href: "#" },
+        { text: t("footer.cookiePolicy"), href: "/cookie-policy" },
+        { text: t("footer.privacyPolicy"), href: "/privacy-policy" },
       ],
     },
     {
@@ -190,15 +191,23 @@ function Footer() {
               >
                 <div className="space-y-2 pb-4">
                   {section.links
-                    ? section.links.map((link, index) => (
-                        <a
-                          key={index}
-                          href={link.href}
-                          className="block text-[#F2F2F2] text-base"
-                        >
-                          {link.text}
-                        </a>
-                      ))
+                    ? section.links.map((link, index) => {
+                        const isExternal = link.href?.startsWith("http") || link.target === "_blank";
+                        const LinkComponent = isExternal ? "a" : Link;
+                        const linkProps = isExternal
+                          ? { href: link.href, target: link.target, rel: "noopener noreferrer" }
+                          : { to: link.href };
+                        
+                        return (
+                          <LinkComponent
+                            key={index}
+                            {...linkProps}
+                            className="block text-[#F2F2F2] text-base"
+                          >
+                            {link.text}
+                          </LinkComponent>
+                        );
+                      })
                     : section.items?.map((item, index) => (
                         <span
                           key={index}
@@ -211,16 +220,23 @@ function Footer() {
               </div>
               <div className="hidden lg:block space-y-2">
                 {section.links
-                  ? section.links.map((link, index) => (
-                      <a
-                        key={index}
-                        href={link.href}
-                        target={link.target}
-                        className="block text-[#F2F2F2] hover:text-primary transition-colors text-base"
-                      >
-                        {link.text}
-                      </a>
-                    ))
+                  ? section.links.map((link, index) => {
+                      const isExternal = link.href?.startsWith("http") || link.target === "_blank";
+                      const LinkComponent = isExternal ? "a" : Link;
+                      const linkProps = isExternal
+                        ? { href: link.href, target: link.target, rel: "noopener noreferrer" }
+                        : { to: link.href };
+                      
+                      return (
+                        <LinkComponent
+                          key={index}
+                          {...linkProps}
+                          className="block text-[#F2F2F2] hover:text-primary transition-colors text-base"
+                        >
+                          {link.text}
+                        </LinkComponent>
+                      );
+                    })
                   : section.items?.map((item, index) => (
                       <span
                         key={index}

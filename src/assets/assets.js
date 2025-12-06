@@ -5,7 +5,7 @@ import bikeCategory from "./images/bikes-category.png";
 import tracer_900_showcase from "./images/tracer9showcase.png";
 import xmax_300_showcase from "./images/xmax300showcase.png";
 import nmax_125_showcase from "./images/nmax125showcase.png";
-import r6_showcase from "./images/r6showcase.png";
+import tmax_showcase from "./images/tmax-showcase.png";
 import categoryFirst from "./images/cat-4.jpg";
 import article1 from "./images/article-1.jpg";
 import article2 from "./images/article-2.jpg";
@@ -197,7 +197,7 @@ export const Images = {
   neos_dual_battery,
   booster_easy,
   booster,
-  r6_showcase,
+  tmax_showcase,
   video,
 };
 

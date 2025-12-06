@@ -120,7 +120,7 @@ function Form() {
           >
             {t("form.privacyAgreement")}{" "}
             <a
-              href="#"
+              href="/privacy-policy"
               className="text-[#720303] font-semibold underline hover:text-[#8a0404] transition-colors"
             >
               {t("form.privacyPolicy")}

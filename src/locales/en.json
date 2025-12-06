@@ -101,13 +101,33 @@
     "tracerDescription": "With Yamaha’s DNA running through it, TRACER 9 is a sportbike when you want, while being equally at home touring with a passenger and luggage. ",
     "xmaxDescription": "Its dynamic bodywork and full LED lighting show that this high-quality machine is built with pure MAX DNA. Get on board and experience the superb riding comfort – and feel the seamless acceleration from the powerful EURO5+ engine. Experience the MAX!",
     "nmaxDescription": "Equipped with a compact body and powerful dual-eye headlights, the latest generation NMAX 125 is your best possible introduction to Yamaha's legendary MAX Sport Scooter family.",
-    "r6Description": "This is the ultimate 600cc Supersport bike that has been dominating WorldSSP racing for years. Like every R-Series it has been developed without compromise in order to achieve the highest levels of performance."
+    "tmaxDescription": "TMAX is the undisputed King of scooters. It’s been Europe’s best-selling Sport Scooter ever since the original model was launched in 2001. "
   },
   "reviews": {
     "title": "reviews",
     "description": "Our results in Yamaha Matakos speak for themselves, but our customers say it best. Explore the real stories and experiences of people who have trusted us with their needs.",
     "yamahaMatakos": "yamaha matakos",
-    "withOverRatings": "With over 500 ratings"
+    "withOverRatings": "With over 500 ratings",
+    "review1": {
+      "text": "I highly recommend them! Everything was just perfect. Friendly staff, they are extremely helpful. Super-quick process, they explain everything in detail. 5 star customer service!!!❤️",
+      "name": "Diana H****ka",
+      "date": "October 2025"
+    },
+    "review2": {
+      "text": "I want to thank Yamaha-Matakos for their excellent service. I came in with an engine light on my motorcycle, and they quickly helped diagnose and remove the issue. They were professional, efficient, and didn’t even charge me for the fix, which I really appreciate.",
+      "name": "Magnus H**d",
+      "date": "August 2025"
+    },
+    "review3": {
+      "text": "Best service experience",
+      "name": "Semih S*****l",
+      "date": "September 2025"
+    },
+    "review4": {
+      "text": "Good service very kind personel. All parts on stock",
+      "name": "Denis T*****r",
+      "date": "December 2024"
+    }
   },
   "partners": {
     "title": "our partners",
@@ -169,7 +189,122 @@
     "visitOurStore": "Visit Our Store",
     "howToContactUs": "How To Contact Us",
     "howToGetToUs": "How To Get To Us",
-    "address": "Lagkada 127, Neapoli, Thessaloniki, 54351",
+    "address": "Lagkada 126, Neapoli, Thessaloniki, 54351",
     "directions": "McClintock, a Latin professor at Hampden comes from a line in section 1.10.32."
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "introduction": {
+      "title": "Introduction",
+      "text": "This Cookie Policy explains how Yamaha Matakos uses cookies and similar technologies on our website. By using our website, you agree to the use of cookies in accordance with this policy."
+    },
+    "whatAreCookies": {
+      "title": "What are Cookies",
+      "text": "Cookies are small text files that are stored on your device when you visit a website. They allow the website to recognize your device and remember information about your visit."
+    },
+    "howWeUseCookies": {
+      "title": "How We Use Cookies",
+      "text": "We use cookies for various purposes:",
+      "item1": "To ensure the proper functioning of the website",
+      "item2": "To improve the browsing experience",
+      "item3": "To collect anonymous statistics about website usage",
+      "item4": "To customize content and advertisements"
+    },
+    "typesOfCookies": {
+      "title": "Types of Cookies",
+      "essential": {
+        "title": "Essential Cookies",
+        "text": "These cookies are essential for the website to function and cannot be disabled. They include cookies that enable basic functionality such as security and access to protected areas."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "text": "These cookies help us understand how visitors use the website by collecting and reporting information anonymously."
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "text": "These cookies allow the website to remember your choices (such as language) and provide enhanced and more personalized functionality."
+      }
+    },
+    "managingCookies": {
+      "title": "Managing Cookies",
+      "text": "You can control and manage cookies through your browser settings. Please note that disabling certain cookies may affect website functionality."
+    },
+    "thirdPartyCookies": {
+      "title": "Third-Party Cookies",
+      "text": "Our website may use cookies from third-party services for analytical purposes. These services have their own cookie policies."
+    },
+    "updates": {
+      "title": "Updates",
+      "text": "We may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated date."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "If you have any questions about our use of cookies, please feel free to contact us:",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "lastUpdated": "Last updated: December 2025"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "introduction": {
+      "title": "Introduction",
+      "text": "Yamaha Matakos respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your information when you visit our website."
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "text": "We may collect the following types of personal data:",
+      "item1": "Contact information (name, email, phone)",
+      "item2": "Information you provide through contact forms",
+      "item3": "Browsing information (IP address, browser type)",
+      "item4": "Cookies and similar technologies",
+      "item5": "Any other information you choose to provide us"
+    },
+    "howWeUseData": {
+      "title": "How We Use Data",
+      "text": "We use your personal data to:",
+      "item1": "Respond to your requests and inquiries",
+      "item2": "Provide you with information about our products and services",
+      "item3": "Improve our website and services",
+      "item4": "Comply with legal obligations",
+      "item5": "Protect our and our users' rights and security"
+    },
+    "dataSharing": {
+      "title": "Data Sharing",
+      "text": "We do not sell your personal data to third parties. We may share your data only with trusted partners who help us operate the website or provide our services, and only for the purposes described in this policy."
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "text": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, loss, or destruction."
+    },
+    "yourRights": {
+      "title": "Your Rights",
+      "text": "Under the General Data Protection Regulation (GDPR), you have the following rights:",
+      "item1": "Right to access your personal data",
+      "item2": "Right to rectify inaccurate data",
+      "item3": "Right to erasure of data",
+      "item4": "Right to restrict processing",
+      "item5": "Right to data portability"
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "text": "We keep your personal data only for as long as necessary for the purposes described in this policy, unless the law requires a longer retention period."
+    },
+    "childrenPrivacy": {
+      "title": "Children's Privacy",
+      "text": "Our website is not intended for individuals under the age of 16. We do not knowingly collect personal data from children without parental or guardian consent."
+    },
+    "updates": {
+      "title": "Updates",
+      "text": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
+    },
+    "lastUpdated": "Last updated: December 2024"
   }
 }

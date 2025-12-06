@@ -30,11 +30,11 @@ const Showcase = () => {
       description: t("showcase.nmaxDescription"),
     },
     {
-      title: "Supersport",
-      image: Images.r6_showcase,
-      href: "https://www.yamaha-motor.eu/gr/el/motorcycles/supersport/pdp/r6-race/",
-      modelLabel: "R6 RACE",
-      description: t("showcase.r6Description"),
+      title: "Sport",
+      image: Images.tmax_showcase,
+      href: "https://www.yamaha-motor.eu/gr/el/scooters/sport/pdp/tmax/",
+      modelLabel: "TMAX 560",
+      description: t("showcase.tmaxDescription"),
     },
   ];
 
