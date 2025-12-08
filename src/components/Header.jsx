@@ -39,7 +39,7 @@ const Header = () => {
         <div className="section-padding flex items-center justify-between py-4">
           <div>
             <div className="pc-verion hidden lg:flex">
-              <a href="/">
+              <a href="https://sotdask.github.io/yamaha-matakos/">
                 <img src={Icons.logo} alt="Yamaha Matakos logo" />
               </a>
             </div>

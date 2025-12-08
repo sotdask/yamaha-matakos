@@ -160,7 +160,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="mobile-version flex lg:hidden">
-        <a href="/">
+        <a href="https://sotdask.github.io/yamaha-matakos/">
           <img src={Icons.logo} alt="Yamaha Matakos logo" />
         </a>
       </div>
