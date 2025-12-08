@@ -6,11 +6,12 @@ import tracer_900_showcase from "./images/tracer9showcase.png";
 import xmax_300_showcase from "./images/xmax300showcase.png";
 import nmax_125_showcase from "./images/nmax125showcase.png";
 import tmax_showcase from "./images/tmax-showcase.png";
-import categoryFirst from "./images/cat-4.jpg";
 import article1 from "./images/article-1.jpg";
 import article2 from "./images/article-2.jpg";
+import r6_article from "./images/yamaha-r6-article.png"
+import tmax_article from "./images/tmax-anniversary-article.png"
+import rxsr_article from "./images/xsr-article.png"
 import parallax from "./images/parallax.png";
-import about1 from "./images/about-1.png";
 import about2 from "./images/about-2.png";
 import workshop1 from "./images/workshop-1.png";
 import workshop2 from "./images/workshop-2.png";
@@ -107,14 +108,15 @@ export const Images = {
   tracer_900_showcase,
   xmax_300_showcase,
   nmax_125_showcase,
-  categoryFirst,
   article1,
   article2,
   parallax,
-  about1,
   about2,
   workshop1,
   workshop2,
+  r6_article,
+  tmax_article,
+  r6_article,
   article,
   r1_race,
   r9_2026,
@@ -201,8 +203,6 @@ export const Images = {
   video,
 };
 
-import facebook from "./icons/facebook.svg";
-import instagram from "./icons/instagram.svg";
 import tiktok from "./icons/tiktok.svg";
 import logo from "./icons/logo.svg";
 import globe from "./icons/globe.svg";
@@ -212,9 +212,6 @@ import leftArrow from "./icons/left-arrow.svg";
 import rightArrow from "./icons/right-arrow.svg";
 import shark from "./icons/shark.png";
 import richa from "./icons/richa.png";
-import parallaxMap from "./images/parallax-map.svg";
-import parallaxPhone from "./images/parallax-phone.svg";
-import parallaxMail from "./images/parallax-mail.svg";
 import star from "./icons/star.svg";
 import burger from "./icons/burger.svg";
 import closeMenu from "./icons/close-menu.svg";
@@ -233,8 +230,6 @@ import mail_red from "./icons/mail-red.svg";
 
 
 export const Icons = {
-  facebook,
-  instagram,
   tiktok,
   logo,
   globe,
@@ -243,9 +238,6 @@ export const Icons = {
   leftArrow,
   rightArrow,
   shark,
-  parallaxMap,
-  parallaxPhone,
-  parallaxMail,
   star,
   burger,
   closeMenu,

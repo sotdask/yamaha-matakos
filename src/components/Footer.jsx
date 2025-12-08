@@ -162,8 +162,8 @@ function Footer() {
         className="absolute top-4/12 lg:top-28 lg:left-4/12 opacity-20"
       />
 
-      <div className="section-padding pt-12 lg:py-16 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-7 gap-8">
+      <div className="section-padding py-12 lg:py-16 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-7 gap-8 lg:gap-10">
           {footerSections.map((section) => (
             <div key={section.id} className="w-full">
               <button

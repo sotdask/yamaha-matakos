@@ -15,10 +15,10 @@ const Reviews = () => {
   return (
     <div className="my-(--html-spacing) section-padding flex flex-col items-center">
       <Title text={t("reviews.title")} />
-      <p className="lg:w-6/12 text-base lg:text-lg mt-5 text-center">
+      <p className="lg:w-6/12 text-base lg:text-lg mt-8 lg:mt-12 text-center">
         {t("reviews.description")}
       </p>
-      <div className="mt-4">
+      <div className="mt-6">
         <h5 className="uppercase text-[#720303] font-bold text-2xl text-center">
           {t("reviews.yamahaMatakos")}
         </h5>
@@ -33,7 +33,7 @@ const Reviews = () => {
           {t("reviews.withOverRatings")}
         </p>
       </div>
-      <div className="w-full mt-8 mb-8">
+      <div className="w-full mt-10 mb-10">
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
@@ -140,7 +140,7 @@ const Reviews = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-            <div className="hidden lg:flex justify-center gap-6 mt-4 mb-4">
+            <div className="hidden lg:flex justify-center gap-6 mt-6 mb-6">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
@@ -156,7 +156,7 @@ const Reviews = () => {
           <img src={Icons.rightArrow} alt="View next review" className="w-12" />
         </button>
       </div>
-      <div className="flex justify-center gap-6 mt-4 lg:hidden">
+      <div className="flex justify-center gap-6 mt-6 lg:hidden">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
@@ -173,7 +173,7 @@ const Reviews = () => {
         </button>
       </div>
       
-      <div className="wrapper flex justify-center mt-12">
+      <div className="wrapper flex justify-center mt-10 lg:mt-12">
         <LinkButton to="https://www.google.com/search?sca_esv=38e51a907b0f751b&hl=en&sxsrf=AE3TifPPhO1mrs1z9JErEsFDZEph5Dzx1g:1764973373370&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMcFu7HxW0sB83V5Xig8A6EErFGi55swFbqDN0abwqzcq7YgRw-aGCfgs6kR90UluH0uGmHoZYcNNv_NTkBJJOXfy_Ze-&q=Yamaha+Matakos+Reviews&sa=X&ved=2ahUKEwj8ttSXvqeRAxVOcfEDHamfD40Q0bkNegQIJxAE" target="_blank" text={t("common.leaveReview")} />
       </div>
     </div>

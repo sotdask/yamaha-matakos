@@ -75,7 +75,7 @@
   "common": {
     "buyNow": "Αγοράστε Τώρα",
     "viewMore": "ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ",
-    "readMore": "διαβάστε περισσότερα",
+    "readMore": "διαβαστε περισσοτερα",
     "exploreMore": "εξερευνηστε περισσοτερα",
     "findOutMore": "Μάθετε Περισσότερα",
     "leaveReview": "ΑΦΗΣΤΕ ΜΙΑ ΚΡΙΤΙΚΗ",
@@ -117,7 +117,6 @@
       "text": "«Θέλω να ευχαριστήσω τη Yamaha-Matakos για την εξαιρετική τους εξυπηρέτηση. Πήγα με αναμμένη ένδειξη κινητήρα στη μοτοσικλέτα μου και με βοήθησαν γρήγορα να διαγνώσω και να αφαιρέσω το πρόβλημα. Ήταν επαγγελματίες, αποτελεσματικοί και δεν μου χρέωσαν καν την επισκευή, κάτι που εκτιμώ πραγματικά.»",
       "name": "Magnus H**d",
       "date": "Αύγουστος 2025"
-
     },
     "review3": {
       "text": "«Η καλύτερη εμπειρία εξυπηρέτησης.»",
@@ -136,8 +135,14 @@
   },
   "discover": {
     "title": "ανακαλυψτε περισσοτερα",
-    "articleSubtitle": "ΤΑ NMAX ΕΙΝΑΙ ΤΩΡΑ ΜΕΡΟΣ ΤΗΣ ΟΙΚΟΓΕΝΕΙΑΣ MAX!",
-    "articleTitle": "ΝΕΟ NMAX 125 & NMAX 125 TECH MAX"
+    "article1": {
+      "articleSubtitle": "SUPERSPORT REFINED!",
+      "articleTitle": "2026 Yamaha R7: Η εξέλιξη του R/World"
+    },
+    "article2": {
+      "articleSubtitle": "ΓΙΟΡΤΑΖΟΝΤΑΣ ΤΟ ΤΜΑΧ!",
+      "articleTitle": "TMAX 25th Anniversary. Obsessed to the MAX."
+    }
   },
   "info": {
     "title": "yamaha matakos",

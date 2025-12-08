@@ -14,10 +14,10 @@ i18n
         translation: elTranslations,
       },
     },
-    lng: localStorage.getItem('language') || 'el', // Default to Greek
+    lng: localStorage.getItem('language') || 'el',
     fallbackLng: 'el',
     interpolation: {
-      escapeValue: false, // React already escapes values
+      escapeValue: false,
     },
   });
 

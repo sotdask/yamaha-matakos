@@ -39,9 +39,9 @@ const Showcase = () => {
   ];
 
   return (
-    <div className="mb-(--html-spacing) section-padding">
+    <div className="my-(--html-spacing) section-padding">
       <Title text={t("showcase.title")} />
-      <div className="max-w-7xl mx-auto mt-8 lg:mt-12 grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8">
+      <div className="max-w-7xl mx-auto mt-8 lg:mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {SHOWCASE_CARDS.map((showcase, index) => (
           <article
             key={index}
@@ -70,7 +70,7 @@ const Showcase = () => {
           </article>
         ))}
       </div>
-      <div className="flex justify-center mt-8 lg:mt-12">
+      <div className="flex justify-center mt-10 lg:mt-12">
         <LinkButton to="https://www.yamaha-motor.eu/gr/el/motorcycles/" target="_blank" text={t("common.viewMore")} />
       </div>
     </div>

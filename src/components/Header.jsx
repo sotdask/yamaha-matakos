@@ -39,9 +39,9 @@ const Header = () => {
         <div className="section-padding flex items-center justify-between py-4">
           <div>
             <div className="pc-verion hidden lg:flex">
-              <Link to="/">
+              <a href="/">
                 <img src={Icons.logo} alt="Yamaha Matakos logo" />
-              </Link>
+              </a>
             </div>
             <div className="mobile-version flex lg:hidden">
               <a href="tel:6940883297">

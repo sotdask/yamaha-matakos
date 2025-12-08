@@ -36,7 +36,7 @@ function Articles() {
       <p className="text-center text-lg max-w-[90%] lg:max-w-[45%]">
         {t("blog.description")}
       </p>
-      <div className="w-full flex flex-col items-center gap-y-12 mt-7">
+      <div className="w-full flex flex-col items-center gap-y-10 lg:gap-y-12 mt-8 lg:mt-12">
         {ARTICLE_CARDS.map((article) => (
           <div className="article-card grid grid-cols-1 md:grid-cols-2">
             <div className="overflow-hidden">
@@ -48,7 +48,7 @@ function Articles() {
                 />
               </a>
             </div>
-            <div className="text-col bg-secondary py-8 md:py-0 justify-center px-6 md:px-12 flex flex-col gap-3">
+            <div className="text-col bg-secondary py-8 md:py-0 justify-center px-6 md:px-12 flex flex-col gap-4">
               <h4 className="text-sm md:text-base font-semibold text-[#720303]">
                 {article.subtitle}
               </h4>

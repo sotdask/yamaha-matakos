@@ -35,10 +35,10 @@ function FAQ() {
   ];
 
   return (
-    <div className="mb-(--html-spacing) section-padding">
+    <div className="my-(--html-spacing) section-padding">
       <Title text={t("workshop.title")} />
-      <div className="max-w-4xl mx-auto mt-8">
-        <div className="flex flex-col gap-4">
+      <div className="max-w-4xl mx-auto mt-8 lg:mt-12">
+        <div className="flex flex-col gap-5">
           {faqQuestions.map((item, index) => (
             <div
               key={index}

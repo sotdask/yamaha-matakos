@@ -13,7 +13,7 @@ const Info = () => {
         className="absolute top-0 lg:top-0 select-none w-11/12 h-11/12"
       />
       <Title text={t("info.title")} />
-      <div className="wrapper text-center mt-3 lg:mt-6 max-w-3xl">
+      <div className="wrapper text-center mt-8 lg:mt-12 max-w-3xl">
         <p>
           {t("info.description")}
         </p>

@@ -31,9 +31,9 @@ const Explore = () => {
   ];
 
   return (
-    <div className="mb-(--html-spacing) section-padding">
+    <div className="my-(--html-spacing) section-padding">
       <Title text={t("explore.title")} />
-      <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-7 lg:mt-12 gap-y-12">
+      <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-8 lg:mt-12 gap-y-10 lg:gap-y-12">
         {CATEGORY_CARDS.map((category) => (
           <article
             key={category.title}

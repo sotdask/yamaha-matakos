@@ -4,12 +4,42 @@
   font-family: Play;
 }
 
+/* ===== CONSISTENT SPACING SYSTEM =====
+ * Section vertical spacing: my-(--html-spacing) or py-(--html-spacing)
+ * Title to content: mt-8 lg:mt-12
+ * Button containers: mt-10 lg:mt-12
+ * Grid gaps: gap-6 lg:gap-8 or gap-8 lg:gap-10
+ * Card gaps: gap-10 lg:gap-12
+ * ===================================== */
+
 .section-padding {
   padding-inline: clamp(1.75rem, 6.22vw + 0.389rem, 6.688rem);
 }
 
 .section-margin {
   margin-inline: clamp(2.813rem, 3.949vw + 1.949rem, 6.688rem)
+}
+
+/* Standard title-to-content gap */
+.title-gap {
+  margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .title-gap {
+    margin-top: 3rem;
+  }
+}
+
+/* Standard button container gap */
+.btn-gap {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .btn-gap {
+    margin-top: 3rem;
+  }
 }
 
 @theme {

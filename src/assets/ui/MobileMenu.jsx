@@ -298,9 +298,9 @@ const MobileMenu = ({
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-gray-200/50 bg-gradient-to-r from-white to-gray-50/50">
-            <Link to="/" onClick={handleClose}>
+            <a href="/" onClick={handleClose}>
               <img src={Icons.logo} alt="Yamaha Matakos logo" />
-            </Link>
+            </a>
             <button
               onClick={handleClose}
               className="p-2.5 rounded-full active:scale-95 transition-transform"
@@ -469,18 +469,22 @@ const MobileMenu = ({
                 />
               </div>
               <div className="flex items-center justify-center gap-x-4">
-                <button
+              <button
                   onClick={() => changeLanguage("en")}
-                  className={`text-primary font-bold text-lg ${
-                    i18n.language === "en" ? "underline" : ""
+                  className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${
+                    i18n.language === "en"
+                      ? "bg-[#720303] text-white"
+                      : "bg-gray-100 text-primary hover:bg-[#720303]/10"
                   }`}
                 >
                   EN
                 </button>
                 <button
                   onClick={() => changeLanguage("el")}
-                  className={`text-primary font-bold text-lg ${
-                    i18n.language === "el" ? "underline" : ""
+                  className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${
+                    i18n.language === "el"
+                      ? "bg-[#720303] text-white"
+                      : "bg-gray-100 text-primary hover:bg-[#720303]/10"
                   }`}
                 >
                   ΕΛ

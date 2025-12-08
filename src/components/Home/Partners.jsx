@@ -49,7 +49,6 @@ const Partners = () => {
         }}
         slidesPerView={2}
         spaceBetween={20}
-        loop={true}
         breakpoints={{
           768: {
             slidesPerView: 3,
