@@ -10,7 +10,7 @@ import article1 from "./images/article-1.jpg";
 import article2 from "./images/article-2.jpg";
 import r6_article from "./images/yamaha-r6-article.png"
 import tmax_article from "./images/tmax-anniversary-article.png"
-import rxsr_article from "./images/xsr-article.png"
+import tenere_article from "./images/tenere-article.png"
 import parallax from "./images/parallax.png";
 import about2 from "./images/about-2.png";
 import workshop1 from "./images/workshop-1.png";
@@ -116,7 +116,7 @@ export const Images = {
   workshop2,
   r6_article,
   tmax_article,
-  r6_article,
+  tenere_article,
   article,
   r1_race,
   r9_2026,

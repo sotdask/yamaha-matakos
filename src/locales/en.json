@@ -135,12 +135,24 @@
   },
   "discover": {
     "title": "discover more",
-    "articleSubtitle": "THE NMAX ARE NOW PART OF THE MAX FAMILY!",
-    "articleTitle": "NEW NMAX 125 & NMAX 125 TECH MAX"
+    "article1": {
+      "articleSubtitle": "SUPERSPORT REFINED!",
+      "articleTitle": "2026 Yamaha R7: The Evolution of R/World"
+    },
+    "article2": {
+      "articleSubtitle": "CELEBRATING THE ΤΜΑΧ!",
+      "articleTitle": "TMAX 25th Anniversary. Obsessed to the MAX."
+    },
+    "article3": {
+      "articleSubtitle": "GO THE DISTANCE:",
+      "articleTitle": "The 2026 Yamaha Ténéré 700 World Raid"
+    }
   },
   "info": {
     "title": "yamaha matakos",
-    "description": "YAMAHA Matakos, with a history dating back to 1964, is one of the most experienced and trusted partners in the motorcycle industry. As an official YAMAHA Greece dealer, it offers genuine spare parts, consumables, comprehensive maintenance and repair services, as well as flexible and advantageous financing programs. With privately owned facilities in Thessaloniki and partnerships with leading insurance companies, A. Matakos & Co. continues to grow, providing riders with high-quality service and top-grade products."
+    "description1": "R7. The Evolution of R/World. Born from Yamaha’s R-Series legacy, the new R7 blends advanced electronics, refined agility and striking design for everyday Supersport performance.",
+    "description2": "The TMAX stands out as one of the most important two-wheelers that Yamaha has released in the last twenty-five years. Having sold over 340,000 units in Europe since its launch, the TMAX is one of the most successful models Yamaha has ever produced, bringing an exciting new lifestyle to thousands of riders.",
+    "description3": "The Ténéré 700 World Raid loves to go the distance, and for 2026 it is set to go even further. The World Raid returns with new premium components, cutting-edge technology and a more refined look that take adventure lovers on to reach new heights."
   },
   "about": {
     "history": "YAMAHA MATAKOS has been active in the motorcycle industry since 1964, when the founder of the business, Apostolos Matakos, opened his first repair shop for two- and three-wheel vehicles in Thessaloniki, at 54 Lagkada Street.",

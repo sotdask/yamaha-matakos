@@ -6,28 +6,28 @@ function Articles() {
   const { t } = useTranslation();
   const ARTICLE_CARDS = [
     {
-      subtitle: t("discover.articleSubtitle"),
-      title: t("discover.articleTitle"),
-      image: Images.article,
+      subtitle: t("discover.article1.articleSubtitle"),
+      title: t("discover.article1.articleTitle"),
+      image: Images.r6_article,
       href: "#",
-      description: t("info.description"),
-      date: "December 1, 2025",
+      description: t("info.description1"),
+      date: "November 4, 2025",
     },
     {
-      subtitle: t("discover.articleSubtitle"),
-      title: t("discover.articleTitle"),
-      image: Images.article,
+      subtitle: t("discover.article2.articleSubtitle"),
+      title: t("discover.article2.articleTitle"),
+      image: Images.tmax_article,
       href: "#",
-      description: t("info.description"),
-      date: "December 1, 2025",
+      description: t("info.description2"),
+      date: "November 4, 2025",
     },
     {
-      subtitle: t("discover.articleSubtitle"),
-      title: t("discover.articleTitle"),
-      image: Images.article,
+      subtitle: t("discover.article3.articleSubtitle"),
+      title: t("discover.article3.articleTitle"),
+      image: Images.tenere_article,
       href: "#",
-      description: t("info.description"),
-      date: "December 1, 2025",
+      description: t("info.description3"),
+      date: "October 21, 2025",
     },
   ];
 
