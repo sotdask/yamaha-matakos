@@ -255,6 +255,7 @@ const MobileMenu = ({
                       href={link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      title={model}
                       onClick={handleClose}
                       className={`block cursor-pointer text-gray-700 hover:text-primary hover:bg-primary/10 rounded-lg transition-all text-sm overflow-hidden ${
                         selectedSubcategory
@@ -298,7 +299,7 @@ const MobileMenu = ({
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-gray-200/50 bg-gradient-to-r from-white to-gray-50/50">
-            <a href="https://sotdask.github.io/yamaha-matakos/" onClick={handleClose}>
+            <a href="https://sotdask.github.io/yamaha-matakos/" title="Yamaha Matakos Homepage" onClick={handleClose}>
               <img src={Icons.logo} alt="Yamaha Matakos logo" />
             </a>
             <button
@@ -371,6 +372,7 @@ const MobileMenu = ({
                         href="https://www.yamaha-motor.eu/gr/el/accessories/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title={t("navbar.accessories")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors"
                       >
@@ -380,6 +382,7 @@ const MobileMenu = ({
                         href="https://www.yamaha-motor.eu/gr/el/clothing-merchandise/clothing/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title={t("navbar.clothing")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors"
                       >
@@ -389,6 +392,7 @@ const MobileMenu = ({
                         href="https://www.yamaha-motor.eu/gr/el/service-support/overview/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title={t("navbar.maintenance")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors"
                       >
@@ -398,6 +402,7 @@ const MobileMenu = ({
                         href="https://www.yamaha-motor.eu/gr/el/clothing-merchandise/riding-gear/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        title={t("navbar.ridingGear")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors"
                       >
@@ -427,6 +432,7 @@ const MobileMenu = ({
                     <div className="mt-2 ml-4 space-y-1 overflow-hidden">
                       <Link
                         to="/about"
+                        title={t("mobileMenu.aboutUs")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
@@ -434,6 +440,7 @@ const MobileMenu = ({
                       </Link>
                       <Link
                         to="/workshop"
+                        title={t("mobileMenu.workshop")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
@@ -441,6 +448,7 @@ const MobileMenu = ({
                       </Link>
                       <Link
                         to="/blog"
+                        title={t("mobileMenu.articles")}
                         onClick={handleClose}
                         className="block text-base font-semibold text-[#720303] py-2 px-4 rounded-lg"
                       >
@@ -453,6 +461,7 @@ const MobileMenu = ({
               <li>
                 <Link
                   to="/contact"
+                  title={t("mobileMenu.contact")}
                   onClick={onClose}
                   className="block text-lg font-bold text-primary py-3 px-4 rounded-lg"
                 >
@@ -497,6 +506,7 @@ const MobileMenu = ({
                   href="https://www.tiktok.com/@yamahamatakos"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Visit our TikTok page"
                   className="active:scale-95 transition-transform"
                   onClick={onClose}
                 >

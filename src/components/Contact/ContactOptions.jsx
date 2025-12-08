@@ -18,6 +18,7 @@ function ContactOptions() {
             href="https://maps.app.goo.gl/J6jEdJdfhTZdmBDx5"
             target="_blank"
             rel="noopener noreferrer"
+            title={t("contact.address")}
             className="flex items-start gap-3 text-gray-700 hover:text-primary transition-colors group"
           >
             <img
@@ -36,6 +37,7 @@ function ContactOptions() {
           <div className="space-y-4">
             <a
               href="tel:+302310522774"
+              title={t("footer.phone")}
               className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors group"
             >
               <img
@@ -47,6 +49,7 @@ function ContactOptions() {
             </a>
             <a
               href="mailto:info@yamaha-matakos.gr"
+              title={t("footer.email")}
               className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors group"
             >
               <img

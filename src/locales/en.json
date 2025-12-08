@@ -4,7 +4,7 @@
   },
   "navbar": {
     "ourModels": "OUR MODELS",
-    "accessoriesMore": "ACCESSORIES & MORE",
+    "accessoriesMore": "MERCHANDISE",
     "explore": "EXPLORE",
     "contact": "CONTACT",
     "accessories": "Accessories",
@@ -17,7 +17,7 @@
   },
   "mobileMenu": {
     "ourModels": "OUR MODELS",
-    "accessoriesMore": "ACCESSORIES & MORE",
+    "accessoriesMore": "MERCHANDISE",
     "explore": "EXPLORE",
     "contact": "CONTACT",
     "motorcycles": "Motorcycles",
@@ -149,12 +149,14 @@
     }
   },
   "info": {
+    "description": "YAMAHA Matakos, with a history dating back to 1964, is one of the most experienced and trusted partners in the motorcycle industry. As an official YAMAHA Greece dealer, it offers genuine spare parts, consumables, comprehensive maintenance and repair services, as well as flexible and advantageous financing programs. With privately owned facilities in Thessaloniki and partnerships with leading insurance companies, A. Matakos & Co. continues to grow, providing riders with high-quality service and top-grade products.",
     "title": "yamaha matakos",
     "description1": "R7. The Evolution of R/World. Born from Yamaha’s R-Series legacy, the new R7 blends advanced electronics, refined agility and striking design for everyday Supersport performance.",
     "description2": "The TMAX stands out as one of the most important two-wheelers that Yamaha has released in the last twenty-five years. Having sold over 340,000 units in Europe since its launch, the TMAX is one of the most successful models Yamaha has ever produced, bringing an exciting new lifestyle to thousands of riders.",
     "description3": "The Ténéré 700 World Raid loves to go the distance, and for 2026 it is set to go even further. The World Raid returns with new premium components, cutting-edge technology and a more refined look that take adventure lovers on to reach new heights."
   },
   "about": {
+    "title": "About Yamaha Matakos",
     "history": "YAMAHA MATAKOS has been active in the motorcycle industry since 1964, when the founder of the business, Apostolos Matakos, opened his first repair shop for two- and three-wheel vehicles in Thessaloniki, at 54 Lagkada Street.",
     "expansion": "In 1973, he began dealing in spare parts and accessories, and in 1978 he expanded his activities to include the import and sale of motorcycles. A few years later, in 1983, he entered into a partnership with YAMAHA Hellas and became an official representative of YAMAHA products.",
     "award": "Just one year later, he was invited to YAMAHA Japan along with 24 other dealers, where he distinguished himself and received an award.",
@@ -163,6 +165,7 @@
     "openingHours": "OPENING HOURS"
   },
   "workshop": {
+    "pageTitle": "Workshop",
     "title": "Common Questions",
     "certified": "YTA Silver Certificate–certified",
     "technicianDescription": "Our specialized and YTA Silver Certificate–certified technical staff, trained by the Yamaha Technical Academy, offers the highest quality in the maintenance of your motorcycle.",
@@ -179,6 +182,7 @@
     "faqAnswer5": "You can contact us through the contact form on our website. Phone communication is not the most suitable method, as the call center and the responsible staff may be busy."
   },
   "blog": {
+    "title": "Articles",
     "description": "Explore the world of Yamaha with our latest articles. Here, we go beyond the showroom. We share riding inspiration, maintenance advice, product comparisons, and real experiences that bring the Yamaha spirit to life.",
     "yamaha": "Yamaha"
   },
@@ -198,6 +202,7 @@
     "submit": "Submit"
   },
   "contact": {
+    "title": "Contact",
     "visitOurStore": "Visit Our Store",
     "howToContactUs": "How To Contact Us",
     "howToGetToUs": "How To Get To Us",

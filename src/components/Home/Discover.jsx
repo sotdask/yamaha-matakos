@@ -26,6 +26,7 @@ const Discover = () => {
             </h3>
             <a
               href="#"
+              title={`${t("common.readMore")} - ${t("discover.article1.articleTitle")}`}
               className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm lg:text-base hover:bg-white hover:text-black transition-all duration-300"
             >
               {t("common.readMore")}
@@ -48,6 +49,7 @@ const Discover = () => {
             </h3>
             <a
               href="#"
+              title={`${t("common.readMore")} - ${t("discover.article1.articleTitle")}`}
               className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm lg:text-base hover:bg-white hover:text-black transition-all duration-300"
             >
               {t("common.readMore")}

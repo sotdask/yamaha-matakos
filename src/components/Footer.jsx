@@ -202,6 +202,7 @@ function Footer() {
                           <LinkComponent
                             key={index}
                             {...linkProps}
+                            title={link.text}
                             className="block text-[#F2F2F2] text-base"
                           >
                             {link.text}
@@ -255,6 +256,7 @@ function Footer() {
               href="https://www.tiktok.com/@yamahamatakos"
               target="_blank"
               rel="noopener noreferrer"
+              title="Visit our TikTok page"
               className="hover:opacity-70 transition-opacity"
             >
               <img
@@ -271,6 +273,7 @@ function Footer() {
             <a
               href="https://sotdask.gr"
               target="_blank"
+              title="Visit sotdask.gr"
               className="text-[#F2F2F2] text-sm text-center lg:text-right flex items-center gap-1"
             >
               Created using

@@ -74,6 +74,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/accessories/" target="_blank"
+                    title={t("navbar.accessories")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.accessories")}
@@ -82,6 +83,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/clothing-merchandise/clothing/" target="_blank"
+                    title={t("navbar.clothing")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.clothing")}
@@ -90,6 +92,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/service-support/overview/" target="_blank"
+                    title={t("navbar.maintenance")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.maintenance")}
@@ -98,6 +101,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/clothing-merchandise/riding-gear/" target="_blank"
+                    title={t("navbar.ridingGear")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.ridingGear")}
@@ -125,6 +129,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/about"
+                    title={t("navbar.aboutUs")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.aboutUs")}
@@ -133,6 +138,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/workshop"
+                    title={t("navbar.workshop")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.workshop")}
@@ -141,6 +147,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/blog"
+                    title={t("navbar.articles")}
                     className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
                   >
                     {t("navbar.articles")}
@@ -152,6 +159,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
+              title={t("navbar.contact")}
               className="relative block pb-0.5 hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300"
             >
               {t("navbar.contact")}
@@ -160,7 +168,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="mobile-version flex lg:hidden">
-        <a href="https://sotdask.github.io/yamaha-matakos/">
+        <a href="https://sotdask.github.io/yamaha-matakos/" title="Yamaha Matakos Homepage">
           <img src={Icons.logo} alt="Yamaha Matakos logo" />
         </a>
       </div>

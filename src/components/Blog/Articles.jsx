@@ -40,7 +40,7 @@ function Articles() {
         {ARTICLE_CARDS.map((article) => (
           <div className="article-card grid grid-cols-1 md:grid-cols-2">
             <div className="overflow-hidden">
-              <a href={article.href}>
+              <a href={article.href} title={article.title}>
                 <img
                   src={article.image}
                   alt={article.title}
@@ -55,6 +55,7 @@ function Articles() {
               <h2 className="text-xl md:text-2xl font-bold">
                 <a
                   href={article.href}
+                  title={article.title}
                   className="text-primary hover:text-[#720303] hover:tracking-wide transition-all duration-300"
                 >
                   {article.title}
@@ -67,6 +68,7 @@ function Articles() {
               <div className="mt-2">
                 <a
                   href={article.href}
+                  title={`${t("common.exploreMore")} - ${article.title}`}
                   className="uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300"
                 >
                   {t("common.exploreMore")}

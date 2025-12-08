@@ -55,7 +55,7 @@ const Reviews = () => {
           modules={[Navigation]}
           className="mySwiper reviews-swiper"
         >
-          <SwiperSlide className="h-auto">
+          <SwiperSlide className="h-full">
             <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -76,7 +76,7 @@ const Reviews = () => {
             </div>
           </SwiperSlide>
           
-          <SwiperSlide className="h-auto">
+          <SwiperSlide className="h-full">
             <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -97,7 +97,7 @@ const Reviews = () => {
             </div>
           </SwiperSlide>
           
-          <SwiperSlide className="h-auto">
+          <SwiperSlide className="h-full">
             <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -118,7 +118,7 @@ const Reviews = () => {
             </div>
           </SwiperSlide>
           
-          <SwiperSlide className="h-auto">
+          <SwiperSlide className="h-full">
             <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (

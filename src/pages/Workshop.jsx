@@ -1,13 +1,16 @@
 import React from "react";
 import { Header, Footer, WorkshopInfo, FAQ } from "../components";
+import { useTranslation } from "react-i18next";
 
 const Workshop = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
       <div className="mt-[94px] section-padding py-3.5 bg-[#C2BABA]">
         <h1 className="font-bold text-[#720303] text-lg text-center md:text-start md:text-xl">
-          WORKSHOP
+          {t("workshop.pageTitle").toUpperCase()}
         </h1>
       </div>
         <WorkshopInfo/>

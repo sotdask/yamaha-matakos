@@ -26,6 +26,7 @@ const Hero = () => {
             <a
               href="https://www.tiktok.com/@yamahamatakos"
               target="_blank"
+              title="Visit our TikTok page"
               className="hover:scale-110 transition duration-300"
             >
               <img src={Icons.tiktok} alt="Visit our TikTok page" />

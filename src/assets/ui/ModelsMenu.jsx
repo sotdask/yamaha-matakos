@@ -206,6 +206,7 @@ const ModelsMenu = ({ isOpen }) => {
                       href={link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      title={model}
                       className="block cursor-pointer text-gray-700 hover:text-primary hover:bg-primary/10 px-3 py-2.5 rounded-lg transition-colors text-sm"
                     >
                       <div className="mb-2">

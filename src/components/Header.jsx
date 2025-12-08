@@ -39,12 +39,12 @@ const Header = () => {
         <div className="section-padding flex items-center justify-between py-4">
           <div>
             <div className="pc-verion hidden lg:flex">
-              <a href="https://sotdask.github.io/yamaha-matakos/">
+              <a href="https://sotdask.github.io/yamaha-matakos/" title="Yamaha Matakos Homepage">
                 <img src={Icons.logo} alt="Yamaha Matakos logo" />
               </a>
             </div>
             <div className="mobile-version flex lg:hidden">
-              <a href="tel:6940883297">
+              <a href="tel:6940883297" title="Call Yamaha Matakos">
                 <img src={Icons.tel} alt="Call Yamaha Matakos" />
               </a>
             </div>

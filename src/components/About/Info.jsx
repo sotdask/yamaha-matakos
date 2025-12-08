@@ -72,19 +72,19 @@ function Info() {
           </ul>
           <ul className="text-center font-bold text-xl mt-6 mb-8 flex flex-col gap-y-6">
             <li>
-              <a href="#" target="_blank" className="flex flex-col items-center hover:text-primary transition duration-300">
+              <a href="#" target="_blank" title={t("footer.address")} className="flex flex-col items-center hover:text-primary transition duration-300">
                 <img src={Icons.pin} alt="Location pin icon" className="mb-2" />
                 {t("footer.address")}
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" className="flex flex-col items-center hover:text-primary transition duration-300">
+              <a href="#" target="_blank" title={t("footer.phone")} className="flex flex-col items-center hover:text-primary transition duration-300">
                 <img src={Icons.tel2} alt="Phone icon" className="mb-2"/>
                 {t("footer.phone")}
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" className="flex flex-col items-center hover:text-primary transition duration-300">
+              <a href="#" target="_blank" title={t("footer.email")} className="flex flex-col items-center hover:text-primary transition duration-300">
                 <img src={Icons.mail} alt="Email icon" className="mb-2" />
                 {t("footer.email")}
               </a>
