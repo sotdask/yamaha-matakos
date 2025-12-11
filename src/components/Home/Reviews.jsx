@@ -56,16 +56,16 @@ const Reviews = () => {
           className="mySwiper reviews-swiper"
         >
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
                 ))}
               </div>
-              <p className="text-[#2C2828] text-base mb-4 grow">
+              <p className="text-[#2C2828] text-base mb-4 grow line-clamp-5 overflow-hidden text-ellipsis">
                 {t("reviews.review1.text")}
               </p>
-              <div className="border-t border-gray-200 pt-4">
+              <div className="border-t border-gray-200 pt-4 mt-auto">
                 <p className="font-bold text-[#720303] text-lg">
                   {t("reviews.review1.name")}
                 </p>
@@ -77,16 +77,16 @@ const Reviews = () => {
           </SwiperSlide>
           
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
                 ))}
               </div>
-              <p className="text-[#2C2828] text-base mb-4 grow">
+              <p className="text-[#2C2828] text-base mb-4 grow line-clamp-5 overflow-hidden text-ellipsis">
                 {t("reviews.review2.text")}
               </p>
-              <div className="border-t border-gray-200 pt-4">
+              <div className="border-t border-gray-200 pt-4 mt-auto">
                 <p className="font-bold text-[#720303] text-lg">
                   {t("reviews.review2.name")}
                 </p>
@@ -98,16 +98,16 @@ const Reviews = () => {
           </SwiperSlide>
           
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
                 ))}
               </div>
-              <p className="text-[#2C2828] text-base mb-4 grow">
+              <p className="text-[#2C2828] text-base mb-4 grow line-clamp-5 overflow-hidden text-ellipsis">
                 {t("reviews.review3.text")}
               </p>
-              <div className="border-t border-gray-200 pt-4">
+              <div className="border-t border-gray-200 pt-4 mt-auto">
                 <p className="font-bold text-[#720303] text-lg">
                   {t("reviews.review3.name")}
                 </p>
@@ -119,16 +119,16 @@ const Reviews = () => {
           </SwiperSlide>
           
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
                 ))}
               </div>
-              <p className="text-[#2C2828] text-base mb-4 grow">
+              <p className="text-[#2C2828] text-base mb-4 grow line-clamp-5 overflow-hidden text-ellipsis">
                 {t("reviews.review4.text")}
               </p>
-              <div className="border-t border-gray-200 pt-4">
+              <div className="border-t border-gray-200 pt-4 mt-auto">
                 <p className="font-bold text-[#720303] text-lg">
                   {t("reviews.review4.name")}
                 </p>

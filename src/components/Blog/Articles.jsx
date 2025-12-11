@@ -9,7 +9,7 @@ function Articles() {
       subtitle: t("discover.article1.articleSubtitle"),
       title: t("discover.article1.articleTitle"),
       image: Images.r6_article,
-      href: "#",
+      href: "https://www.yamaha-motor.eu/gr/el/news/2025/2026-yamaha-r7-the-evolution-of-rworld-supersport-refined/",
       description: t("info.description1"),
       date: "November 4, 2025",
     },
@@ -17,7 +17,7 @@ function Articles() {
       subtitle: t("discover.article2.articleSubtitle"),
       title: t("discover.article2.articleTitle"),
       image: Images.tmax_article,
-      href: "#",
+      href: "https://www.yamaha-motor.eu/gr/el/news/2025/tmax-25th-anniversary-obsessed-to-the-max/",
       description: t("info.description2"),
       date: "November 4, 2025",
     },
@@ -25,7 +25,7 @@ function Articles() {
       subtitle: t("discover.article3.articleSubtitle"),
       title: t("discover.article3.articleTitle"),
       image: Images.tenere_article,
-      href: "#",
+      href: "https://www.yamaha-motor.eu/gr/el/news/2025/go-the-distance-the-2026-yamaha-tenere-700-world-raid/",
       description: t("info.description3"),
       date: "October 21, 2025",
     },
@@ -40,7 +40,7 @@ function Articles() {
         {ARTICLE_CARDS.map((article) => (
           <div className="article-card grid grid-cols-1 md:grid-cols-2">
             <div className="overflow-hidden">
-              <a href={article.href} title={article.title}>
+              <a href={article.href} title={article.title} target="_blank">
                 <img
                   src={article.image}
                   alt={article.title}
@@ -56,6 +56,7 @@ function Articles() {
                 <a
                   href={article.href}
                   title={article.title}
+                  target="_blank"
                   className="text-primary hover:text-[#720303] hover:tracking-wide transition-all duration-300"
                 >
                   {article.title}
@@ -68,6 +69,7 @@ function Articles() {
               <div className="mt-2">
                 <a
                   href={article.href}
+                  target="_blank"
                   title={`${t("common.exploreMore")} - ${article.title}`}
                   className="uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300"
                 >
