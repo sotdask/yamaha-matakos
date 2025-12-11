@@ -273,8 +273,9 @@ function Footer() {
             <a
               href="https://sotdask.gr"
               target="_blank"
+              rel="noopener noreferrer"
               title="Visit sotdask.gr"
-              className="text-[#F2F2F2] text-sm text-center lg:text-right flex items-center gap-1"
+              className="text-[#F2F2F2] text-sm text-center lg:text-right flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
             >
               Created using
               <span className="inline-block animate-sparkle">✨</span> by SD

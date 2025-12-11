@@ -42,7 +42,9 @@ const Navbar = () => {
           <li ref={modelsRef} className="relative">
             <button
               onClick={() => setIsModelsOpen(!isModelsOpen)}
-              className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1"
+              className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+              aria-expanded={isModelsOpen}
+              aria-haspopup="true"
             >
               {t("navbar.ourModels")}
               <img
@@ -58,7 +60,9 @@ const Navbar = () => {
           <li ref={accessoriesRef} className="relative">
             <button
               onClick={() => setIsAccessoriesOpen(!isAccessoriesOpen)}
-              className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1"
+              className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+              aria-expanded={isAccessoriesOpen}
+              aria-haspopup="true"
             >
               {t("navbar.accessoriesMore")}
               <img
@@ -74,8 +78,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/accessories/" target="_blank"
+                    rel="noopener noreferrer"
                     title={t("navbar.accessories")}
-                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
+                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   >
                     {t("navbar.accessories")}
                   </a>
@@ -83,8 +88,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/clothing-merchandise/clothing/" target="_blank"
+                    rel="noopener noreferrer"
                     title={t("navbar.clothing")}
-                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
+                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   >
                     {t("navbar.clothing")}
                   </a>
@@ -92,8 +98,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/service-support/overview/" target="_blank"
+                    rel="noopener noreferrer"
                     title={t("navbar.maintenance")}
-                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
+                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   >
                     {t("navbar.maintenance")}
                   </a>
@@ -101,8 +108,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://www.yamaha-motor.eu/gr/el/clothing-merchandise/riding-gear/" target="_blank"
+                    rel="noopener noreferrer"
                     title={t("navbar.ridingGear")}
-                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold"
+                    className="block px-4 py-2 hover:bg-primary/10 hover:text-[#720303] rounded-lg transition-colors text-base font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   >
                     {t("navbar.ridingGear")}
                   </a>
@@ -113,7 +121,9 @@ const Navbar = () => {
           <li ref={exploreRef} className="relative">
             <button
               onClick={() => setIsExploreOpen(!isExploreOpen)}
-              className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1"
+              className="cursor-pointer relative hover:text-[#720303] hover: after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-[#720303] after:w-0 hover:after:w-full after:transition-all after:duration-300 transition duration-300 flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+              aria-expanded={isExploreOpen}
+              aria-haspopup="true"
             >
               {t("navbar.explore")}
               <img

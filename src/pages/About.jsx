@@ -8,12 +8,14 @@ const About = () => {
   return (
     <>
       <Header />
-      <div className="mt-[94px] section-padding py-3.5 bg-[#C2BABA]" data-aos="fade-down">
-        <h1 className="font-bold text-[#720303] text-lg text-center md:text-start md:text-xl">
-          {t("about.title").toUpperCase()}
-        </h1>
-      </div>
-      <AboutInfo />
+      <main id="main-content">
+        <div className="mt-[94px] section-padding py-3.5 bg-[#C2BABA]" data-aos="fade-down">
+          <h1 className="font-bold text-[#720303] text-lg text-center md:text-start md:text-xl">
+            {t("about.title").toUpperCase()}
+          </h1>
+        </div>
+        <AboutInfo />
+      </main>
       <Footer />
     </>
   );

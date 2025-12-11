@@ -24,12 +24,12 @@ const Reviews = () => {
         <h5 className="uppercase text-[#720303] font-bold text-2xl text-center">
           {t("reviews.yamahaMatakos")}
         </h5>
-        <div className="stars-wrapper mt-2 flex gap-x-3">
-          <img src={Icons.star} alt="Five star rating" />
-          <img src={Icons.star} alt="" />
-          <img src={Icons.star} alt="" />
-          <img src={Icons.star} alt="" />
-          <img src={Icons.star} alt="" />
+        <div className="stars-wrapper mt-2 flex gap-x-3" role="img" aria-label="Five star rating">
+          <img src={Icons.star} alt="" aria-hidden="true" />
+          <img src={Icons.star} alt="" aria-hidden="true" />
+          <img src={Icons.star} alt="" aria-hidden="true" />
+          <img src={Icons.star} alt="" aria-hidden="true" />
+          <img src={Icons.star} alt="" aria-hidden="true" />
         </div>
         <p className="text-base text-[#2C2828] tracking-wide text-center mt-2">
           {t("reviews.withOverRatings")}
@@ -145,14 +145,14 @@ const Reviews = () => {
             <div className="hidden lg:flex justify-center gap-6 mt-6 mb-6">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
+          className="cursor-pointer hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
           aria-label="Previous slide"
         >
           <img src={Icons.leftArrow} alt="View previous review" className="w-12" />
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
+          className="cursor-pointer hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
           aria-label="Next slide"
         >
           <img src={Icons.rightArrow} alt="View next review" className="w-12" />
@@ -161,14 +161,14 @@ const Reviews = () => {
       <div className="flex justify-center gap-6 mt-6 lg:hidden">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
+          className="cursor-pointer hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
           aria-label="Previous slide"
         >
           <img src={Icons.leftArrow} alt="View previous review" className="w-12" />
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
+          className="cursor-pointer hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
           aria-label="Next slide"
         >
           <img src={Icons.rightArrow} alt="View next review" className="w-12" />

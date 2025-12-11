@@ -46,7 +46,7 @@ const Explore = () => {
             <div className="absolute inset-0 -z-10 bg-linear-to-br from-primary/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative flex h-full flex-col bg-black/80">
               <div className="relative overflow-hidden">
-                <a href={category.href} target="_blank" title={category.title}>
+                <a href={category.href} target="_blank" rel="noopener noreferrer" title={category.title}>
                   <img
                     src={category.image}
                     alt={`${category.title} category`}
@@ -70,8 +70,9 @@ const Explore = () => {
                   <a
                     href={category.href}
                     target="_blank"
+                    rel="noopener noreferrer"
                     title={`${t("common.exploreMore")} - ${category.title}`}
-                    className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-2 py-2 mb-3 text-sm hover:bg-white hover:text-black transition-all duration-300"
+                    className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-2 py-2 mb-3 text-sm hover:bg-white hover:text-black transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
                   >
                     {t("common.exploreMore")}
                   </a>

@@ -29,8 +29,9 @@ const Discover = () => {
             <a
               href="https://www.yamaha-motor.eu/gr/el/news/2025/2026-yamaha-r7-the-evolution-of-rworld-supersport-refined/"
               target="_blank"
+              rel="noopener noreferrer"
               title={`${t("common.readMore")} - ${t("discover.article1.articleTitle")}`}
-              className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm lg:text-base hover:bg-white hover:text-black transition-all duration-300"
+              className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm lg:text-base hover:bg-white hover:text-black transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
             >
               {t("common.readMore")}
             </a>
@@ -53,8 +54,9 @@ const Discover = () => {
             <a
               href="https://www.yamaha-motor.eu/gr/el/news/2025/tmax-25th-anniversary-obsessed-to-the-max/"
               target="_blank"
+              rel="noopener noreferrer"
               title={`${t("common.readMore")} - ${t("discover.article1.articleTitle")}`}
-              className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm lg:text-base hover:bg-white hover:text-black transition-all duration-300"
+              className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm lg:text-base hover:bg-white hover:text-black transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
             >
               {t("common.readMore")}
             </a>

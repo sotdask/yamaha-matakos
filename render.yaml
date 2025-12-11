@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: yamaha-matakos-api
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: FRONTEND_URL
+        value: https://yamaha-matakos.gr
+      - key: BREVO_API_KEY
+        sync: false
+      - key: BREVO_SENDER_EMAIL
+        value: noreply@yamaha-matakos.gr
+      - key: CONTACT_EMAIL
+        value: info@yamaha-matakos.gr
+

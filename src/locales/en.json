@@ -199,7 +199,11 @@
     "messagePlaceholder": "Enter Your Message",
     "privacyAgreement": "I agree with the",
     "privacyPolicy": "Privacy Policy",
-    "submit": "Submit"
+    "privacyRequired": "Please accept the privacy policy",
+    "submit": "Submit",
+    "submitting": "Sending...",
+    "submitSuccess": "Thank you! Your message has been sent successfully.",
+    "submitError": "An error occurred. Please try again."
   },
   "contact": {
     "title": "Contact",

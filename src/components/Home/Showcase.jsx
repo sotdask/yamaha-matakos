@@ -49,7 +49,10 @@ const Showcase = () => {
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 100}
-            className="card w-full h-[320px] md:h-[280px] lg:h-[350px] xl:h-[420px] relative overflow-hidden group cursor-pointer rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="card w-full h-[320px] md:h-[280px] lg:h-[350px] xl:h-[420px] relative overflow-hidden group cursor-pointer rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2"
+            tabIndex={0}
+            role="article"
+            aria-label={`${showcase.modelLabel} - ${showcase.title}`}
           >
             <img
               src={showcase.image}
@@ -66,8 +69,9 @@ const Showcase = () => {
               <a
                 href={showcase.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 title={`${t("common.makeItYours")} - ${showcase.modelLabel}`}
-                className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm hover:bg-white hover:text-black transition-all duration-300"
+                className="uppercase font-bold border-2 border-white text-white inline-block w-fit px-6 py-2 mt-2 lg:mt-4 text-sm hover:bg-white hover:text-black transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 rounded"
               >
                 {t("common.makeItYours")}
               </a>

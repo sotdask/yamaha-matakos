@@ -128,7 +128,7 @@ const ModelsMenu = ({ isOpen }) => {
                     <span className="capitalize">
                       {item.replace(/-/g, " ")}
                     </span>
-                    <img src={Icons.modalArrow} alt="" className="w-4 h-4" />
+                    <img src={Icons.modalArrow} alt="" aria-hidden="true" className="w-4 h-4" />
                   </button>
                 </li>
               ))}
@@ -146,7 +146,7 @@ const ModelsMenu = ({ isOpen }) => {
                     <span className="capitalize">
                       {item.replace(/-/g, " ")}
                     </span>
-                    <img src={Icons.modalArrow} alt="" className="w-4 h-4" />
+                    <img src={Icons.modalArrow} alt="" aria-hidden="true" className="w-4 h-4" />
                   </button>
                 </li>
               ))}
@@ -164,7 +164,7 @@ const ModelsMenu = ({ isOpen }) => {
                     <span className="capitalize">
                       {item.replace(/-/g, " ")}
                     </span>
-                    <img src={Icons.modalArrow} alt="" className="w-4 h-4" />
+                    <img src={Icons.modalArrow} alt="" aria-hidden="true" className="w-4 h-4" />
                   </button>
                 </li>
               ))}

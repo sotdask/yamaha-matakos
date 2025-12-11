@@ -23,7 +23,7 @@ const Partners = () => {
         <div className="hidden lg:flex gap-6">
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
+            className="cursor-pointer hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
             aria-label="Previous slide"
           >
             <img
@@ -34,7 +34,7 @@ const Partners = () => {
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className="cursor-pointer hover:opacity-70 transition-opacity duration-300"
+            className="cursor-pointer hover:opacity-70 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
             aria-label="Next slide"
           >
             <img

@@ -60,9 +60,10 @@ const Header = () => {
               <LangDropdown />
             </div>
             <button
-              className="mobile-version lg:hidden"
+              className="mobile-version lg:hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
               onClick={toggleMenu}
               aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
               <img src={Icons.burger} alt="Open navigation menu" />
             </button>

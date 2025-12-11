@@ -40,7 +40,7 @@ function Articles() {
         {ARTICLE_CARDS.map((article, index) => (
           <div className="article-card grid grid-cols-1 md:grid-cols-2" key={index} data-aos="fade-up" data-aos-delay={index * 150}>
             <div className="overflow-hidden">
-              <a href={article.href} title={article.title} target="_blank">
+              <a href={article.href} title={article.title} target="_blank" rel="noopener noreferrer">
                 <img
                   src={article.image}
                   alt={article.title}
@@ -57,7 +57,8 @@ function Articles() {
                   href={article.href}
                   title={article.title}
                   target="_blank"
-                  className="text-primary hover:text-[#720303] hover:tracking-wide transition-all duration-300"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-[#720303] hover:tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
                 >
                   {article.title}
                 </a>
@@ -70,8 +71,9 @@ function Articles() {
                 <a
                   href={article.href}
                   target="_blank"
+                  rel="noopener noreferrer"
                   title={`${t("common.exploreMore")} - ${article.title}`}
-                  className="uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300"
+                  className="uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
                 >
                   {t("common.exploreMore")}
                 </a>
