@@ -13,7 +13,7 @@ const Hero = () => {
         className="w-full h-full object-cover"
         style={{ objectPosition: "25% 70%" }}
       />
-      <div className="absolute inset-0 flex items-center justify-center md:justify-end px-6 xl:px-44 bg-black/40">
+      <div data-aos="fade-up" className="absolute inset-0 flex items-center justify-center md:justify-end px-6 xl:px-44 bg-black/40">
         <div className="px-6 pt-14 md:px-10 md:pt-18 text-[#C2BABA] w-full max-w-xl flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-center">
             Ride. Explore. Feel

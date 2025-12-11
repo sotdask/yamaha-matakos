@@ -7,7 +7,7 @@ function Info() {
   return (
     <div className="my-(--html-spacing) section-padding">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start">
-        <div className="flex flex-col items-center gap-5" data-aos="fade-right">
+        <div className="flex flex-col items-center gap-5" data-aos="fade-up">
           <div className="flex justify-center">
             <img
               src={Images.technical_academy}
@@ -24,7 +24,7 @@ function Info() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center md:items-end" data-aos="fade-left">
+        <div className="flex flex-col items-center md:items-end" data-aos="fade-up" data-aos-delay="100">
           <div className="w-full">
             <img
               src={Images.workshop}

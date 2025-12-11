@@ -47,7 +47,7 @@ const Showcase = () => {
         {SHOWCASE_CARDS.map((showcase, index) => (
           <article
             key={index}
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos="fade-up"
             data-aos-delay={index * 100}
             className="card w-full h-[320px] md:h-[280px] lg:h-[350px] xl:h-[420px] relative overflow-hidden group cursor-pointer rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
