@@ -34,7 +34,7 @@ function Form() {
     // Validate privacy checkbox
     if (!isChecked) {
       setSubmitStatus("error");
-      setErrorMessage(t("form.privacyRequired") || "Please accept the privacy policy");
+      setErrorMessage(t("form.privacyRequired") || "Παρακαλώ αποδεχτείτε την πολιτική απορρήτου");
       return;
     }
 
@@ -44,9 +44,9 @@ function Form() {
 
     try {
       // API endpoint - can be configured via environment variable
-      // Default: local backend server
-      // For production: Set VITE_API_ENDPOINT in .env
-      const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || "http://localhost:3000/contact";
+      // Default: production backend on Render
+      // For local development: Set VITE_API_ENDPOINT in .env
+      const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || "https://yamaha-matakos-backend.onrender.com/api/contact";
       
       const response = await fetch(API_ENDPOINT, {
         method: "POST",
@@ -57,12 +57,12 @@ function Form() {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(data.error || `HTTP error! status: ${response.status}`);
       }
 
-      await response.json();
-      
       // Success
       setSubmitStatus("success");
       setFormData({
@@ -82,7 +82,7 @@ function Form() {
       console.error("Form submission error:", error);
       setSubmitStatus("error");
       setErrorMessage(
-        error.message || t("form.submitError") || "An error occurred. Please try again later."
+        error.message || t("form.submitError") || "Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά αργότερα."
       );
     } finally {
       setIsSubmitting(false);
@@ -248,7 +248,7 @@ function Form() {
             aria-live="polite"
           >
             <p className="font-semibold">
-              {t("form.submitSuccess") || "Thank you! Your message has been sent successfully."}
+              {t("form.submitSuccess") || "Ευχαριστούμε! Το μήνυμά σας στάλθηκε επιτυχώς."}
             </p>
           </div>
         )}
@@ -260,7 +260,7 @@ function Form() {
             aria-live="assertive"
           >
             <p className="font-semibold">
-              {errorMessage || t("form.submitError") || "An error occurred. Please try again."}
+              {errorMessage || t("form.submitError") || "Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά."}
             </p>
           </div>
         )}
@@ -277,7 +277,7 @@ function Form() {
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
-                {t("form.submitting") || "Sending..."}
+                {t("form.submitting") || "Αποστολή..."}
               </span>
             ) : (
               t("form.submit")

@@ -1,71 +1,75 @@
-# Yamaha Matakos Backend API
+# Yamaha Matakos Backend Server
 
-Backend server για τη φόρμα επικοινωνίας.
+Backend server για την αποστολή φορμών επικοινωνίας μέσω BRAVO API.
 
-## Setup
-
-### 1. Εγκατάσταση Dependencies
+## Εγκατάσταση
 
 ```bash
 cd server
 npm install
 ```
 
-### 2. Email Configuration
+## Ρύθμιση Environment Variables
 
-Δημιούργησε `.env` file (αντίγραψε το `.env.example`):
-
-```bash
-cp .env.example .env
-```
-
-#### Για Gmail (Προτεινόμενη για testing):
-
-1. Πήγαινε στο Google Account Settings
-2. Enable 2-Factor Authentication
-3. Δημιούργησε App Password:
-   - Security → 2-Step Verification → App passwords
-   - Επίλεξε "Mail" και "Other"
-   - Αντιγράψε το password
-
-4. Στο `.env`:
-```env
-EMAIL_SERVICE=gmail
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-app-password-here
-CONTACT_EMAIL=info@yamaha-matakos.gr
-```
-
-#### Για SMTP (Production):
+Δημιουργήστε ένα αρχείο `.env` στον φάκελο `server/` με τα εξής:
 
 ```env
-EMAIL_SERVICE=smtp
-SMTP_HOST=smtp.yourdomain.com
-SMTP_PORT=587
-SMTP_SECURE=false
-EMAIL_USER=noreply@yamaha-matakos.gr
-EMAIL_PASS=your-password
+PORT=3000
+FRONTEND_URL=https://yamaha-matakos.gr
+BRAVO_API_URL=https://api.bravo.gr/v1/email/send
+BRAVO_API_KEY=your_bravo_api_key_here
 CONTACT_EMAIL=info@yamaha-matakos.gr
+FROM_EMAIL=noreply@yamaha-matakos.gr
 ```
 
-### 3. Run Server
+## Local Development
 
-Development:
 ```bash
 npm run dev
 ```
 
-Production:
-```bash
-npm start
-```
+Ο server θα τρέξει στο `http://localhost:3000`
 
-Server θα τρέχει στο: `http://localhost:3000`
+## Production Deployment στο Render.com
+
+### Βήματα:
+
+1. **Push τον κώδικα στο GitHub**
+
+2. **Σύνδεση με Render.com:**
+   - Πηγαίνετε στο [Render.com](https://render.com)
+   - Κάντε login και συνδεθείτε με το GitHub account σας
+
+3. **Δημιουργία Νέας Web Service:**
+   - Κάντε κλικ στο "New" → "Web Service"
+   - Επιλέξτε το repository σας
+
+4. **Ρυθμίσεις:**
+   - **Name:** `yamaha-matakos-backend`
+   - **Environment:** `Node`
+   - **Build Command:** `cd server && npm install`
+   - **Start Command:** `cd server && npm start`
+   - **Plan:** Επιλέξτε το δωρεάν plan ή paid plan
+
+5. **Environment Variables:**
+   Προσθέστε τα εξής environment variables στο Render dashboard:
+   - `NODE_ENV` = `production`
+   - `PORT` = `3000` (αυτό θα οριστεί αυτόματα από το Render)
+   - `FRONTEND_URL` = `https://yamaha-matakos.gr`
+   - `BRAVO_API_URL` = `https://api.bravo.gr/v1/email/send`
+   - `BRAVO_API_KEY` = `your_bravo_api_key_here` (από το BRAVO API)
+   - `CONTACT_EMAIL` = `info@yamaha-matakos.gr`
+   - `FROM_EMAIL` = `noreply@yamaha-matakos.gr`
+
+6. **Deploy:**
+   - Κάντε κλικ στο "Create Web Service"
+   - Το Render θα κάνει build και deploy τον server
 
 ## API Endpoints
 
-### POST /contact
-Στέλνει email από τη φόρμα επικοινωνίας.
+### POST /api/contact
+
+Αποστολή φόρμας επικοινωνίας.
 
 **Request Body:**
 ```json
@@ -73,7 +77,7 @@ Server θα τρέχει στο: `http://localhost:3000`
   "firstName": "John",
   "lastName": "Doe",
   "email": "john@example.com",
-  "phone": "+1234567890",
+  "phone": "+302310522774",
   "message": "Hello, I'm interested in..."
 }
 ```
@@ -82,7 +86,7 @@ Server θα τρέχει στο: `http://localhost:3000`
 ```json
 {
   "success": true,
-  "message": "Message sent successfully"
+  "message": "Το μήνυμά σας στάλθηκε επιτυχώς!"
 }
 ```
 
@@ -95,41 +99,28 @@ Server θα τρέχει στο: `http://localhost:3000`
 ```
 
 ### GET /health
+
 Health check endpoint.
 
-## Frontend Configuration
-
-Στο frontend `.env` file:
-```env
-VITE_API_ENDPOINT=http://localhost:3000/contact
+**Response:**
+```json
+{
+  "status": "ok",
+  "message": "Server is running"
+}
 ```
 
-Για production:
-```env
-VITE_API_ENDPOINT=https://api.yamaha-matakos.gr/contact
-```
+## BRAVO API Configuration
 
-## Deployment
+Για να λάβετε το BRAVO API key:
+1. Επισκεφτείτε το [BRAVO API](https://bravo.gr/api)
+2. Δημιουργήστε λογαριασμό
+3. Λάβετε το API key από το dashboard
+4. Προσθέστε το στο environment variable `BRAVO_API_KEY`
 
-### Option 1: Vercel / Netlify Functions
-Μετατρέψτε το server σε serverless functions.
+## Troubleshooting
 
-### Option 2: Railway / Render
-Deploy ως Node.js application.
-
-### Option 3: VPS / Dedicated Server
-Run με PM2:
-```bash
-npm install -g pm2
-pm2 start server.js --name yamaha-api
-pm2 save
-pm2 startup
-```
-
-## Security Notes
-
-- Μην commit-άρεις το `.env` file
-- Χρησιμοποίησε environment variables στο production
-- Προσθήκη rate limiting για production
-- Προσθήκη validation και sanitization
+- **CORS Errors:** Βεβαιωθείτε ότι το `FRONTEND_URL` είναι σωστά ρυθμισμένο
+- **Email Not Sending:** Ελέγξτε ότι το `BRAVO_API_KEY` είναι σωστό και valid
+- **Server Not Starting:** Ελέγξτε τα logs στο Render dashboard
 
