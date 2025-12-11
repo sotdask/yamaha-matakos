@@ -6,16 +6,13 @@ import tracer_900_showcase from "./images/tracer9showcase.png";
 import xmax_300_showcase from "./images/xmax300showcase.png";
 import nmax_125_showcase from "./images/nmax125showcase.png";
 import tmax_showcase from "./images/tmax-showcase.png";
-import article1 from "./images/article-1.jpg";
-import article2 from "./images/article-2.jpg";
 import r6_article from "./images/yamaha-r6-article.png"
 import tmax_article from "./images/tmax-anniversary-article.png"
 import tenere_article from "./images/tenere-article.png"
 import parallax from "./images/parallax.png";
-import about2 from "./images/about-2.png";
-import workshop1 from "./images/workshop-1.png";
-import workshop2 from "./images/workshop-2.png";
-import article from "./images/article.png";
+import inside_of_store from "./images/inside-of-store.png";
+import workshop from "./images/workshop.png";
+import technical_academy from "./images/technical-academy.png";
 import r1_race from "./images/models/r1-race.png";
 import r9_2026 from "./images/models/r9-2026.png";
 import r9_2025 from "./images/models/2025-r9.png";
@@ -108,16 +105,13 @@ export const Images = {
   tracer_900_showcase,
   xmax_300_showcase,
   nmax_125_showcase,
-  article1,
-  article2,
   parallax,
-  about2,
-  workshop1,
-  workshop2,
+  inside_of_store,
+  workshop,
+  technical_academy,
   r6_article,
   tmax_article,
   tenere_article,
-  article,
   r1_race,
   r9_2026,
   r9_2025,

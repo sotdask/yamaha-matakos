@@ -10,7 +10,7 @@ function Info() {
         <div className="flex flex-col items-center gap-5">
           <div className="flex justify-center">
             <img
-              src={Images.workshop2}
+              src={Images.technical_academy}
               alt="Yamaha Workshop Technician"
               className="w-10/12 lg:w-9/12 h-auto"
             />
@@ -27,7 +27,7 @@ function Info() {
         <div className="flex flex-col items-center md:items-end">
           <div className="w-full">
             <img
-              src={Images.workshop1}
+              src={Images.workshop}
               alt="Yamaha Workshop"
               className="w-full h-auto"
             />

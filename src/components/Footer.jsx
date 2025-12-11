@@ -176,7 +176,7 @@ function Footer() {
                 <img
                   src={Icons.down}
                   alt="Expand or collapse section"
-                  className={`w-5 h-5 transition-transform duration-300 ${
+                  className={`w-5 h-5 transition-transform duration-300 brightness-0 invert ${
                     openSections[section.id] ? "rotate-180" : ""
                   }`}
                 />

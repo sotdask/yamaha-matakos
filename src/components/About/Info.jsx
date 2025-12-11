@@ -39,7 +39,7 @@ function Info() {
       </div>
       <div className="md:col-span-1 lg:col-span-3 flex flex-col">
         <img
-          src={Images.about2}
+          src={Images.inside_of_store}
           alt="Yamaha Matakos Award"
           className="w-full h-auto object-cover"
         />
