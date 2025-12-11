@@ -9,8 +9,22 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+// Allow both domain and IP address for frontend
+const allowedOrigins = process.env.FRONTEND_URL 
+  ? [process.env.FRONTEND_URL, 'http://207.154.226.88', 'https://207.154.226.88']
+  : ['http://207.154.226.88', 'https://207.154.226.88', '*'];
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: function (origin, callback) {
+    // Allow requests with no origin (mobile apps, curl, etc)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.includes('*') || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(null, true); // Allow all for now, can be restricted later
+    }
+  },
   credentials: true
 }));
 app.use(express.json());

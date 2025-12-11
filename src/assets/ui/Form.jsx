@@ -46,6 +46,7 @@ function Form() {
       // API endpoint - can be configured via environment variable
       // Default: production backend on Render
       // For local development: Set VITE_API_ENDPOINT in .env
+      // For IP-based frontend: Set VITE_API_ENDPOINT to point to Render backend
       const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || "https://yamaha-matakos-backend.onrender.com/api/contact";
       
       const response = await fetch(API_ENDPOINT, {

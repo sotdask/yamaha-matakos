@@ -10,7 +10,7 @@ services:
       - key: PORT
         value: 3000
       - key: FRONTEND_URL
-        value: https://yamaha-matakos.gr
+        value: http://207.154.226.88
       - key: BRAVO_API_URL
         sync: false
       - key: BRAVO_API_KEY

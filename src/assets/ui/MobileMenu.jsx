@@ -299,7 +299,7 @@ const MobileMenu = ({
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-gray-200/50 bg-gradient-to-r from-white to-gray-50/50">
-            <a href="https://yamaha-matakos.gr/" title="Yamaha Matakos Homepage" onClick={handleClose}>
+            <a href="/" title="Yamaha Matakos Homepage" onClick={handleClose}>
               <img src={Icons.logo} alt="Yamaha Matakos logo" />
             </a>
             <button

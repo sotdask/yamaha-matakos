@@ -15,12 +15,14 @@ npm install
 
 ```env
 PORT=3000
-FRONTEND_URL=https://yamaha-matakos.gr
+FRONTEND_URL=http://207.154.226.88
 BRAVO_API_URL=https://api.bravo.gr/v1/email/send
 BRAVO_API_KEY=your_bravo_api_key_here
 CONTACT_EMAIL=info@yamaha-matakos.gr
 FROM_EMAIL=noreply@yamaha-matakos.gr
 ```
+
+**Σημείωση:** Το `FRONTEND_URL` μπορεί να είναι IP address (`http://207.154.226.88`) ή domain (`https://yamaha-matakos.gr`). Χρησιμοποιήστε το IP μέχρι να έχετε domain.
 
 ## Local Development
 
