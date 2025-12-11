@@ -8,7 +8,7 @@ function ContactOptions() {
 
   return (
     <div className="mt-8 lg:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-      <div className="order-2 lg:order-1 space-y-10">
+      <div className="order-2 lg:order-1 space-y-10" data-aos="fade-right">
         <div className="relative pl-8 border-l-4 border-primary">
           <div className="absolute -left-2.5 top-0 w-4 h-4 bg-primary rounded-full"></div>
           <h5 className="text-primary font-bold text-xl mb-3 uppercase tracking-wide">
@@ -62,7 +62,7 @@ function ContactOptions() {
           </div>
         </div>
       </div>
-      <div className="order-1 lg:order-2">
+      <div className="order-1 lg:order-2" data-aos="fade-left">
         <Form />
       </div>
     </div>

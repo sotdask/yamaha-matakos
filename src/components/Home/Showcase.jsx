@@ -40,11 +40,15 @@ const Showcase = () => {
 
   return (
     <div className="my-(--html-spacing) section-padding">
-      <Title text={t("showcase.title")} />
+      <div data-aos="fade-up">
+        <Title text={t("showcase.title")} />
+      </div>
       <div className="max-w-7xl mx-auto mt-8 lg:mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {SHOWCASE_CARDS.map((showcase, index) => (
           <article
             key={index}
+            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos-delay={index * 100}
             className="card w-full h-[320px] md:h-[280px] lg:h-[350px] xl:h-[420px] relative overflow-hidden group cursor-pointer rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             <img

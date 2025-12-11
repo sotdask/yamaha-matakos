@@ -12,8 +12,10 @@ const Info = () => {
         alt="Yamaha Matakos decorative background logo"
         className="absolute top-0 lg:top-0 select-none w-11/12 h-11/12"
       />
-      <Title text={t("info.title")} />
-      <div className="wrapper text-center mt-8 lg:mt-12 max-w-3xl">
+      <div data-aos="fade-up">
+        <Title text={t("info.title")} />
+      </div>
+      <div className="wrapper text-center mt-8 lg:mt-12 max-w-3xl" data-aos="fade-up" data-aos-delay="100">
         <p>
           {t("info.description")}
         </p>

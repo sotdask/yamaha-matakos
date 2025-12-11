@@ -13,8 +13,10 @@ const Partners = () => {
 
   return (
     <div className="mb-(--html-spacing) section-padding">
-      <Title text={t("partners.title")} />
-      <div className="wrapper flex flex-col lg:flex-row lg:justify-between mt-7 lg:mt-12 mb-5 lg:mb-10">
+      <div data-aos="fade-up">
+        <Title text={t("partners.title")} />
+      </div>
+      <div className="wrapper flex flex-col lg:flex-row lg:justify-between mt-7 lg:mt-12 mb-5 lg:mb-10" data-aos="fade-up" data-aos-delay="100">
         <p className="w-full lg:max-w-4/12 text-lg mb-6 lg:mb-0 text-center lg:text-start">
           {t("partners.description")}
         </p>

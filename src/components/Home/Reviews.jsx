@@ -14,11 +14,13 @@ const Reviews = () => {
 
   return (
     <div className="my-(--html-spacing) section-padding flex flex-col items-center">
-      <Title text={t("reviews.title")} />
-      <p className="lg:w-6/12 text-base lg:text-lg mt-8 lg:mt-12 text-center">
+      <div data-aos="fade-up">
+        <Title text={t("reviews.title")} />
+      </div>
+      <p className="lg:w-6/12 text-base lg:text-lg mt-8 lg:mt-12 text-center" data-aos="fade-up" data-aos-delay="100">
         {t("reviews.description")}
       </p>
-      <div className="mt-6">
+      <div className="mt-6" data-aos="zoom-in" data-aos-delay="200">
         <h5 className="uppercase text-[#720303] font-bold text-2xl text-center">
           {t("reviews.yamahaMatakos")}
         </h5>
@@ -33,7 +35,7 @@ const Reviews = () => {
           {t("reviews.withOverRatings")}
         </p>
       </div>
-      <div className="w-full mt-10 mb-10">
+      <div className="w-full mt-10 mb-10" data-aos="fade-up" data-aos-delay="300">
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
@@ -56,7 +58,7 @@ const Reviews = () => {
           className="mySwiper reviews-swiper"
         >
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full w-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
@@ -77,7 +79,7 @@ const Reviews = () => {
           </SwiperSlide>
           
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full w-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
@@ -98,7 +100,7 @@ const Reviews = () => {
           </SwiperSlide>
           
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full w-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />
@@ -119,7 +121,7 @@ const Reviews = () => {
           </SwiperSlide>
           
           <SwiperSlide className="h-full">
-            <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col min-h-[280px]">
+            <div className="bg-white rounded-lg shadow-md p-6 h-full w-full flex flex-col min-h-[280px]">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <img key={i} src={Icons.star} alt="Star rating" className="w-5 h-5" />

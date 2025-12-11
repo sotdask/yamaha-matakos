@@ -6,7 +6,7 @@ function Info() {
   const { t } = useTranslation();
   return (
     <div className="my-(--html-spacing) section-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-8 lg:gap-10">
-      <div className="md:col-span-1 lg:col-span-6 flex flex-col gap-4">
+      <div className="md:col-span-1 lg:col-span-6 flex flex-col gap-4" data-aos="fade-right">
         <video
           src={Images.video}
           autoPlay
@@ -37,7 +37,7 @@ function Info() {
           </p>
         </div>
       </div>
-      <div className="md:col-span-1 lg:col-span-3 flex flex-col">
+      <div className="md:col-span-1 lg:col-span-3 flex flex-col" data-aos="fade-left">
         <img
           src={Images.inside_of_store}
           alt="Yamaha Matakos Award"

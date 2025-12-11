@@ -33,12 +33,12 @@ function Articles() {
 
   return (
     <div className="my-(--html-spacing) section-padding flex flex-col items-center">
-      <p className="text-center text-lg max-w-[90%] lg:max-w-[45%]">
+      <p className="text-center text-lg max-w-[90%] lg:max-w-[45%]" data-aos="fade-up">
         {t("blog.description")}
       </p>
       <div className="w-full flex flex-col items-center gap-y-10 lg:gap-y-12 mt-8 lg:mt-12">
-        {ARTICLE_CARDS.map((article) => (
-          <div className="article-card grid grid-cols-1 md:grid-cols-2">
+        {ARTICLE_CARDS.map((article, index) => (
+          <div className="article-card grid grid-cols-1 md:grid-cols-2" key={index} data-aos="fade-up" data-aos-delay={index * 150}>
             <div className="overflow-hidden">
               <a href={article.href} title={article.title} target="_blank">
                 <img

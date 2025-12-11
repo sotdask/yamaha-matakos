@@ -36,12 +36,16 @@ function FAQ() {
 
   return (
     <div className="my-(--html-spacing) section-padding">
-      <Title text={t("workshop.title")} />
+      <div data-aos="fade-up">
+        <Title text={t("workshop.title")} />
+      </div>
       <div className="max-w-4xl mx-auto mt-8 lg:mt-12">
         <div className="flex flex-col gap-5">
           {faqQuestions.map((item, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className={`bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ${
                 openIndex === index
                   ? "ring-2 ring-[#720303] shadow-lg"

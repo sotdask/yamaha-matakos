@@ -8,9 +8,11 @@ const Discover = () => {
   const { t } = useTranslation();
   return (
     <div className="my-(--html-spacing) section-padding">
-      <Title text={t("discover.title")} />
+      <div data-aos="fade-up">
+        <Title text={t("discover.title")} />
+      </div>
       <div className="wrapper gap-10 lg:gap-12 mt-8 lg:mt-12 flex flex-col lg:flex-row justify-center">
-        <div className="card relative overflow-hidden group cursor-pointer h-64 lg:h-80 xl:h-92">
+        <div className="card relative overflow-hidden group cursor-pointer h-64 lg:h-80 xl:h-92" data-aos="fade-right" data-aos-delay="100">
           <img
             src={Images.r6_article}
             alt="Article image: New NMAX 125 and NMAX 125 Tech MAX motorcycles"
@@ -34,7 +36,7 @@ const Discover = () => {
             </a>
           </div>
         </div>
-        <div className="card relative overflow-hidden group cursor-pointer h-64 lg:h-80 xl:h-92">
+        <div className="card relative overflow-hidden group cursor-pointer h-64 lg:h-80 xl:h-92" data-aos="fade-left" data-aos-delay="200">
           <img
             src={Images.tmax_article}
             alt="Article image: New NMAX 125 and NMAX 125 Tech MAX motorcycles"

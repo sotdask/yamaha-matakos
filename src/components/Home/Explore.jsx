@@ -32,11 +32,15 @@ const Explore = () => {
 
   return (
     <div className="my-(--html-spacing) section-padding">
-      <Title text={t("explore.title")} />
+      <div data-aos="fade-up">
+        <Title text={t("explore.title")} />
+      </div>
       <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-8 lg:mt-12 gap-y-10 lg:gap-y-12">
-        {CATEGORY_CARDS.map((category) => (
+        {CATEGORY_CARDS.map((category, index) => (
           <article
             key={category.title}
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
             className="group relative isolate flex w-full xs:w-10/12 sm:w-8/12 md:w-10/12 flex-col overflow-hidden border border-white/10 bg-white/5 p-0.5 shadow-[0_35px_80px_-25px_rgba(0,0,0,0.65)] backdrop-blur transition-all duration-500 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[0_45px_90px_-25px_rgba(114,3,3,0.55)]"
           >
             <div className="absolute inset-0 -z-10 bg-linear-to-br from-primary/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
