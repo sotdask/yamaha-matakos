@@ -10,15 +10,15 @@ import "aos/dist/aos.css";
 function AppWithAOS() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400,
       easing: "ease-in-out",
       once: true,
-      offset: 100,
+      offset: 0,
     });
   }, []);
 
   return (
-    <BrowserRouter basename="/yamaha-matakos">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   );

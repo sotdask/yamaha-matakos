@@ -198,6 +198,8 @@ export const Images = {
 };
 
 import tiktok from "./icons/tiktok.svg";
+import facebook from "./icons/facebook.svg";
+import instagram from "./icons/instagram.svg";
 import logo from "./icons/logo.svg";
 import globe from "./icons/globe.svg";
 import tel from "./icons/tel.svg";
@@ -247,5 +249,7 @@ export const Icons = {
   yamalube,
   phone_red,
   mail_red,
-  pin_red
+  pin_red,
+  facebook,
+  instagram,
 };

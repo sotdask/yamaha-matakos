@@ -253,6 +253,32 @@ function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col lg:flex-row items-center justify-between gap-4">
           <div className="flex gap-6">
             <a
+              href="https://www.facebook.com/yamahamatakos"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit our Facebook page"
+              className="hover:opacity-70 transition-opacity"
+            >
+              <img
+                src={Icons.facebook}
+                alt="Visit our Facebook page"
+                className="w-6 h-6"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/yamaha.matakos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit our Instagram page"
+              className="hover:opacity-70 transition-opacity"
+            >
+              <img
+                src={Icons.instagram}
+                alt="Visit our Instagram page"
+                className="w-6 h-6"
+              />
+            </a>
+            <a
               href="https://www.tiktok.com/@yamahamatakos"
               target="_blank"
               rel="noopener noreferrer"

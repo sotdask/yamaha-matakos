@@ -13,19 +13,38 @@ const Hero = () => {
         className="w-full h-full object-cover"
         style={{ objectPosition: "25% 70%" }}
       />
-      <div data-aos="fade-up" className="absolute inset-0 flex items-center justify-center md:justify-end px-6 xl:px-44 bg-black/40">
+      <div className="absolute inset-0 flex items-center justify-center md:justify-end px-6 xl:px-44 bg-black/40">
         <div className="px-6 pt-14 md:px-10 md:pt-18 text-[#C2BABA] w-full max-w-xl flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-center">
+          <h2  data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-center">
             Ride. Explore. Feel
           </h2>
-          <h1 className="text-5xl md:text-6xl font-bold mt-4 mb-8 text-center">
+          <h1  data-aos="fade-up" className="text-5xl md:text-6xl font-bold mt-4 mb-8 text-center">
             EXPERIENCE FREEDOM ON A MOTORBIKE
           </h1>
           <LinkButton to="/about" text={t("hero.findOutMore")} />
           <div className="socials flex gap-12 mt-14">
             <a
+              href="https://www.facebook.com/yamahamatakos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit our Facebook page"
+              className="hover:scale-110 transition duration-300"
+            >
+              <img src={Icons.facebook} alt="Visit our Facebook page" />
+            </a>
+            <a
+              href="https://www.instagram.com/yamaha.matakos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit our Instagram page"
+              className="hover:scale-110 transition duration-300"
+            >
+              <img src={Icons.instagram} alt="Visit our Instagram page" />
+            </a>
+            <a
               href="https://www.tiktok.com/@yamahamatakos"
               target="_blank"
+              rel="noopener noreferrer"
               title="Visit our TikTok page"
               className="hover:scale-110 transition duration-300"
             >
