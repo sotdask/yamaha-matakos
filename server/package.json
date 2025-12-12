@@ -2,13 +2,13 @@
   "name": "yamaha-matakos-backend",
   "version": "1.0.0",
   "type": "module",
-  "description": "Backend server for Yamaha Matakos contact form using BRAVO API",
+  "description": "Backend server for Yamaha Matakos contact form using BREVO API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js"
   },
-  "keywords": ["express", "bravo-api", "contact-form"],
+  "keywords": ["express", "brevo-api", "contact-form"],
   "author": "",
   "license": "ISC",
   "dependencies": {
