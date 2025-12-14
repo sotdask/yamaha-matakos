@@ -17,7 +17,10 @@ function Form() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
     if (submitStatus === "error") {
       setSubmitStatus(null);
       setErrorMessage("");
@@ -26,36 +29,35 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!isChecked) {
       setSubmitStatus("error");
-      setErrorMessage(
-        t("form.privacyRequired") ||
-          "Παρακαλώ αποδεχτείτε την πολιτική απορρήτου"
-      );
+      setErrorMessage(t("form.privacyRequired") || "Παρακαλώ αποδεχτείτε την πολιτική απορρήτου");
       return;
     }
+
     setIsSubmitting(true);
     setSubmitStatus(null);
     setErrorMessage("");
+
     try {
-      const API_ENDPOINT =
-        import.meta.env.VITE_API_ENDPOINT ||
-        "https://yamaha-matakos-backend.onrender.com/api/contact";
+      const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || "https://yamaha-matakos-backend.onrender.com/api/contact";
+      
       const response = await fetch(API_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
         body: JSON.stringify(formData),
       });
+
+      const data = await response.json();
+
       if (!response.ok) {
-        let errorMsg = `HTTP error! status: ${response.status}`;
-        try {
-          await response.json();
-        } catch (err) {
-          console.error("Could not parse JSON:", err);
-        }
-        throw new Error(errorMsg);
+        throw new Error(data.error || `HTTP error! status: ${response.status}`);
       }
-      await response.json();
+
       setSubmitStatus("success");
       setFormData({
         firstName: "",
@@ -65,32 +67,23 @@ function Form() {
         message: "",
       });
       setIsChecked(false);
+      
       setTimeout(() => {
         setSubmitStatus(null);
       }, 5000);
     } catch (error) {
       console.error("Form submission error:", error);
-      let userMessage =
-        t("form.submitError") ||
-        "Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά αργότερα.";
-      if (
-        error.message.includes("Failed to fetch") ||
-        error.message.includes("NetworkError")
-      ) {
-        userMessage =
-          "Δεν ήταν δυνατή η σύνδεση με τον server. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.";
-      } else {
-        userMessage = error.message;
-      }
       setSubmitStatus("error");
-      setErrorMessage(userMessage);
+      setErrorMessage(
+        error.message || t("form.submitError") || "Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά αργότερα."
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <form
+    <form 
       onSubmit={handleSubmit}
       className="bg-secondary py-6 sm:py-8 lg:py-11 px-6 sm:px-8 lg:px-10 rounded-3xl w-full"
       noValidate
@@ -102,7 +95,7 @@ function Form() {
               htmlFor="firstName"
               className="block text-[#720303] font-semibold text-base sm:text-lg"
             >
-              {t("form.firstName")}
+              {t("form.firstName")} <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -112,6 +105,7 @@ function Form() {
               value={formData.firstName}
               onChange={handleChange}
               required
+              aria-required="true"
               disabled={isSubmitting}
               className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
             />
@@ -121,7 +115,7 @@ function Form() {
               htmlFor="lastName"
               className="block text-[#720303] font-semibold text-base sm:text-lg"
             >
-              {t("form.lastName")}
+              {t("form.lastName")} <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -131,6 +125,7 @@ function Form() {
               value={formData.lastName}
               onChange={handleChange}
               required
+              aria-required="true"
               disabled={isSubmitting}
               className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
             />
@@ -138,12 +133,12 @@ function Form() {
         </div>
 
         <div className="space-y-3 flex flex-col w-full">
-          <label
-            htmlFor="email"
-            className="block text-[#720303] font-semibold text-base sm:text-lg"
-          >
-            {t("form.email")}
-          </label>
+            <label
+              htmlFor="email"
+              className="block text-[#720303] font-semibold text-base sm:text-lg"
+            >
+              {t("form.email")}
+            </label>
           <input
             type="email"
             placeholder={t("form.emailPlaceholder")}
@@ -151,19 +146,18 @@ function Form() {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            required
             disabled={isSubmitting}
             className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
           />
         </div>
 
         <div className="space-y-3 flex flex-col w-full">
-          <label
-            htmlFor="phone"
-            className="block text-[#720303] font-semibold text-base sm:text-lg"
-          >
-            {t("form.phone")}
-          </label>
+            <label
+              htmlFor="phone"
+              className="block text-[#720303] font-semibold text-base sm:text-lg"
+            >
+              {t("form.phone")} <span className="text-red-500">*</span>
+            </label>
           <input
             type="tel"
             placeholder={t("form.phonePlaceholder")}
@@ -171,6 +165,8 @@ function Form() {
             id="phone"
             value={formData.phone}
             onChange={handleChange}
+            required
+            aria-required="true"
             disabled={isSubmitting}
             className="border-2 border-primary rounded-2xl text-primary py-3 px-4 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
           />
@@ -190,12 +186,10 @@ function Form() {
             placeholder={t("form.messagePlaceholder")}
             value={formData.message}
             onChange={handleChange}
-            required
             disabled={isSubmitting}
             className="w-full border-2 border-primary rounded-2xl text-primary py-3 px-4 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
           ></textarea>
         </div>
-
         <div className="flex items-start space-x-3 lg:col-span-2 mt-4">
           <div className="relative flex items-center justify-center mt-0.5 sm:mt-1">
             <input
@@ -237,61 +231,41 @@ function Form() {
             </a>
           </label>
         </div>
-
         {submitStatus === "success" && (
-          <div
+          <div 
             className="bg-green-100 border-2 border-green-500 text-green-700 px-4 py-3 rounded-lg text-center"
             role="alert"
             aria-live="polite"
           >
             <p className="font-semibold">
-              {t("form.submitSuccess") ||
-                "Ευχαριστούμε! Το μήνυμά σας στάλθηκε επιτυχώς."}
+              {t("form.submitSuccess") || "Ευχαριστούμε! Το μήνυμά σας στάλθηκε επιτυχώς."}
             </p>
           </div>
         )}
-
+        
         {submitStatus === "error" && (
-          <div
+          <div 
             className="bg-red-100 border-2 border-red-500 text-red-700 px-4 py-3 rounded-lg text-center"
             role="alert"
             aria-live="assertive"
           >
             <p className="font-semibold">
-              {errorMessage ||
-                t("form.submitError") ||
-                "Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά."}
+              {errorMessage || t("form.submitError") || "Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά."}
             </p>
           </div>
         )}
 
         <div className="pt-4 flex justify-center">
-          <button
+          <button 
             type="submit"
             disabled={isSubmitting}
             className="cursor-pointer uppercase font-bold border-2 border-primary text-primary inline-block w-fit px-4 py-2 text-sm hover:bg-primary hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded disabled:opacity-50 disabled:cursor-not-allowed min-w-[120px]"
           >
             {isSubmitting ? (
               <span className="flex items-center gap-2">
-                <svg
-                  className="animate-spin h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                  ></circle>
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  ></path>
+                <svg className="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 {t("form.submitting") || "Αποστολή..."}
               </span>

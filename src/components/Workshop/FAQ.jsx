@@ -44,8 +44,6 @@ function FAQ() {
           {faqQuestions.map((item, index) => (
             <div
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
               className={`bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ${
                 openIndex === index
                   ? "ring-2 ring-[#720303] shadow-lg"
@@ -66,7 +64,7 @@ function FAQ() {
                   {item.title}
                 </span>
                 <div
-                  className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                     openIndex === index
                       ? "bg-[#720303] rotate-180"
                       : "bg-gray-100 group-hover:bg-[#720303]/10"

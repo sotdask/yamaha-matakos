@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Icons, Images } from "../assets";
@@ -18,27 +18,6 @@ const MobileMenu = ({
   const { t, i18n } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
-
-  useEffect(() => {
-    if (!isOpen) {
-      setSelectedCategory(null);
-      setSelectedSubcategory(null);
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    const handleFocus = () => {
-      if (isOpen) {
-        onClose();
-      }
-    };
-
-    window.addEventListener("focus", handleFocus);
-
-    return () => {
-      window.removeEventListener("focus", handleFocus);
-    };
-  }, [isOpen, onClose]);
 
   const subcategories = {
     motorcycles: [
@@ -277,13 +256,7 @@ const MobileMenu = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       title={model}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        handleClose();
-                        setTimeout(() => {
-                          window.open(link, "_blank", "noopener,noreferrer");
-                        }, 100);
-                      }}
+                      onClick={handleClose}
                       className={`block cursor-pointer text-gray-700 hover:text-primary hover:bg-primary/10 rounded-lg transition-all text-sm overflow-hidden ${
                         selectedSubcategory
                           ? "opacity-100 translate-y-0"
@@ -529,34 +502,6 @@ const MobileMenu = ({
             </div>
             <div className="mt-auto pt-8 pb-6 border-t border-gray-200/60">
               <div className="flex justify-center gap-8 mb-6">
-                <a
-                  href="https://www.facebook.com/yamahamatakos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visit our Facebook page"
-                  className="active:scale-95 transition-transform"
-                  onClick={onClose}
-                >
-                  <img
-                    src={Icons.facebook}
-                    alt="Visit our Facebook page"
-                    className="w-6 h-6"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/yamaha.matakos/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visit our Instagram page"
-                  className="active:scale-95 transition-transform"
-                  onClick={onClose}
-                >
-                  <img
-                    src={Icons.instagram}
-                    alt="Visit our Instagram page"
-                    className="w-6 h-6"
-                  />
-                </a>
                 <a
                   href="https://www.tiktok.com/@yamahamatakos"
                   target="_blank"

@@ -11,7 +11,7 @@ services:
       - key: PORT
         value: 3000
       - key: FRONTEND_URL
-        value: http://207.154.226.88
+        value: https://yamaha-matakos.gr
       - key: BREVO_API_KEY
         sync: false
       - key: BREVO_SENDER_EMAIL
