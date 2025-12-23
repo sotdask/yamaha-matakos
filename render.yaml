@@ -21,4 +21,4 @@ services:
       - key: BREVO_SENDER_NAME
         value: Yamaha Matakos Contact
       - key: EMAIL_USER
-        value: sotdaskalou@gmail.com
+        value: info@yamaha-matakos.gr
